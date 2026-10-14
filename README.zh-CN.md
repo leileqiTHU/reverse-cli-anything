@@ -4,6 +4,8 @@
 
 [English](README.md) · [最简安装](#最简安装复制给你的-agent) · [对话使用](#安装后通过对话生成和使用-cli) · [工作方式](#工作方式) · [展示案例](#展示案例) · [开发文档](#开发与扩展) · [致敬与感谢](#致敬与感谢)
 
+**没有源码，也能通过逆向构建 CLI，让 Agent 调用软件的原生能力。** 中英双语项目介绍：[YouTube · 1 分 48 秒](https://www.youtube.com/watch?v=BVbwRFlK0nM) · [X · 60 秒](https://x.com/lei_le77716/status/2110290745844437485)。
+
 **先看实际效果：通过 CLI 驱动 CapCut 原生视频编辑。**
 
 [![CapCut CLI：剪辑时间线、添加可编辑字幕、查看导出结果](capcut-cli/assets/capcut-cli-teaser.gif)](https://github.com/leileqiTHU/reverse-cli-anything/raw/refs/heads/main/capcut-cli/assets/capcut-cli-45s.mp4)

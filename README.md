@@ -4,6 +4,8 @@
 
 [中文](README.zh-CN.md) · [Quick start](#quick-start-install-with-your-agent) · [Conversational use](#after-installation-create-and-use-clis-through-conversation) · [How it works](#how-it-works) · [Showcases](#showcase-examples) · [Developer docs](#development-and-extension) · [Acknowledgments](#acknowledgments)
 
+**No source code? Build a CLI for agents through reverse engineering.** Watch the bilingual project introduction: [YouTube · 1:48](https://www.youtube.com/watch?v=BVbwRFlK0nM) · [X · 60 seconds](https://x.com/lei_le77716/status/2110290745844437485).
+
 **See it in action: native video editing in CapCut, driven through a CLI.**
 
 [![CapCut CLI: timeline edits, editable captions and the exported result](capcut-cli/assets/capcut-cli-teaser.gif)](https://github.com/leileqiTHU/reverse-cli-anything/raw/refs/heads/main/capcut-cli/assets/capcut-cli-45s.mp4)
