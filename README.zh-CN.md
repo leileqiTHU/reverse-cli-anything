@@ -153,3 +153,7 @@ CapCut 的语音识别、翻译由外部工具和 Agent 完成，再写入原生
 - [FFmpeg](https://ffmpeg.org/)、[faster-whisper](https://github.com/SYSTRAN/faster-whisper)、[Windows Capture](https://github.com/NiiightmareXD/windows-capture)：媒体准备与验收、语音识别和录屏。
 
 也感谢 NASA 提供演示素材，以及 Kevin MacLeod 创作的 *Fluidscape*。来源、许可和必要署名见[素材致谢](docs/demos/CREDITS.md)。软件官方文档与其他研究资料的链接，保留在[候选调研](docs/research/closed-source-shortlist-20261013.md)、[前期对比](docs/research/next-example-20261013.md)和各案例的实现说明中。
+
+## 许可证
+
+本项目原创代码与文档采用 [MIT 许可证](LICENSE)。第三方软件及媒体素材保留各自的许可，参见上方致谢与[素材署名](docs/demos/CREDITS.md)。

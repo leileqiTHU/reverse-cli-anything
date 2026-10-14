@@ -107,7 +107,7 @@ def bundle_sources(root):
     for stem in documents:
         files.extend(root / "docs" / (stem + suffix + ".md") for suffix in ("", ".zh-CN"))
     for name in ("reverse-cli-anything.py", "reverse-cli-anything.ps1", "reverse-cli.py", "reverse-cli.ps1",
-                 "reverse-cli.config.example.json", "requirements-dev.txt", "CONTRIBUTING.md", "CONTRIBUTING.zh-CN.md",
+                 "reverse-cli.config.example.json", "requirements-dev.txt", "LICENSE", "CONTRIBUTING.md", "CONTRIBUTING.zh-CN.md",
                  "skills/reverse-cli-anything/SKILL.md", "acceptance/README.md", "acceptance/README.zh-CN.md",
                  "tools/rea/README.md", "tools/rea/README.zh-CN.md"):
         files.append(root / name)
@@ -143,9 +143,9 @@ def install_skill(destination):
     _text_new(staging / "SKILL.md", skill.replace("(../../", "(framework/"))
     _text_new(staging / "framework/README.md", "# reverse-cli-anything\n\n## Quick start: install with your agent\n\n"
               "This is the self-contained framework resource bundle. Read the [installed Skill](../SKILL.md), "
-              "[installation guide](docs/install.md) and [engineering manual](docs/HARNESS.md).\n")
+              "[installation guide](docs/install.md) and [engineering manual](docs/HARNESS.md).\n\n[MIT License](LICENSE).\n")
     _text_new(staging / "framework/README.zh-CN.md", "# reverse-cli-anything\n\n## 最简安装：复制给你的 Agent\n\n"
-              "这是独立框架资源包，请读取[已安装 Skill](../SKILL.md)、[安装指南](docs/install.zh-CN.md)和[工程手册](docs/HARNESS.zh-CN.md)。\n")
+              "这是独立框架资源包，请读取[已安装 Skill](../SKILL.md)、[安装指南](docs/install.zh-CN.md)和[工程手册](docs/HARNESS.zh-CN.md)。\n\n[MIT 许可证](LICENSE)。\n")
     records = [{"path": p.relative_to(staging).as_posix(), "sha256": sha256(p)}
                for p in sorted(staging.rglob("*")) if p.is_file()]
     save_new(staging / "bundle.json", {"schemaVersion": 1, "name": "reverse-cli-anything", "files": records,

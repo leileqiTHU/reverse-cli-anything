@@ -157,3 +157,7 @@ The implementation and demonstrations also rely on these open-source tools:
 - [FFmpeg](https://ffmpeg.org/), [faster-whisper](https://github.com/SYSTRAN/faster-whisper) and [Windows Capture](https://github.com/NiiightmareXD/windows-capture): media preparation and validation, speech transcription and recording.
 
 Thanks also to NASA for the demonstration footage and to Kevin MacLeod for *Fluidscape*. Sources, licenses and required attribution are retained in [media credits](docs/demos/CREDITS.md). Application documentation and additional research sources are linked in the [candidate research](docs/research/closed-source-shortlist-20261013.md), [earlier comparison](docs/research/next-example-20261013.md) and individual implementation notes.
+
+## License
+
+The project's original code and documentation are available under the [MIT License](LICENSE). Third-party software and media retain their respective licenses; see the acknowledgments above and [media credits](docs/demos/CREDITS.md).
