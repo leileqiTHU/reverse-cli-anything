@@ -6,11 +6,11 @@
 
 **先看实际效果：通过 CLI 驱动 CapCut 原生视频编辑。**
 
-[![CapCut CLI：剪辑时间线、添加可编辑字幕、查看导出结果](capcut-cli/assets/capcut-cli-teaser.gif)](https://github.com/leileqiTHU/reverse-cli-anything/blob/main/capcut-cli/assets/capcut-cli-45s.mp4)
+[![CapCut CLI：剪辑时间线、添加可编辑字幕、查看导出结果](capcut-cli/assets/capcut-cli-teaser.gif)](https://github.com/leileqiTHU/reverse-cli-anything/raw/refs/heads/main/capcut-cli/assets/capcut-cli-45s.mp4)
 
-**[观看 45 秒预告](https://github.com/leileqiTHU/reverse-cli-anything/blob/main/capcut-cli/assets/capcut-cli-45s.mp4)** · [CapCut 完整流程 · 4:08](capcut-cli/assets/capcut-cli-demo.mp4) · [Axure + Shapr3D 演示](#展示案例)
+**[45 秒视频 · MP4 · 4.2 MB](https://github.com/leileqiTHU/reverse-cli-anything/raw/refs/heads/main/capcut-cli/assets/capcut-cli-45s.mp4)** · [CapCut 完整流程 · 4:08](capcut-cli/assets/capcut-cli-demo.mp4) · [Axure + Shapr3D 演示](#展示案例)
 
-预告从实际录像中选取片段，保留原速；动图为无声预览。CapCut 的编辑和导出通过逆向恢复的内部调用完成，语音识别和翻译使用外部辅助工具。[剪辑来源](docs/demos/README.md#short-overview) · [素材署名](docs/demos/CREDITS.md)。
+MP4 链接会根据浏览器设置直接打开或下载视频。预告从实际录像中选取片段，保留原速；动图为无声预览。CapCut 的编辑和导出通过逆向恢复的内部调用完成，语音识别和翻译使用外部辅助工具。[剪辑来源](docs/demos/README.md#short-overview) · [素材署名](docs/demos/CREDITS.md)。
 
 `reverse-cli-anything` 是给 Agent 使用的通用逆向工具链。当 Agent 需要在某个软件里完成工作，而公开 CLI、API 或 MCP 不支持所需操作时，你可以让 Agent 利用本仓库分析软件、恢复内部能力，并建立一组可调用、可验证、可复用的 CLI。
 

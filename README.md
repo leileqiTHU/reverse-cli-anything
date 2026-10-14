@@ -6,11 +6,11 @@
 
 **See it in action: native video editing in CapCut, driven through a CLI.**
 
-[![CapCut CLI: timeline edits, editable captions and the exported result](capcut-cli/assets/capcut-cli-teaser.gif)](https://github.com/leileqiTHU/reverse-cli-anything/blob/main/capcut-cli/assets/capcut-cli-45s.mp4)
+[![CapCut CLI: timeline edits, editable captions and the exported result](capcut-cli/assets/capcut-cli-teaser.gif)](https://github.com/leileqiTHU/reverse-cli-anything/raw/refs/heads/main/capcut-cli/assets/capcut-cli-45s.mp4)
 
-**[Watch the 45-second overview](https://github.com/leileqiTHU/reverse-cli-anything/blob/main/capcut-cli/assets/capcut-cli-45s.mp4)** · [Full CapCut workflow · 4:08](capcut-cli/assets/capcut-cli-demo.mp4) · [Axure + Shapr3D demos](#showcase-examples)
+**[45-second video · MP4 · 4.2 MB](https://github.com/leileqiTHU/reverse-cli-anything/raw/refs/heads/main/capcut-cli/assets/capcut-cli-45s.mp4)** · [Full CapCut workflow · 4:08](capcut-cli/assets/capcut-cli-demo.mp4) · [Axure + Shapr3D demos](#showcase-examples)
 
-Selected recorded segments at their original speed; the GIF is a silent preview. CapCut's recovered internal calls drive editing and export; speech recognition and translation use external helpers. [Recording details](docs/demos/README.md#short-overview) · [Media credits](docs/demos/CREDITS.md).
+The MP4 link opens or downloads the video, depending on your browser. Selected recorded segments at their original speed; the GIF is a silent preview. CapCut's recovered internal calls drive editing and export; speech recognition and translation use external helpers. [Recording details](docs/demos/README.md#short-overview) · [Media credits](docs/demos/CREDITS.md).
 
 `reverse-cli-anything` is a general reverse-engineering toolkit for agents. When an agent needs to work inside an application but its public CLI, API or MCP lacks the required operations, ask the agent to use this repository to investigate the software, recover its internal capabilities and build a set of callable, verifiable, reusable CLI tools.
 
