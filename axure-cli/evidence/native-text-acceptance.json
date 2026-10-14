@@ -1,0 +1,860 @@
+{
+  "passed": true,
+  "application": "Axure RP",
+  "version": "11.0.0.4150",
+  "utc": "2026-10-13T11:20:00.998790+00:00",
+  "mouseClicks": 0,
+  "keyboardAutomation": 0,
+  "outputDirectory": "D:\\ChatGPT\\reverse-cli\\axure-cli\\outputs\\acceptance-20261013-191954",
+  "project": "D:\\ChatGPT\\reverse-cli\\axure-cli\\outputs\\acceptance-20261013-191954\\text-proof.rp",
+  "widgetId": "ffd6fe42-ffc1-409a-a0f1-dbac42b29d9d",
+  "expectedText": "Hello from reverse-cli — 原生文字编辑",
+  "htmlPage": "D:\\ChatGPT\\reverse-cli\\axure-cli\\outputs\\acceptance-20261013-191954\\html\\page_1.html",
+  "oldPid": 24684,
+  "reopenedPid": 6360,
+  "checks": [
+    {
+      "name": "initial project is clean",
+      "passed": true
+    },
+    {
+      "name": "native configurable cache points to D",
+      "passed": true
+    },
+    {
+      "name": "native widget creation",
+      "passed": true
+    },
+    {
+      "name": "native text transaction",
+      "passed": true
+    },
+    {
+      "name": "dirty-project guard",
+      "passed": true
+    },
+    {
+      "name": "guard leaves document intact",
+      "passed": true
+    },
+    {
+      "name": "native undo restores original text",
+      "passed": true
+    },
+    {
+      "name": "native redo restores changed text",
+      "passed": true
+    },
+    {
+      "name": "native save persisted clean file",
+      "passed": true
+    },
+    {
+      "name": "native new removes previous page widgets",
+      "passed": true
+    },
+    {
+      "name": "save/reopen retains stable ID and Unicode text",
+      "passed": true
+    },
+    {
+      "name": "official read service remains usable",
+      "passed": true
+    },
+    {
+      "name": "native exporter reports success",
+      "passed": true
+    },
+    {
+      "name": "exported HTML contains exact edited text",
+      "passed": true
+    },
+    {
+      "name": "native JavaScript runtime emitted",
+      "passed": true
+    },
+    {
+      "name": "native CSS emitted",
+      "passed": true
+    },
+    {
+      "name": "nonempty export directory protected",
+      "passed": true
+    },
+    {
+      "name": "native close exits old process",
+      "passed": true
+    },
+    {
+      "name": "cold start uses a new PID",
+      "passed": true
+    },
+    {
+      "name": "cold-start reopen retains stable ID and Unicode text",
+      "passed": true
+    },
+    {
+      "name": "cold-start process uses D temp and cache",
+      "passed": true
+    },
+    {
+      "name": "reopened widget remains editable",
+      "passed": true
+    },
+    {
+      "name": "native undo works after cold reopen",
+      "passed": true
+    },
+    {
+      "name": "final saved state is clean",
+      "passed": true
+    }
+  ],
+  "commands": [
+    {
+      "command": [
+        "status"
+      ],
+      "response": {
+        "ok": true,
+        "result": {
+          "pid": 24684,
+          "version": "11.0.0.4150",
+          "sha256": "dae5748f6be3e69c063ef117bab0b400586d94adf119f5a9ba260df59dc4e4a7",
+          "app": "D:\\Apps\\Axure\\Axure RP 11\\AxureRP11.dll",
+          "temp": "D:\\Caches\\Axure\\Temp\\",
+          "configuredCache": "D:\\Caches\\Axure\\Application",
+          "project": {
+            "file": "D:\\ChatGPT\\reverse-cli\\axure-cli\\outputs\\login-20261013-191733\\login-form.rp",
+            "dirty": false,
+            "writable": true,
+            "widgets": [
+              {
+                "id": "1215edf5-2456-4d93-a5cc-4470852cc668",
+                "type": "Axure.DocumentModel.Objects.VectorShape",
+                "name": "heading",
+                "text": "Sign in to reverse-cli",
+                "bounds": {
+                  "x": 180,
+                  "y": 80,
+                  "width": 420,
+                  "height": 40
+                },
+                "inputType": null,
+                "placeholder": null
+              },
+              {
+                "id": "47413b61-d786-4b7c-911e-1705cddc1fd3",
+                "type": "Axure.DocumentModel.Objects.VectorShape",
+                "name": "subtitle",
+                "text": "Created and wired through the native Axure CLI.",
+                "bounds": {
+                  "x": 180,
+                  "y": 126,
+                  "width": 460,
+                  "height": 30
+                },
+                "inputType": null,
+                "placeholder": null
+              },
+              {
+                "id": "447f2d84-7aa5-4c53-8727-96661eba2382",
+                "type": "Axure.DocumentModel.Objects.VectorShape",
+                "name": "username_label",
+                "text": "Username",
+                "bounds": {
+                  "x": 180,
+                  "y": 180,
+                  "width": 320,
+                  "height": 24
+                },
+                "inputType": null,
+                "placeholder": null
+              },
+              {
+                "id": "862eb102-f9fd-48ca-869c-f3265f28290b",
+                "type": "Axure.DocumentModel.Objects.TextBox",
+                "name": "username",
+                "text": "",
+                "bounds": {
+                  "x": 180,
+                  "y": 210,
+                  "width": 320,
+                  "height": 42
+                },
+                "inputType": "Text",
+                "placeholder": "Enter username"
+              },
+              {
+                "id": "6079985e-2e3b-4cbb-96c1-f76e1c1ac352",
+                "type": "Axure.DocumentModel.Objects.VectorShape",
+                "name": "password_label",
+                "text": "Password",
+                "bounds": {
+                  "x": 180,
+                  "y": 270,
+                  "width": 320,
+                  "height": 24
+                },
+                "inputType": null,
+                "placeholder": null
+              },
+              {
+                "id": "b241ac2c-2cd6-4016-9265-99bf94dd90d2",
+                "type": "Axure.DocumentModel.Objects.TextBox",
+                "name": "password",
+                "text": "",
+                "bounds": {
+                  "x": 180,
+                  "y": 300,
+                  "width": 320,
+                  "height": 42
+                },
+                "inputType": "Password",
+                "placeholder": "Enter password"
+              },
+              {
+                "id": "c60aa958-0f85-4924-be9f-83941982a915",
+                "type": "Axure.DocumentModel.Objects.Button",
+                "name": "submit",
+                "text": "Sign in",
+                "bounds": {
+                  "x": 180,
+                  "y": 365,
+                  "width": 320,
+                  "height": 46
+                },
+                "inputType": null,
+                "placeholder": null
+              },
+              {
+                "id": "8204589e-b79b-4f2c-86d4-a70585c83322",
+                "type": "Axure.DocumentModel.Objects.Button",
+                "name": "reset",
+                "text": "Clear form",
+                "bounds": {
+                  "x": 180,
+                  "y": 427,
+                  "width": 320,
+                  "height": 40
+                },
+                "inputType": null,
+                "placeholder": null
+              },
+              {
+                "id": "f60d453f-2bba-4905-9ed9-5eb97591f46f",
+                "type": "Axure.DocumentModel.Objects.VectorShape",
+                "name": "feedback",
+                "text": "Enter the demo credentials to continue.",
+                "bounds": {
+                  "x": 180,
+                  "y": 490,
+                  "width": 460,
+                  "height": 45
+                },
+                "inputType": null,
+                "placeholder": null
+              },
+              {
+                "id": "f692469a-1abb-49a4-91ff-7b1c9cd3446d",
+                "type": "Axure.DocumentModel.Objects.VectorShape",
+                "name": "demo_note",
+                "text": "Demo credentials: demo / cli123\nLocal prototype only. Do not enter a real password.",
+                "bounds": {
+                  "x": 180,
+                  "y": 550,
+                  "width": 480,
+                  "height": 55
+                },
+                "inputType": null,
+                "placeholder": null
+              }
+            ]
+          }
+        },
+        "requestId": "d6f8e1be-4c64-4557-86bd-14488d7c202b"
+      },
+      "exitCode": 0
+    },
+    {
+      "command": [
+        "settings",
+        "cache",
+        "--path",
+        "D:\\Caches\\Axure\\Application"
+      ],
+      "response": {
+        "ok": true,
+        "result": {
+          "configuredCache": "D:\\Caches\\Axure\\Application",
+          "restartRequired": true
+        },
+        "requestId": "189ee7e6-3d4e-46da-a538-f08d3ad67425"
+      },
+      "exitCode": 0
+    },
+    {
+      "command": [
+        "project",
+        "new"
+      ],
+      "response": {
+        "ok": true,
+        "result": {
+          "file": "C:\\Users\\13247\\AppData\\Local\\Axure\\Untitled.rp",
+          "dirty": false,
+          "writable": true,
+          "widgets": []
+        },
+        "requestId": "8cb31289-69cb-42e9-9839-dd312453032e"
+      },
+      "exitCode": 0
+    },
+    {
+      "command": [
+        "widget",
+        "create",
+        "--text",
+        "Original text",
+        "--name",
+        "CLI acceptance paragraph"
+      ],
+      "response": {
+        "ok": true,
+        "result": {
+          "id": "ffd6fe42-ffc1-409a-a0f1-dbac42b29d9d",
+          "type": "Axure.DocumentModel.Objects.VectorShape",
+          "name": "CLI acceptance paragraph",
+          "text": "Original text",
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 70,
+            "height": 15
+          },
+          "inputType": null,
+          "placeholder": null
+        },
+        "requestId": "eb648096-3ecd-4307-8f99-2ba888e35ce4"
+      },
+      "exitCode": 0
+    },
+    {
+      "command": [
+        "widget",
+        "text",
+        "--id",
+        "ffd6fe42-ffc1-409a-a0f1-dbac42b29d9d",
+        "--text",
+        "Hello from reverse-cli — 原生文字编辑"
+      ],
+      "response": {
+        "ok": true,
+        "result": {
+          "before": "Original text",
+          "after": {
+            "id": "ffd6fe42-ffc1-409a-a0f1-dbac42b29d9d",
+            "type": "Axure.DocumentModel.Objects.VectorShape",
+            "name": "CLI acceptance paragraph",
+            "text": "Hello from reverse-cli — 原生文字编辑",
+            "bounds": {
+              "x": 0,
+              "y": 0,
+              "width": 222,
+              "height": 15
+            },
+            "inputType": null,
+            "placeholder": null
+          },
+          "dirty": true
+        },
+        "requestId": "4dbd48c7-9436-40cc-ac21-2f9b05fb79ab"
+      },
+      "exitCode": 0
+    },
+    {
+      "command": [
+        "project",
+        "new"
+      ],
+      "response": {
+        "ok": false,
+        "error": "UNSAVED_CHANGES: save the project before new/open/close",
+        "kind": "InvalidOperationException",
+        "outcome": "inspect_before_retry",
+        "requestId": "8147877e-9f43-4ff1-b8c5-e055240b6d24"
+      },
+      "exitCode": 1
+    },
+    {
+      "command": [
+        "inspect"
+      ],
+      "response": {
+        "ok": true,
+        "result": {
+          "file": "C:\\Users\\13247\\AppData\\Local\\Axure\\Untitled.rp",
+          "dirty": true,
+          "writable": true,
+          "widgets": [
+            {
+              "id": "ffd6fe42-ffc1-409a-a0f1-dbac42b29d9d",
+              "type": "Axure.DocumentModel.Objects.VectorShape",
+              "name": "CLI acceptance paragraph",
+              "text": "Hello from reverse-cli — 原生文字编辑",
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "width": 222,
+                "height": 15
+              },
+              "inputType": null,
+              "placeholder": null
+            }
+          ]
+        },
+        "requestId": "18bebcbf-b5f5-4381-a88f-676b7291a9f1"
+      },
+      "exitCode": 0
+    },
+    {
+      "command": [
+        "undo"
+      ],
+      "response": {
+        "ok": true,
+        "result": {
+          "file": "C:\\Users\\13247\\AppData\\Local\\Axure\\Untitled.rp",
+          "dirty": true,
+          "writable": true,
+          "widgets": [
+            {
+              "id": "ffd6fe42-ffc1-409a-a0f1-dbac42b29d9d",
+              "type": "Axure.DocumentModel.Objects.VectorShape",
+              "name": "CLI acceptance paragraph",
+              "text": "Original text",
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "width": 70,
+                "height": 15
+              },
+              "inputType": null,
+              "placeholder": null
+            }
+          ]
+        },
+        "requestId": "3271fde2-9b39-421f-aa1f-dd175c500627"
+      },
+      "exitCode": 0
+    },
+    {
+      "command": [
+        "redo"
+      ],
+      "response": {
+        "ok": true,
+        "result": {
+          "file": "C:\\Users\\13247\\AppData\\Local\\Axure\\Untitled.rp",
+          "dirty": true,
+          "writable": true,
+          "widgets": [
+            {
+              "id": "ffd6fe42-ffc1-409a-a0f1-dbac42b29d9d",
+              "type": "Axure.DocumentModel.Objects.VectorShape",
+              "name": "CLI acceptance paragraph",
+              "text": "Hello from reverse-cli — 原生文字编辑",
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "width": 222,
+                "height": 15
+              },
+              "inputType": null,
+              "placeholder": null
+            }
+          ]
+        },
+        "requestId": "71ace4b2-1c8e-4d73-a4e6-3b80453a27ee"
+      },
+      "exitCode": 0
+    },
+    {
+      "command": [
+        "project",
+        "save",
+        "--path",
+        "D:\\ChatGPT\\reverse-cli\\axure-cli\\outputs\\acceptance-20261013-191954\\text-proof.rp"
+      ],
+      "response": {
+        "ok": true,
+        "result": {
+          "path": "D:\\ChatGPT\\reverse-cli\\axure-cli\\outputs\\acceptance-20261013-191954\\text-proof.rp",
+          "bytes": 44652,
+          "dirty": false
+        },
+        "requestId": "cce06441-1324-454b-bd6b-51ba01d778ec"
+      },
+      "exitCode": 0
+    },
+    {
+      "command": [
+        "project",
+        "new"
+      ],
+      "response": {
+        "ok": true,
+        "result": {
+          "file": "C:\\Users\\13247\\AppData\\Local\\Axure\\Untitled.rp",
+          "dirty": false,
+          "writable": true,
+          "widgets": []
+        },
+        "requestId": "58eef580-8e37-453c-affb-85f128e694ee"
+      },
+      "exitCode": 0
+    },
+    {
+      "command": [
+        "project",
+        "open",
+        "--path",
+        "D:\\ChatGPT\\reverse-cli\\axure-cli\\outputs\\acceptance-20261013-191954\\text-proof.rp"
+      ],
+      "response": {
+        "ok": true,
+        "result": {
+          "file": "D:\\ChatGPT\\reverse-cli\\axure-cli\\outputs\\acceptance-20261013-191954\\text-proof.rp",
+          "dirty": false,
+          "writable": true,
+          "widgets": [
+            {
+              "id": "ffd6fe42-ffc1-409a-a0f1-dbac42b29d9d",
+              "type": "Axure.DocumentModel.Objects.VectorShape",
+              "name": "CLI acceptance paragraph",
+              "text": "Hello from reverse-cli — 原生文字编辑",
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "width": 222,
+                "height": 15
+              },
+              "inputType": null,
+              "placeholder": null
+            }
+          ]
+        },
+        "requestId": "76526143-599e-4379-b95f-be28c03e39a2"
+      },
+      "exitCode": 0
+    },
+    {
+      "command": [
+        "project",
+        "sitemap"
+      ],
+      "response": {
+        "ok": true,
+        "result": {
+          "DocumentId": "9295a9bc-b809-4859-aba1-1bd63cd4a9d8",
+          "FileName": "text-proof",
+          "Pages": [
+            {
+              "Id": "0cf66128-9c07-4c40-90eb-5524e2c90c7a",
+              "Name": "Page 1",
+              "Type": "page",
+              "Children": null
+            }
+          ]
+        },
+        "requestId": "dc195c14-f5f3-42b5-b66c-0c8679a4f5ae"
+      },
+      "exitCode": 0
+    },
+    {
+      "command": [
+        "export",
+        "html",
+        "--output",
+        "D:\\ChatGPT\\reverse-cli\\axure-cli\\outputs\\acceptance-20261013-191954\\html"
+      ],
+      "response": {
+        "ok": true,
+        "result": {
+          "output": "D:\\ChatGPT\\reverse-cli\\axure-cli\\outputs\\acceptance-20261013-191954\\html",
+          "nativeSuccess": true,
+          "files": 136
+        },
+        "requestId": "81a3c4b4-23d9-4dc7-b653-24cf2a3976ca"
+      },
+      "exitCode": 0
+    },
+    {
+      "command": [
+        "export",
+        "html",
+        "--output",
+        "D:\\ChatGPT\\reverse-cli\\axure-cli\\outputs\\acceptance-20261013-191954\\html"
+      ],
+      "response": {
+        "ok": false,
+        "error": "Export destination must be empty",
+        "kind": "IOException",
+        "outcome": "inspect_before_retry",
+        "requestId": "ef9fa413-3360-48f7-a951-1ca26fe4bbed"
+      },
+      "exitCode": 1
+    },
+    {
+      "command": [
+        "status"
+      ],
+      "response": {
+        "ok": true,
+        "result": {
+          "pid": 24684,
+          "version": "11.0.0.4150",
+          "sha256": "dae5748f6be3e69c063ef117bab0b400586d94adf119f5a9ba260df59dc4e4a7",
+          "app": "D:\\Apps\\Axure\\Axure RP 11\\AxureRP11.dll",
+          "temp": "D:\\Caches\\Axure\\Temp\\",
+          "configuredCache": "D:\\Caches\\Axure\\Application",
+          "project": {
+            "file": "D:\\ChatGPT\\reverse-cli\\axure-cli\\outputs\\acceptance-20261013-191954\\text-proof.rp",
+            "dirty": false,
+            "writable": true,
+            "widgets": [
+              {
+                "id": "ffd6fe42-ffc1-409a-a0f1-dbac42b29d9d",
+                "type": "Axure.DocumentModel.Objects.VectorShape",
+                "name": "CLI acceptance paragraph",
+                "text": "Hello from reverse-cli — 原生文字编辑",
+                "bounds": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 222,
+                  "height": 15
+                },
+                "inputType": null,
+                "placeholder": null
+              }
+            ]
+          }
+        },
+        "requestId": "5bc33aef-4001-4563-adf8-7d050120dec1"
+      },
+      "exitCode": 0
+    },
+    {
+      "command": [
+        "project",
+        "close"
+      ],
+      "response": {
+        "ok": true,
+        "result": {
+          "closed": true,
+          "pid": 24684,
+          "verifiedProcessExit": true
+        },
+        "requestId": "7914c180-9d6f-4c4e-bb7f-3cdf8b261ef4"
+      },
+      "exitCode": 0
+    },
+    {
+      "command": [
+        "launch",
+        "--project",
+        "D:\\ChatGPT\\reverse-cli\\axure-cli\\outputs\\acceptance-20261013-191954\\text-proof.rp"
+      ],
+      "response": {
+        "ok": true,
+        "result": {
+          "pid": 6360,
+          "version": "11.0.0.4150",
+          "sha256": "dae5748f6be3e69c063ef117bab0b400586d94adf119f5a9ba260df59dc4e4a7",
+          "app": "D:\\Apps\\Axure\\Axure RP 11\\AxureRP11.dll",
+          "temp": "D:\\Caches\\Axure\\Temp\\",
+          "configuredCache": "D:\\Caches\\Axure\\Application",
+          "project": {
+            "file": "D:\\ChatGPT\\reverse-cli\\axure-cli\\outputs\\acceptance-20261013-191954\\text-proof.rp",
+            "dirty": false,
+            "writable": true,
+            "widgets": [
+              {
+                "id": "ffd6fe42-ffc1-409a-a0f1-dbac42b29d9d",
+                "type": "Axure.DocumentModel.Objects.VectorShape",
+                "name": "CLI acceptance paragraph",
+                "text": "Hello from reverse-cli — 原生文字编辑",
+                "bounds": {
+                  "x": 0,
+                  "y": 0,
+                  "width": 222,
+                  "height": 15
+                },
+                "inputType": null,
+                "placeholder": null
+              }
+            ]
+          }
+        },
+        "requestId": "c39848de-d7ed-4bdf-8c84-af8d442ee7fe",
+        "launchedPid": 6360
+      },
+      "exitCode": 0
+    },
+    {
+      "command": [
+        "widget",
+        "text",
+        "--id",
+        "ffd6fe42-ffc1-409a-a0f1-dbac42b29d9d",
+        "--text",
+        "Cold reopen editable"
+      ],
+      "response": {
+        "ok": true,
+        "result": {
+          "before": "Hello from reverse-cli — 原生文字编辑",
+          "after": {
+            "id": "ffd6fe42-ffc1-409a-a0f1-dbac42b29d9d",
+            "type": "Axure.DocumentModel.Objects.VectorShape",
+            "name": "CLI acceptance paragraph",
+            "text": "Cold reopen editable",
+            "bounds": {
+              "x": 0,
+              "y": 0,
+              "width": 120,
+              "height": 15
+            },
+            "inputType": null,
+            "placeholder": null
+          },
+          "dirty": true
+        },
+        "requestId": "f1ccda32-924d-4513-958a-d3bc7d44794b"
+      },
+      "exitCode": 0
+    },
+    {
+      "command": [
+        "inspect"
+      ],
+      "response": {
+        "ok": true,
+        "result": {
+          "file": "D:\\ChatGPT\\reverse-cli\\axure-cli\\outputs\\acceptance-20261013-191954\\text-proof.rp",
+          "dirty": true,
+          "writable": true,
+          "widgets": [
+            {
+              "id": "ffd6fe42-ffc1-409a-a0f1-dbac42b29d9d",
+              "type": "Axure.DocumentModel.Objects.VectorShape",
+              "name": "CLI acceptance paragraph",
+              "text": "Cold reopen editable",
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "width": 120,
+                "height": 15
+              },
+              "inputType": null,
+              "placeholder": null
+            }
+          ]
+        },
+        "requestId": "e7f74dae-aee8-4949-ab8f-625b83840687"
+      },
+      "exitCode": 0
+    },
+    {
+      "command": [
+        "undo"
+      ],
+      "response": {
+        "ok": true,
+        "result": {
+          "file": "D:\\ChatGPT\\reverse-cli\\axure-cli\\outputs\\acceptance-20261013-191954\\text-proof.rp",
+          "dirty": true,
+          "writable": true,
+          "widgets": [
+            {
+              "id": "ffd6fe42-ffc1-409a-a0f1-dbac42b29d9d",
+              "type": "Axure.DocumentModel.Objects.VectorShape",
+              "name": "CLI acceptance paragraph",
+              "text": "Hello from reverse-cli — 原生文字编辑",
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "width": 222,
+                "height": 15
+              },
+              "inputType": null,
+              "placeholder": null
+            }
+          ]
+        },
+        "requestId": "f262936a-9911-42d5-b462-60fac83f9492"
+      },
+      "exitCode": 0
+    },
+    {
+      "command": [
+        "project",
+        "save"
+      ],
+      "response": {
+        "ok": true,
+        "result": {
+          "path": "D:\\ChatGPT\\reverse-cli\\axure-cli\\outputs\\acceptance-20261013-191954\\text-proof.rp",
+          "bytes": 44644,
+          "dirty": false
+        },
+        "requestId": "77296aaa-d8d4-42dc-9a21-c26cd599f268"
+      },
+      "exitCode": 0
+    },
+    {
+      "command": [
+        "inspect"
+      ],
+      "response": {
+        "ok": true,
+        "result": {
+          "file": "D:\\ChatGPT\\reverse-cli\\axure-cli\\outputs\\acceptance-20261013-191954\\text-proof.rp",
+          "dirty": false,
+          "writable": true,
+          "widgets": [
+            {
+              "id": "ffd6fe42-ffc1-409a-a0f1-dbac42b29d9d",
+              "type": "Axure.DocumentModel.Objects.VectorShape",
+              "name": "CLI acceptance paragraph",
+              "text": "Hello from reverse-cli — 原生文字编辑",
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "width": 222,
+                "height": 15
+              },
+              "inputType": null,
+              "placeholder": null
+            }
+          ]
+        },
+        "requestId": "e2ae1cfe-3ac7-4074-b590-0dd78fec26ba"
+      },
+      "exitCode": 0
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "D:\\ChatGPT\\reverse-cli\\axure-cli\\outputs\\acceptance-20261013-191954\\text-proof.rp",
+      "bytes": 44644,
+      "sha256": "8d8dae1eb444b70682f2384d234809173a97c72ae5a688d915936aa10cbf7cf7"
+    },
+    {
+      "path": "D:\\ChatGPT\\reverse-cli\\axure-cli\\outputs\\acceptance-20261013-191954\\html\\page_1.html",
+      "bytes": 3502,
+      "sha256": "5c55277c3de03d672738c90ae0fa094ae87f3ad6fa8b71ebda028664c25324d0"
+    }
+  ]
+}

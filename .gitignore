@@ -1,0 +1,71 @@
+# Local state, evidence bundles, dependencies and downloaded software.
+/.local/
+**/.runtime/
+**/.native-tools/
+**/__pycache__/
+*.py[cod]
+**/local.settings.json
+/reverse-cli.local.json
+/.reverse-cli/
+/outputs/
+/shapr3d-cli/outputs/
+/axure-cli/outputs/
+*.rp
+*.msix
+*.msixbundle
+*.shapr
+/capcut-cli/capcut-analysis/
+/capcut-cli/capcut-test-media/
+/capcut-cli/exports/
+/capcut-cli/previews/
+/capcut-cli/tests/output/
+/capcut-cli/docs/*.txt
+
+# Local-only compatibility junctions created by the layout migration.
+/.native-tools
+/.runtime
+/.rea-setup
+/capcut-analysis
+/capcut-test-media
+/exports
+/previews
+/tests
+/native-engine
+/rea-smoke-test
+/references
+/research
+/downloads
+
+# Never include dumps, installers, target application binaries or large media.
+*.dmp
+*.exe
+*.dll
+*.msi
+*.zip
+*.7z
+*.tgz
+*.mp4
+# Curated small demonstration; raw recordings stay under ignored outputs/.
+!/axure-cli/assets/axure-cli-from-blank.mp4
+# Curated, validated showcase editions referenced by the project README.
+!/capcut-cli/assets/capcut-cli-demo.mp4
+!/axure-cli/assets/axure-cli-demo.mp4
+!/shapr3d-cli/assets/shapr3d-cli-demo.mp4
+*.mov
+*.wav
+*.mp3
+.DS_Store
+Thumbs.db
+
+# Local credentials and development environments.
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.pfx
+*.p12
+**/.venv/
+**/node_modules/
+**/obj/
+**/bin/

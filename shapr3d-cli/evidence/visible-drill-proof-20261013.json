@@ -1,0 +1,96 @@
+{
+  "date": "2026-10-13",
+  "application": "Shapr3D",
+  "version": "26.180.11926.0",
+  "workflow": "empty visible model -> native extrusion -> history thickness -> native hole-face moves -> center cut -> native export",
+  "noMouseOrKeyboardUiInput": true,
+  "frontend": "EditorPage; activeEditor=1; editable normal session",
+  "recording": {
+    "seconds": 49,
+    "width": 1026,
+    "height": 802,
+    "fps": 15,
+    "capture": "DXGI Desktop Duplication, verified foreground app bounds",
+    "fullDecodeExitCode": 0,
+    "sha256": "0edd8f2650edf161416249ca87eb28159f5e45df160e158de096b68990eb5488",
+    "events": [
+      {
+        "phase": "empty-model",
+        "seconds": 0.0
+      },
+      {
+        "phase": "rectangle-and-two-circles",
+        "seconds": 3.328
+      },
+      {
+        "phase": "native-extrude-4mm",
+        "seconds": 7.578
+      },
+      {
+        "phase": "thickness-6mm",
+        "seconds": 11.938
+      },
+      {
+        "phase": "right-hole-moved",
+        "seconds": 16.703
+      },
+      {
+        "phase": "mounting-hole-pitch-60mm",
+        "seconds": 21.578
+      },
+      {
+        "phase": "new-center-circle",
+        "seconds": 26.188
+      },
+      {
+        "phase": "center-region-selected",
+        "seconds": 30.063
+      },
+      {
+        "phase": "center-cut-2mm",
+        "seconds": 33.907
+      },
+      {
+        "phase": "center-cut-4mm",
+        "seconds": 38.266
+      },
+      {
+        "phase": "center-cut-8mm",
+        "seconds": 41.813
+      },
+      {
+        "phase": "native-export-complete",
+        "seconds": 45.703
+      }
+    ]
+  },
+  "geometry": {
+    "passed": true,
+    "checks": 78,
+    "lengthMm": 80,
+    "widthMm": 40,
+    "thicknessMm": 6,
+    "originalHoles": {
+      "diameterMm": 6,
+      "pitchMm": 60
+    },
+    "newHole": {
+      "diameterMm": 8,
+      "centerMm": [
+        0,
+        0
+      ]
+    },
+    "triangles": 188,
+    "connectedComponents": 1,
+    "eulerCharacteristic": -4,
+    "stlSha256": "c9a350af5941ecd2e3618d67f7462c1d9b0474bb540162725d529df82e0c467f",
+    "matchesFirstDrillExactly": true
+  },
+  "limitations": [
+    "Version-pinned XY plate pilot",
+    "Native Low resolution STL",
+    "First GDI window capture was black and excluded",
+    "This run did not reverify cold app restart or visible export dialog flow"
+  ]
+}

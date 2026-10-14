@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "operations": [
+    {
+      "id": "requested-operation",
+      "description": "One requested business operation",
+      "publicCoverage": "unknown",
+      "effect": "unknown",
+      "expectedNativeResult": "Define the observable native result",
+      "unchanged": [],
+      "dependsOn": [],
+      "status": "planned",
+      "entrypoints": [],
+      "experiments": [],
+      "acceptanceEvidence": [],
+      "blocker": null
+    }
+  ]
+}

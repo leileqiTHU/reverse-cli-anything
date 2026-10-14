@@ -1,0 +1,196 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "native Login page initializes",
+      "passed": true
+    },
+    {
+      "name": "username hint survives native export",
+      "passed": true
+    },
+    {
+      "name": "native exported submit geometry matches CLI bounds",
+      "passed": true
+    },
+    {
+      "name": "empty fields trigger native validation",
+      "passed": true
+    },
+    {
+      "name": "validation does not navigate",
+      "passed": true
+    },
+    {
+      "name": "partial credentials remain on validation branch",
+      "passed": true
+    },
+    {
+      "name": "native password input is masked when it contains a value",
+      "passed": true
+    },
+    {
+      "name": "incorrect credentials trigger native else branch",
+      "passed": true
+    },
+    {
+      "name": "clear button restores empty input hints through native actions",
+      "passed": true
+    },
+    {
+      "name": "clear button restores feedback",
+      "passed": true
+    },
+    {
+      "name": "valid demo credentials navigate through native link action",
+      "passed": true
+    },
+    {
+      "name": "native destination page renders",
+      "passed": true
+    },
+    {
+      "name": "native return action reaches Login",
+      "passed": true
+    },
+    {
+      "name": "no JavaScript exceptions or capture failures",
+      "passed": true,
+      "detail": {
+        "exceptions": [],
+        "captureErrors": []
+      }
+    }
+  ],
+  "mouseEvents": 0,
+  "activation": "CDP keyboard Enter; no mouse events or DOM click calls",
+  "input": "dummy values assigned to native exported form controls with input/change events",
+  "htmlModified": false,
+  "network": "local HTTP only; external URLs blocked in test",
+  "profile": "D:\\Caches\\Axure\\HtmlQA\\login-20261013-191733-1791890453008",
+  "outputDirectory": "D:\\ChatGPT\\reverse-cli\\axure-cli\\outputs\\login-20261013-191733",
+  "screenshots": [
+    {
+      "path": "D:\\ChatGPT\\reverse-cli\\axure-cli\\outputs\\login-20261013-191733\\login-initial.png",
+      "sha256": "eefac964689fc7c2d22b9d4f7225f8cb9f20f98eb19b570ae77cab495fe9ac44"
+    },
+    {
+      "path": "D:\\ChatGPT\\reverse-cli\\axure-cli\\outputs\\login-20261013-191733\\login-validation.png",
+      "sha256": "15e3cebc163625d56c06cd9c2f761c357463cfdc38648f829e45c9707d3e9c0e"
+    },
+    {
+      "path": "D:\\ChatGPT\\reverse-cli\\axure-cli\\outputs\\login-20261013-191733\\login-invalid.png",
+      "sha256": "a3a272c069a2c8b2848a823a19b880832a86e2be97ca4b41430993ee736a433c"
+    },
+    {
+      "path": "D:\\ChatGPT\\reverse-cli\\axure-cli\\outputs\\login-20261013-191733\\login-success.png",
+      "sha256": "3e12e59f552b57bb64199b9495733d3f9a49c0027e2b32e2a5163232f05d3c5c"
+    }
+  ],
+  "exceptions": [],
+  "video": "D:\\ChatGPT\\reverse-cli\\axure-cli\\outputs\\login-20261013-191733\\browser-interaction-1791890476664.mp4",
+  "captureFrames": 115,
+  "captions": [
+    {
+      "seconds": 0.00013110000000000354,
+      "text": "Native Axure HTML | real browser interaction | keyboard activation only"
+    },
+    {
+      "seconds": 0.17860820000000008,
+      "text": "PASS: native Login page initializes"
+    },
+    {
+      "seconds": 0.8896272,
+      "text": "PASS: username hint survives native export"
+    },
+    {
+      "seconds": 0.8900885000000001,
+      "text": "PASS: native exported submit geometry matches CLI bounds"
+    },
+    {
+      "seconds": 3.142958,
+      "text": "Focus submit and press Enter (no mouse event)"
+    },
+    {
+      "seconds": 4.3622822999999995,
+      "text": "PASS: empty fields trigger native validation"
+    },
+    {
+      "seconds": 4.3631074,
+      "text": "PASS: validation does not navigate"
+    },
+    {
+      "seconds": 6.6095006,
+      "text": "Enter dummy username: demo"
+    },
+    {
+      "seconds": 7.7145264,
+      "text": "Focus submit and press Enter (no mouse event)"
+    },
+    {
+      "seconds": 8.934028699999999,
+      "text": "PASS: partial credentials remain on validation branch"
+    },
+    {
+      "seconds": 8.934039199999999,
+      "text": "Enter dummy password: wrong-demo-password"
+    },
+    {
+      "seconds": 10.0375496,
+      "text": "Focus submit and press Enter (no mouse event)"
+    },
+    {
+      "seconds": 11.2473256,
+      "text": "PASS: native password input is masked when it contains a value"
+    },
+    {
+      "seconds": 11.248357200000001,
+      "text": "PASS: incorrect credentials trigger native else branch"
+    },
+    {
+      "seconds": 13.4924641,
+      "text": "Focus reset and press Enter (no mouse event)"
+    },
+    {
+      "seconds": 14.7080481,
+      "text": "PASS: clear button restores empty input hints through native actions"
+    },
+    {
+      "seconds": 14.708492,
+      "text": "PASS: clear button restores feedback"
+    },
+    {
+      "seconds": 14.7084934,
+      "text": "Enter dummy username: demo"
+    },
+    {
+      "seconds": 15.8169704,
+      "text": "Enter dummy password: cli123"
+    },
+    {
+      "seconds": 16.924478899999997,
+      "text": "Focus submit and press Enter (no mouse event)"
+    },
+    {
+      "seconds": 18.1516782,
+      "text": "PASS: valid demo credentials navigate through native link action"
+    },
+    {
+      "seconds": 18.1523001,
+      "text": "PASS: native destination page renders"
+    },
+    {
+      "seconds": 20.4252195,
+      "text": "Focus back and press Enter (no mouse event)"
+    },
+    {
+      "seconds": 21.637387299999997,
+      "text": "PASS: native return action reaches Login"
+    },
+    {
+      "seconds": 21.637417799999998,
+      "text": "PASS: no JavaScript exceptions or capture failures"
+    }
+  ],
+  "frameCache": "D:\\Caches\\Axure\\Recordings\\login-20261013-191733-1791890453008"
+}

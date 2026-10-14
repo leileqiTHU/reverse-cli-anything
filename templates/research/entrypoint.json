@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "candidate-entry",
+  "operation": "requested-operation",
+  "stage": "static-candidate",
+  "target": {
+    "module": "unknown",
+    "sha256": null,
+    "build": "uninvestigated"
+  },
+  "discovery": {
+    "tool": "unrecorded",
+    "coverage": "unknown",
+    "locator": null,
+    "evidence": []
+  },
+  "call": {
+    "receiverSource": "unknown",
+    "signature": "unknown",
+    "abi": "unknown",
+    "parameters": [],
+    "returnAndErrors": "unknown"
+  },
+  "lifecycle": {
+    "thread": "unknown",
+    "prerequisites": [],
+    "ownership": [],
+    "callbackLifetime": "unknown",
+    "invalidatedBy": []
+  },
+  "semantics": {
+    "transaction": "unknown",
+    "dirtyState": "unknown",
+    "notifications": [],
+    "sideEffects": [],
+    "completion": "unknown",
+    "observation": "unknown",
+    "recovery": "unknown"
+  },
+  "limitations": [],
+  "runtimeEvidence": []
+}

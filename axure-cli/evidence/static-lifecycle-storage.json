@@ -1,0 +1,55 @@
+{
+  "artifact": "D:\\Apps\\Axure\\Axure RP 11\\AxureRP11.dll",
+  "sha256": "dae5748f6be3e69c063ef117bab0b400586d94adf119f5a9ba260df59dc4e4a7",
+  "kind": "static-decompilation-not-runtime-proof",
+  "lifecycle": {
+    "writable": "client.LImL()",
+    "dirty": "client.TIX7()",
+    "flush": "client.CommitOuterObject(true)",
+    "new": "client.vImH(DesignDocumentType.Standard,false)",
+    "save": "client.XIXf().Save()",
+    "saveAs": "client.XIXf().INR4(path,out error)",
+    "open": "client.OpenDocument(path,false)",
+    "close": "client.CloseClient()",
+    "guard": "Check writable for mutations. Commit pending edit before reading dirty. Refuse unsaved new/open/close. Native dI0J() shows a dialog and should not be used for a CLI guard.",
+    "reopenCaveat": "OpenDocument(currentFilename) is rejected by TgR; create a clean blank document or close/relaunch before reopening to establish disk persistence.",
+    "evidence": [
+      "M3m.cs:2123",
+      "M3m.cs:3269",
+      "M3m.cs:3484",
+      "M3m.cs:5616",
+      "M3m.cs:7173",
+      "M3m.cs:7731",
+      "Cx3.cs:3153",
+      "Cx3.cs:3261",
+      "Cx3.cs:3710"
+    ]
+  },
+  "storage": {
+    "nativePreference": "y9JG.P9bz.AppTemporaryPath",
+    "nativePreferenceStore": "kSnw.xSnT.iS8H().cIzy() : D99H.m995, backed by X1Nr.z1NV registry indexer",
+    "keyDecoder": "wIhA.zIhQ.sIho(0x45242D70 XOR module-instance-field m_12d7391c2c704393b19bbd6e593f2662)",
+    "windowsResolution": "X1b4.G1bY.WIvf() chooses P9bz.AppTemporaryPath before LocalApplicationData fallback",
+    "init": "FSab.OSaj.mI0T() derives temp subpaths. Apply preference before fresh app initialization; do not call live, because initialization includes migration/locking.",
+    "outputs": [
+      "FSfg.SSf3.DefaultPrototypePath",
+      "FSfg.SSf3.DefaultSpecificationPath",
+      "FSfg.SSf3.DefaultReportPath",
+      "FSfg.SSf3.DefaultLibraryPath",
+      "FSfg.SSf3.DefaultTeamPath"
+    ],
+    "settingsPersist": "Axure.Client.ClientSettings.I5b() serializes the ClientSettings profile including SSf3 output defaults",
+    "evidence": [
+      "G1bY.cs:42",
+      "G1bY.cs:47",
+      "OSaj.cs:379",
+      "P9bz-temporary.cs",
+      "P9bz-preference-store.cs",
+      "m995.cs",
+      "z1NV.cs:261",
+      "SSf3.cs:367",
+      "ClientSettings.cs:3901",
+      "ClientSettings.cs:4363"
+    ]
+  }
+}

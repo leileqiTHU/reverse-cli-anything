@@ -1,0 +1,233 @@
+{
+  "case": "NASA water properties / real footage and speech",
+  "validatedOn": "2026-10-13",
+  "application": "CapCut 9.5.0.4050 Windows x64",
+  "passed": true,
+  "checks": {
+    "timelineIdentity": true,
+    "duration33_7Seconds": true,
+    "threeNativeVideoClips": true,
+    "oneNativeMusicClip": true,
+    "sixteenBilingualCaptionsAndSourceCredit": true,
+    "editableItemsSurviveCloseAndReopen": true,
+    "originalUserProjectUnchanged": true,
+    "clip1NativeSourceAndTarget": true,
+    "clip2NativeSourceAndTarget": true,
+    "clip3NativeSourceAndTarget": true,
+    "middleClipNative108PercentScale": true,
+    "musicNativeGainSourceAndFades": true,
+    "1011FramesFullyDecoded": true,
+    "1080p30H264AAC": true,
+    "finiteAudioNoClipping": true,
+    "audioDurationWithinAACPadding": true,
+    "noBlankFrames": true,
+    "renderedSpeechPreserved": true,
+    "renderedMusicMinus22dB": true,
+    "renderedAudioMatchesRealSources": true,
+    "speechClearlyAboveAddedMusic": true,
+    "independentRecognitionRetainsSpeech": true,
+    "sampledFramesMatchSelectedSourceAndTransform": true,
+    "nativeTimelineFramesMatchExport": true
+  },
+  "decode": {
+    "frames": 1011,
+    "audioSeconds": 33.715375,
+    "audioPeak": 0.9318930506706238,
+    "stateItemCount": 21
+  },
+  "output": {
+    "bytes": 39753090,
+    "sha256": "1b2d5eb7736b2f6fd6ea935de9382375ba2f72b516957be396b834da7ed70b51",
+    "streamDescriptions": [
+      "Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1920x1080 [SAR 1:1 DAR 16:9], 9233 kb/s, 30 fps, 30 tbr, 30 tbn (default)",
+      "Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 196 kb/s (default)"
+    ],
+    "containerDurationSeconds": 33.72
+  },
+  "audioMixMeasurements": [
+    {
+      "windowSeconds": [
+        1.5,
+        7.5
+      ],
+      "speechDelaySamples": 0,
+      "musicRelativeDelaySamples": 0,
+      "gainDbPerChannelSpeechMusic": [
+        [
+          -0.03161399324201813,
+          -22.054438884824023
+        ],
+        [
+          -0.03233951870258815,
+          -22.071525849115737
+        ]
+      ],
+      "reconstructionCorrelation": [
+        0.999858337896966,
+        0.9998470331703079
+      ],
+      "reconstructionSnrDb": [
+        35.47619184087682,
+        35.142682226859904
+      ],
+      "speechOverMusicDb": [
+        18.85326648086164,
+        19.61232403202345
+      ]
+    },
+    {
+      "windowSeconds": [
+        9.5,
+        19.5
+      ],
+      "speechDelaySamples": -1,
+      "musicRelativeDelaySamples": 1,
+      "gainDbPerChannelSpeechMusic": [
+        [
+          -0.032281033815850464,
+          -22.06834416718655
+        ],
+        [
+          -0.03180961713453815,
+          -22.064674537940835
+        ]
+      ],
+      "reconstructionCorrelation": [
+        0.9997507967023169,
+        0.9997525231690099
+      ],
+      "reconstructionSnrDb": [
+        33.022493099997156,
+        33.052669059765364
+      ],
+      "speechOverMusicDb": [
+        21.12215037684081,
+        23.497869054860114
+      ]
+    },
+    {
+      "windowSeconds": [
+        21.5,
+        31.5
+      ],
+      "speechDelaySamples": -2,
+      "musicRelativeDelaySamples": 2,
+      "gainDbPerChannelSpeechMusic": [
+        [
+          -0.08098412567721404,
+          -22.084748580007954
+        ],
+        [
+          -0.059318527209656316,
+          -22.07723254949793
+        ]
+      ],
+      "reconstructionCorrelation": [
+        0.9972180143331356,
+        0.9979101255496735
+      ],
+      "reconstructionSnrDb": [
+        22.528000319359425,
+        23.774868845841503
+      ],
+      "speechOverMusicDb": [
+        19.59897771764072,
+        21.69226756419947
+      ]
+    }
+  ],
+  "finalRecognition": {
+    "model": "local base.en CPU/int8",
+    "referenceWords": 92,
+    "editDistance": 1,
+    "wordErrorRate": 0.010869565217391304,
+    "initialPromptUsed": false
+  },
+  "frameCorrespondence": [
+    {
+      "outputSeconds": 3,
+      "sourceSeconds": 196.8,
+      "scale": 1,
+      "contentMae": 1.2462656497955322,
+      "contentCorrelation": 0.9995547714485881,
+      "nativeFrameVsExportMae": 2.5444412231445312
+    },
+    {
+      "outputSeconds": 11,
+      "sourceSeconds": 218.9,
+      "scale": 1.08,
+      "contentMae": 3.5239171981811523,
+      "contentCorrelation": 0.9939149772452398,
+      "nativeFrameVsExportMae": 2.839848279953003
+    },
+    {
+      "outputSeconds": 17,
+      "sourceSeconds": 224.9,
+      "scale": 1.08,
+      "contentMae": 3.0859830379486084,
+      "contentCorrelation": 0.9943306775965344,
+      "nativeFrameVsExportMae": 2.89064359664917
+    },
+    {
+      "outputSeconds": 24,
+      "sourceSeconds": 232.5,
+      "scale": 1,
+      "contentMae": 1.455559492111206,
+      "contentCorrelation": 0.9993827219101188,
+      "nativeFrameVsExportMae": 2.580148458480835
+    },
+    {
+      "outputSeconds": 30,
+      "sourceSeconds": 238.50000000000003,
+      "scale": 1,
+      "contentMae": 1.6480076313018799,
+      "contentCorrelation": 0.9992183495865514,
+      "nativeFrameVsExportMae": 2.528510093688965
+    },
+    {
+      "outputSeconds": 33,
+      "sourceSeconds": 241.50000000000003,
+      "scale": 1,
+      "contentMae": 1.5856660604476929,
+      "contentCorrelation": 0.9993081254475301,
+      "nativeFrameVsExportMae": 2.3926632404327393
+    }
+  ],
+  "visualReview": {
+    "reviewedOutputSeconds": [
+      3,
+      11,
+      17,
+      24,
+      30,
+      33
+    ],
+    "bilingualCaptionsLegible": true,
+    "noObservedTextClipping": true,
+    "sourceScienceLabelsPreserved": true,
+    "method": "Visual inspection of actual native frames and exported MP4 contact sheet"
+  },
+  "workflowIncidents": [
+    {
+      "issue": "Native attachment stalled before trim execution",
+      "resolution": "Backed up test project, restarted unresponsive CapCut, inspected unchanged saved clip and resumed once."
+    },
+    {
+      "issue": "MP3 cover artwork classified as video by native media probe",
+      "resolution": "FFmpeg CLI decoded original music to 90-second PCM WAV; native audio CLI selected seconds 20–53.7. No synthesized music."
+    },
+    {
+      "issue": "Caption timestamp saved one microsecond below requested value",
+      "resolution": "Fixed strict equality to allow <=1 us per timing field, passed 38 related regression tests, inspected first four captions and imported only the remaining twelve."
+    }
+  ],
+  "limitations": [
+    "ASR comparison is evidence of speech preservation, not a human listening claim.",
+    "Visual correspondence and subtitle legibility are sampled; full video and audio were decoded.",
+    "Encoder and renderer resampling may introduce small PCM or pixel differences.",
+    "No source JSON rewriting or UI click/key events were used for editing; CapCut remained the native editor and renderer."
+  ],
+  "originalLocalEvidence": "capcut-analysis/real-media-20261013/verification.json",
+  "source": "https://www.nasa.gov/stem-content/stemonstrations-properties-of-water/",
+  "music": "Fluidscape — Kevin MacLeod (incompetech.com), CC BY 4.0"
+}

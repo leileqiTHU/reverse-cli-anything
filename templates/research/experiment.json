@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "experiment-001",
+  "operation": "requested-operation",
+  "entrypoint": "candidate-entry",
+  "hypothesis": "State a falsifiable hypothesis",
+  "targetIdentity": {},
+  "baseline": [],
+  "invocation": {
+    "argv": [],
+    "requestId": null,
+    "submittedAt": null
+  },
+  "expected": [],
+  "observed": [],
+  "counterevidence": [],
+  "outcome": "not-run",
+  "evidence": [],
+  "nextDecision": "Choose a bounded observation before mutation"
+}

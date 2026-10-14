@@ -1,0 +1,305 @@
+{
+  "schemaVersion": 1,
+  "evidenceType": "offline-static-analysis",
+  "binary": {
+    "name": "VECreator.dll",
+    "build": "CapCut 9.5.0.4050",
+    "sha256": "576bc1f51c0e81d50369e2ee69c157389a310151f1e75ea79813d9753be2db77",
+    "imageBase": "0x180000000",
+    "scope": "Read local shipped binary and existing extracted QML; no attach, mutation, native execution, Ghidra session, or REA global session change."
+  },
+  "question": "Why may native video export change visible subtitle track attributes from 0 to 2?",
+  "observations": [
+    "Normal export-finish smart crop preview may automatically initiate a secondary export without text.",
+    "Both Qt ViewModel methods tail-call the same model function at RVA 0x3e8bfd0 with a model pointer stored at ViewModel+0x48; return is void and no explicit arguments exist.",
+    "The function checks the existing track attribute bit 2, skips already-hidden tracks, then constructs SetTrackAttribute requests with value 2 and enable=true.",
+    "The WithText entry at RVA 0x3e8b2e0 builds additional track-attribute requests and video export actions. It is not a pure restore helper and was not invoked.",
+    "subtitleChecked is the separate SRT/TXT file export option; the saved subtitle format list is SRT/TXT. It is not evidence of video burn-in visibility."
+  ],
+  "qml": [
+    {
+      "file": "capcut-cli/capcut-analysis/export-frontend-qml/0853230b.qml",
+      "sha256": "6e34a116c72669c9eb9aa1715bfc4eb544e58ea571efa869bd4704895bc9c395",
+      "relevantLines": [
+        94,
+        113
+      ],
+      "observation": "After export, the smart crop preview calls exportAICropWithoutText when smartCutEnable is true and canvas ratio differs from 9:16, regardless of whether original ratio is selected."
+    },
+    {
+      "file": "capcut-cli/capcut-analysis/export-frontend-qml/08531040.qml",
+      "sha256": "f517b1bbaa1693e73b82202d6b6bff63bab57b64c4f587a29b7b44684ad7b23a",
+      "relevantLines": [
+        124,
+        132
+      ],
+      "observation": "After export, the smart crop preview calls exportAICropWithoutText when smartCutEnable is true and canvas ratio differs from 9:16, regardless of whether original ratio is selected."
+    }
+  ],
+  "qtCallChains": [
+    {
+      "class": "ExportAICropViewModel",
+      "qMetaObjectRva": "0xbce4d30",
+      "staticMetacallRva": "0x3def9c0",
+      "methodTableRva": "0x3df081c",
+      "withoutTextMethodIndex": 38,
+      "withTextMethodIndex": 39,
+      "withoutTextCase": [
+        {
+          "rva": "0x3defc3a",
+          "bytes": "498bca",
+          "instruction": "mov rcx, r10"
+        },
+        {
+          "rva": "0x3defc3d",
+          "bytes": "488b5c2450",
+          "instruction": "mov rbx, qword ptr [rsp + 0x50]"
+        },
+        {
+          "rva": "0x3defc42",
+          "bytes": "4883c440",
+          "instruction": "add rsp, 0x40"
+        },
+        {
+          "rva": "0x3defc46",
+          "bytes": "5d",
+          "instruction": "pop rbp"
+        },
+        {
+          "rva": "0x3defc47",
+          "bytes": "e9645a1000",
+          "instruction": "jmp 0x3ef56b0"
+        }
+      ],
+      "withoutTextThunk": [
+        {
+          "rva": "0x3ef56b0",
+          "bytes": "488b4948",
+          "instruction": "mov rcx, qword ptr [rcx + 0x48]"
+        },
+        {
+          "rva": "0x3ef56b4",
+          "bytes": "4885c9",
+          "instruction": "test rcx, rcx"
+        },
+        {
+          "rva": "0x3ef56b7",
+          "bytes": "0f851369f9ff",
+          "instruction": "jne 0x3e8bfd0"
+        },
+        {
+          "rva": "0x3ef56bd",
+          "bytes": "c3",
+          "instruction": "ret "
+        }
+      ],
+      "withTextCase": [
+        {
+          "rva": "0x3defc4c",
+          "bytes": "498bca",
+          "instruction": "mov rcx, r10"
+        },
+        {
+          "rva": "0x3defc4f",
+          "bytes": "488b5c2450",
+          "instruction": "mov rbx, qword ptr [rsp + 0x50]"
+        },
+        {
+          "rva": "0x3defc54",
+          "bytes": "4883c440",
+          "instruction": "add rsp, 0x40"
+        },
+        {
+          "rva": "0x3defc58",
+          "bytes": "5d",
+          "instruction": "pop rbp"
+        },
+        {
+          "rva": "0x3defc59",
+          "bytes": "e9425a1000",
+          "instruction": "jmp 0x3ef56a0"
+        }
+      ]
+    },
+    {
+      "class": "ExportAICropPlayerViewModel",
+      "qMetaObjectRva": "0xbcf4c60",
+      "staticMetacallRva": "0x3dfb830",
+      "methodTableRva": "0x3dfc72c",
+      "withoutTextMethodIndex": 40,
+      "withTextMethodIndex": 41,
+      "withoutTextCase": [
+        {
+          "rva": "0x3dfbac2",
+          "bytes": "498bca",
+          "instruction": "mov rcx, r10"
+        },
+        {
+          "rva": "0x3dfbac5",
+          "bytes": "488b5c2450",
+          "instruction": "mov rbx, qword ptr [rsp + 0x50]"
+        },
+        {
+          "rva": "0x3dfbaca",
+          "bytes": "4883c440",
+          "instruction": "add rsp, 0x40"
+        },
+        {
+          "rva": "0x3dfbace",
+          "bytes": "5d",
+          "instruction": "pop rbp"
+        },
+        {
+          "rva": "0x3dfbacf",
+          "bytes": "e98cc30f00",
+          "instruction": "jmp 0x3ef7e60"
+        }
+      ],
+      "withoutTextThunk": [
+        {
+          "rva": "0x3ef7e60",
+          "bytes": "488b4948",
+          "instruction": "mov rcx, qword ptr [rcx + 0x48]"
+        },
+        {
+          "rva": "0x3ef7e64",
+          "bytes": "e96741f9ff",
+          "instruction": "jmp 0x3e8bfd0"
+        }
+      ],
+      "withTextCase": [
+        {
+          "rva": "0x3dfbad4",
+          "bytes": "498bca",
+          "instruction": "mov rcx, r10"
+        },
+        {
+          "rva": "0x3dfbad7",
+          "bytes": "488b5c2450",
+          "instruction": "mov rbx, qword ptr [rsp + 0x50]"
+        },
+        {
+          "rva": "0x3dfbadc",
+          "bytes": "4883c440",
+          "instruction": "add rsp, 0x40"
+        },
+        {
+          "rva": "0x3dfbae0",
+          "bytes": "5d",
+          "instruction": "pop rbp"
+        },
+        {
+          "rva": "0x3dfbae1",
+          "bytes": "e96ac30f00",
+          "instruction": "jmp 0x3ef7e50"
+        }
+      ]
+    }
+  ],
+  "withoutTextModel": {
+    "rva": "0x3e8bfd0",
+    "endExclusiveRva": "0x3e8d0e4",
+    "abi": "void(model*) Microsoft x64",
+    "prefix32": "48895c2410488974241848897c2420554154415541564157488dac2410fcffff",
+    "visibilityBitTest": [
+      {
+        "rva": "0x3e8c331",
+        "bytes": "498b0f",
+        "instruction": "mov rcx, qword ptr [r15]"
+      },
+      {
+        "rva": "0x3e8c334",
+        "bytes": "ff15d6815403",
+        "instruction": "call qword ptr [rip + 0x35481d6]"
+      },
+      {
+        "rva": "0x3e8c33a",
+        "bytes": "f60002",
+        "instruction": "test byte ptr [rax], 2"
+      },
+      {
+        "rva": "0x3e8c33d",
+        "bytes": "0f85d9010000",
+        "instruction": "jne 0x3e8c51c"
+      }
+    ],
+    "requestAttributeValue": [
+      {
+        "rva": "0x3e8c463",
+        "bytes": "c7861801000002000000",
+        "instruction": "mov dword ptr [rsi + 0x118], 2"
+      }
+    ],
+    "requestEnableFlag": [
+      {
+        "rva": "0x3e8c493",
+        "bytes": "c6861c01000001",
+        "instruction": "mov byte ptr [rsi + 0x11c], 1"
+      }
+    ],
+    "requestConstructorStringReferences": [
+      {
+        "instructionRva": "0x3e8c40a",
+        "targetRva": "0xbcff098",
+        "text": "CommonService"
+      },
+      {
+        "instructionRva": "0x3e8c42a",
+        "targetRva": "0xbcff308",
+        "text": "setTrackAttributes"
+      }
+    ]
+  },
+  "withTextModel": {
+    "rva": "0x3e8b2e0",
+    "endExclusiveRva": "0x3e8bfce",
+    "evidence": {
+      "attribute2Request": [
+        {
+          "rva": "0x3e8b678",
+          "bytes": "488b5c2468",
+          "instruction": "mov rbx, qword ptr [rsp + 0x68]"
+        },
+        {
+          "rva": "0x3e8b67d",
+          "bytes": "c7831801000002000000",
+          "instruction": "mov dword ptr [rbx + 0x118], 2"
+        }
+      ],
+      "exportRequest": [
+        {
+          "rva": "0x3e8bb89",
+          "bytes": "488d8db8000000",
+          "instruction": "lea rcx, [rbp + 0xb8]"
+        },
+        {
+          "rva": "0x3e8bb90",
+          "bytes": "ff1522695303",
+          "instruction": "call qword ptr [rip + 0x3536922]"
+        },
+        {
+          "rva": "0x3e8bb96",
+          "bytes": "488d4d98",
+          "instruction": "lea rcx, [rbp - 0x68]"
+        },
+        {
+          "rva": "0x3e8bb9a",
+          "bytes": "e89108d7fc",
+          "instruction": "call 0xbfc430"
+        }
+      ]
+    },
+    "recommendation": "Do not invoke as restoration; a fresh isolated regression project avoids executing this multi-action export path."
+  },
+  "proposedBoundedProbe": [
+    "Temporarily observe/guard only the resolved WithoutText entry during the CLI-owned native export window, pinned build and project.",
+    "Suppress only that optional secondary smart-crop request, report the count and matched native model, preserve normal call for any request outside ownership scope.",
+    "Remove the transient hook only after owned panel close; do not change persistent settings or eligibility checks.",
+    "Keep the exact before/after content guard and independently verify burn-in captions in decoded output on a fresh dedicated project."
+  ],
+  "limitations": [
+    "Static analysis does not prove this path executed during the failed run. A scoped runtime event plus unchanged raw content and independently inspected output are required to establish causality.",
+    "No pure hide=false/cleanup entry was established.",
+    "No runtime test performed by this investigator."
+  ]
+}

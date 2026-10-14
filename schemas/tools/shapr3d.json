@@ -1,0 +1,692 @@
+{
+  "schemaVersion": 1,
+  "adapter": "shapr3d",
+  "tools": [
+    {
+      "name": "start",
+      "command": [
+        "start"
+      ],
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "pid": {
+            "type": "integer",
+            "minimum": 1
+          }
+        },
+        "required": [
+          "pid"
+        ],
+        "additionalProperties": false
+      },
+      "adapter": "shapr3d",
+      "mutates": true,
+      "outputSchema": {
+        "$ref": "../legacy-response.schema.json"
+      },
+      "execution": "version-pinned desktop adapter; native validation also applies",
+      "evidenceIndex": "../../acceptance/shapr3d.json",
+      "provenance": "adapter-infrastructure"
+    },
+    {
+      "name": "inspect",
+      "command": [
+        "call"
+      ],
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "session": {
+            "type": "string",
+            "description": "Current public pilot session directory"
+          }
+        },
+        "required": [
+          "session"
+        ],
+        "additionalProperties": false
+      },
+      "adapter": "shapr3d",
+      "mutates": false,
+      "outputSchema": {
+        "$ref": "../legacy-response.schema.json"
+      },
+      "execution": "version-pinned desktop adapter; native validation also applies",
+      "evidenceIndex": "../../acceptance/shapr3d.json",
+      "provenance": "recovered-internal"
+    },
+    {
+      "name": "history",
+      "command": [
+        "call"
+      ],
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "session": {
+            "type": "string",
+            "description": "Current public pilot session directory"
+          }
+        },
+        "required": [
+          "session"
+        ],
+        "additionalProperties": false
+      },
+      "adapter": "shapr3d",
+      "mutates": false,
+      "outputSchema": {
+        "$ref": "../legacy-response.schema.json"
+      },
+      "execution": "version-pinned desktop adapter; native validation also applies",
+      "evidenceIndex": "../../acceptance/shapr3d.json",
+      "provenance": "recovered-internal"
+    },
+    {
+      "name": "create-project",
+      "command": [
+        "call"
+      ],
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "session": {
+            "type": "string",
+            "description": "Current public pilot session directory"
+          }
+        },
+        "required": [
+          "session"
+        ],
+        "additionalProperties": false
+      },
+      "adapter": "shapr3d",
+      "mutates": true,
+      "outputSchema": {
+        "$ref": "../legacy-response.schema.json"
+      },
+      "execution": "version-pinned desktop adapter; native validation also applies",
+      "evidenceIndex": "../../acceptance/shapr3d.json",
+      "provenance": "recovered-internal"
+    },
+    {
+      "name": "visible-status",
+      "command": [
+        "call"
+      ],
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "session": {
+            "type": "string",
+            "description": "Current public pilot session directory"
+          }
+        },
+        "required": [
+          "session"
+        ],
+        "additionalProperties": false
+      },
+      "adapter": "shapr3d",
+      "mutates": false,
+      "outputSchema": {
+        "$ref": "../legacy-response.schema.json"
+      },
+      "execution": "version-pinned desktop adapter; native validation also applies",
+      "evidenceIndex": "../../acceptance/shapr3d.json",
+      "provenance": "recovered-internal"
+    },
+    {
+      "name": "import-native",
+      "command": [
+        "call"
+      ],
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "session": {
+            "type": "string",
+            "description": "Current public pilot session directory"
+          },
+          "path": {
+            "type": "string",
+            "description": "Existing .shapr or .dxf file"
+          }
+        },
+        "required": [
+          "session",
+          "path"
+        ],
+        "additionalProperties": false
+      },
+      "adapter": "shapr3d",
+      "mutates": true,
+      "outputSchema": {
+        "$ref": "../legacy-response.schema.json"
+      },
+      "execution": "version-pinned desktop adapter; native validation also applies",
+      "evidenceIndex": "../../acceptance/shapr3d.json",
+      "provenance": "recovered-internal"
+    },
+    {
+      "name": "history-set",
+      "command": [
+        "call"
+      ],
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "session": {
+            "type": "string",
+            "description": "Current public pilot session directory"
+          },
+          "step": {
+            "type": "string"
+          },
+          "parameter": {
+            "type": "string"
+          },
+          "expression": {
+            "type": "string",
+            "description": "Native expression with explicit units"
+          }
+        },
+        "required": [
+          "session",
+          "step",
+          "parameter",
+          "expression"
+        ],
+        "additionalProperties": false
+      },
+      "adapter": "shapr3d",
+      "mutates": true,
+      "outputSchema": {
+        "$ref": "../legacy-response.schema.json"
+      },
+      "execution": "version-pinned desktop adapter; native validation also applies",
+      "evidenceIndex": "../../acceptance/shapr3d.json",
+      "provenance": "recovered-internal"
+    },
+    {
+      "name": "export-stl",
+      "command": [
+        "call"
+      ],
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "session": {
+            "type": "string",
+            "description": "Current public pilot session directory"
+          },
+          "directory": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string",
+            "description": "Basename without extension"
+          }
+        },
+        "required": [
+          "session",
+          "directory",
+          "name"
+        ],
+        "additionalProperties": false
+      },
+      "adapter": "shapr3d",
+      "mutates": true,
+      "outputSchema": {
+        "$ref": "../legacy-response.schema.json"
+      },
+      "execution": "version-pinned desktop adapter; native validation also applies",
+      "evidenceIndex": "../../acceptance/shapr3d.json",
+      "provenance": "recovered-internal"
+    },
+    {
+      "name": "export-shapr",
+      "command": [
+        "call"
+      ],
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "session": {
+            "type": "string",
+            "description": "Current public pilot session directory"
+          },
+          "directory": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string",
+            "description": "Basename without extension"
+          }
+        },
+        "required": [
+          "session",
+          "directory",
+          "name"
+        ],
+        "additionalProperties": false
+      },
+      "adapter": "shapr3d",
+      "mutates": true,
+      "outputSchema": {
+        "$ref": "../legacy-response.schema.json"
+      },
+      "execution": "version-pinned desktop adapter; native validation also applies",
+      "evidenceIndex": "../../acceptance/shapr3d.json",
+      "provenance": "recovered-internal"
+    },
+    {
+      "name": "project-close",
+      "command": [
+        "call"
+      ],
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "session": {
+            "type": "string",
+            "description": "Current public pilot session directory"
+          }
+        },
+        "required": [
+          "session"
+        ],
+        "additionalProperties": false
+      },
+      "adapter": "shapr3d",
+      "mutates": true,
+      "outputSchema": {
+        "$ref": "../legacy-response.schema.json"
+      },
+      "execution": "version-pinned desktop adapter; native validation also applies",
+      "evidenceIndex": "../../acceptance/shapr3d.json",
+      "provenance": "recovered-internal"
+    },
+    {
+      "name": "project-reopen",
+      "command": [
+        "call"
+      ],
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "session": {
+            "type": "string",
+            "description": "Current public pilot session directory"
+          }
+        },
+        "required": [
+          "session"
+        ],
+        "additionalProperties": false
+      },
+      "adapter": "shapr3d",
+      "mutates": true,
+      "outputSchema": {
+        "$ref": "../legacy-response.schema.json"
+      },
+      "execution": "version-pinned desktop adapter; native validation also applies",
+      "evidenceIndex": "../../acceptance/shapr3d.json",
+      "provenance": "recovered-internal"
+    },
+    {
+      "name": "session-close",
+      "command": [
+        "call"
+      ],
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "session": {
+            "type": "string",
+            "description": "Current public pilot session directory"
+          }
+        },
+        "required": [
+          "session"
+        ],
+        "additionalProperties": false
+      },
+      "adapter": "shapr3d",
+      "mutates": true,
+      "outputSchema": {
+        "$ref": "../legacy-response.schema.json"
+      },
+      "execution": "version-pinned desktop adapter; native validation also applies",
+      "evidenceIndex": "../../acceptance/shapr3d.json",
+      "provenance": "adapter-infrastructure"
+    },
+    {
+      "name": "model-select-sketch",
+      "command": [
+        "call"
+      ],
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "session": {
+            "type": "string",
+            "description": "Current public pilot session directory"
+          }
+        },
+        "required": [
+          "session"
+        ],
+        "additionalProperties": false
+      },
+      "adapter": "shapr3d",
+      "mutates": true,
+      "outputSchema": {
+        "$ref": "../legacy-response.schema.json"
+      },
+      "execution": "version-pinned desktop adapter; native validation also applies",
+      "evidenceIndex": "../../acceptance/shapr3d.json",
+      "provenance": "recovered-internal"
+    },
+    {
+      "name": "model-annotations",
+      "command": [
+        "call"
+      ],
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "session": {
+            "type": "string",
+            "description": "Current public pilot session directory"
+          }
+        },
+        "required": [
+          "session"
+        ],
+        "additionalProperties": false
+      },
+      "adapter": "shapr3d",
+      "mutates": false,
+      "outputSchema": {
+        "$ref": "../legacy-response.schema.json"
+      },
+      "execution": "version-pinned desktop adapter; native validation also applies",
+      "evidenceIndex": "../../acceptance/shapr3d.json",
+      "provenance": "recovered-internal"
+    },
+    {
+      "name": "model-tool-start",
+      "command": [
+        "call"
+      ],
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "session": {
+            "type": "string",
+            "description": "Current public pilot session directory"
+          },
+          "tool": {
+            "type": "string",
+            "enum": [
+              "extrude",
+              "move-rotate"
+            ]
+          }
+        },
+        "required": [
+          "session",
+          "tool"
+        ],
+        "additionalProperties": false
+      },
+      "adapter": "shapr3d",
+      "mutates": true,
+      "outputSchema": {
+        "$ref": "../legacy-response.schema.json"
+      },
+      "execution": "version-pinned desktop adapter; native validation also applies",
+      "evidenceIndex": "../../acceptance/shapr3d.json",
+      "provenance": "recovered-internal"
+    },
+    {
+      "name": "model-tool-finish",
+      "command": [
+        "call"
+      ],
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "session": {
+            "type": "string",
+            "description": "Current public pilot session directory"
+          }
+        },
+        "required": [
+          "session"
+        ],
+        "additionalProperties": false
+      },
+      "adapter": "shapr3d",
+      "mutates": true,
+      "outputSchema": {
+        "$ref": "../legacy-response.schema.json"
+      },
+      "execution": "version-pinned desktop adapter; native validation also applies",
+      "evidenceIndex": "../../acceptance/shapr3d.json",
+      "provenance": "recovered-internal"
+    },
+    {
+      "name": "model-pick",
+      "command": [
+        "call"
+      ],
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "session": {
+            "type": "string",
+            "description": "Current public pilot session directory"
+          },
+          "xMm": {
+            "type": "number"
+          },
+          "yMm": {
+            "type": "number"
+          },
+          "nearMm": {
+            "type": "array",
+            "items": {
+              "type": "number"
+            },
+            "minItems": 3,
+            "maxItems": 3
+          },
+          "farMm": {
+            "type": "array",
+            "items": {
+              "type": "number"
+            },
+            "minItems": 3,
+            "maxItems": 3
+          },
+          "select": {
+            "type": "boolean"
+          },
+          "additive": {
+            "type": "boolean"
+          },
+          "expectedRawID": {
+            "type": "string",
+            "description": "Exact decimal uint64 native ID from a recent pick"
+          }
+        },
+        "required": [
+          "session"
+        ],
+        "additionalProperties": false
+      },
+      "adapter": "shapr3d",
+      "mutates": true,
+      "outputSchema": {
+        "$ref": "../legacy-response.schema.json"
+      },
+      "execution": "version-pinned desktop adapter; native validation also applies",
+      "evidenceIndex": "../../acceptance/shapr3d.json",
+      "provenance": "recovered-internal"
+    },
+    {
+      "name": "model-set-distance",
+      "command": [
+        "call"
+      ],
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "session": {
+            "type": "string",
+            "description": "Current public pilot session directory"
+          },
+          "expression": {
+            "type": "string",
+            "description": "Explicit mm expression within +/-100 mm"
+          }
+        },
+        "required": [
+          "session",
+          "expression"
+        ],
+        "additionalProperties": false
+      },
+      "adapter": "shapr3d",
+      "mutates": true,
+      "outputSchema": {
+        "$ref": "../legacy-response.schema.json"
+      },
+      "execution": "version-pinned desktop adapter; native validation also applies",
+      "evidenceIndex": "../../acceptance/shapr3d.json",
+      "provenance": "recovered-internal"
+    },
+    {
+      "name": "model-screenshot",
+      "command": [
+        "call"
+      ],
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "session": {
+            "type": "string",
+            "description": "Current public pilot session directory"
+          },
+          "path": {
+            "type": "string",
+            "description": "Empty PNG reserved in app-accessible LocalState"
+          }
+        },
+        "required": [
+          "session",
+          "path"
+        ],
+        "additionalProperties": false
+      },
+      "adapter": "shapr3d",
+      "mutates": true,
+      "outputSchema": {
+        "$ref": "../legacy-response.schema.json"
+      },
+      "execution": "version-pinned desktop adapter; native validation also applies",
+      "evidenceIndex": "../../acceptance/shapr3d.json",
+      "provenance": "recovered-internal"
+    },
+    {
+      "name": "model-command",
+      "command": [
+        "call"
+      ],
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "session": {
+            "type": "string",
+            "description": "Current public pilot session directory"
+          },
+          "name": {
+            "type": "string",
+            "enum": [
+              "exit-sketch",
+              "deselect",
+              "default-view",
+              "zoom-fit",
+              "undo"
+            ]
+          },
+          "check": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "session",
+          "name"
+        ],
+        "additionalProperties": false
+      },
+      "adapter": "shapr3d",
+      "mutates": true,
+      "outputSchema": {
+        "$ref": "../legacy-response.schema.json"
+      },
+      "execution": "version-pinned desktop adapter; native validation also applies",
+      "evidenceIndex": "../../acceptance/shapr3d.json",
+      "provenance": "recovered-internal"
+    },
+    {
+      "name": "model-clear-demo",
+      "command": [
+        "call"
+      ],
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "session": {
+            "type": "string",
+            "description": "Current public pilot session directory"
+          },
+          "backup": {
+            "type": "string"
+          },
+          "confirm": {
+            "type": "string",
+            "enum": [
+              "replace-backed-up-demo-plate"
+            ]
+          },
+          "expectedHistory": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          }
+        },
+        "required": [
+          "session",
+          "backup",
+          "confirm",
+          "expectedHistory"
+        ],
+        "additionalProperties": false
+      },
+      "adapter": "shapr3d",
+      "mutates": true,
+      "outputSchema": {
+        "$ref": "../legacy-response.schema.json"
+      },
+      "execution": "version-pinned desktop adapter; native validation also applies",
+      "evidenceIndex": "../../acceptance/shapr3d.json",
+      "provenance": "recovered-internal"
+    }
+  ],
+  "scope": "Argument schemas plus adapter runtime validation; descriptions do not expand native support."
+}

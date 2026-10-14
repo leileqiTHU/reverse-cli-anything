@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "operationId": null,
+  "target": {},
+  "capturedAt": null,
+  "sourceKind": "unrecorded",
+  "sourceRevision": null,
+  "freshness": "unknown",
+  "state": {},
+  "artifacts": [],
+  "temporaryState": {
+    "modified": false,
+    "restoration": "not-applicable",
+    "evidence": []
+  },
+  "limitations": []
+}

@@ -1,0 +1,116 @@
+{
+  "evidence_id": "ev_e29c588cceaa189a8c3d87f9dd7a5e28e7bd8a65bf8773ddb6a485e6f18273e8",
+  "subject": {
+    "name": "D:\\Apps\\Axure\\Axure RP 11\\AxureRP11.dll",
+    "digest": {
+      "sha256": "dae5748f6be3e69c063ef117bab0b400586d94adf119f5a9ba260df59dc4e4a7"
+    },
+    "format": "pe",
+    "architecture": "x86_64",
+    "local_path": "D:\\Apps\\Axure\\Axure RP 11\\AxureRP11.dll"
+  },
+  "provider": {
+    "id": "rea-dotnet-static",
+    "name": "REA managed static analysis provider",
+    "version": "1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_managed_artifact",
+  "parameters": {
+    "path": "D:\\Apps\\Axure\\Axure RP 11\\AxureRP11.dll"
+  },
+  "raw_result": null,
+  "normalized_result": {
+    "artifact": {
+      "path": "D:\\Apps\\Axure\\Axure RP 11\\AxureRP11.dll",
+      "sha256": "dae5748f6be3e69c063ef117bab0b400586d94adf119f5a9ba260df59dc4e4a7",
+      "byte_length": 16314368,
+      "format": "pe"
+    },
+    "pe": {
+      "machine": 34404,
+      "machine_hex": "0x8664",
+      "architecture": "x86_64",
+      "optional_header": "pe32-plus",
+      "section_count": 3,
+      "characteristics": 8226,
+      "cli": {
+        "header_offset": 124768,
+        "header_size": 72,
+        "runtime_version": "2.5",
+        "flags": 4,
+        "flag_names": [
+          "il-library"
+        ],
+        "entry_point": {
+          "kind": "metadata-token",
+          "value": "0x06000004"
+        },
+        "metadata_rva": 11812880,
+        "metadata_size": 4432080,
+        "resources_rva": 232576,
+        "resources_size": 729780,
+        "strong_name_rva": 0,
+        "strong_name_size": 0,
+        "managed_native_header_rva": 124840,
+        "managed_native_header_size": 196,
+        "ready_to_run_signature": true
+      }
+    },
+    "classification": {
+      "status": "managed",
+      "container": "pe",
+      "runtime_family": "mixed-clr-native",
+      "implementation": "unknown",
+      "managed_architecture": "unknown",
+      "evidence": [
+        {
+          "code": "metadata-not-admitted",
+          "detail": "Managed metadata exceeds the 67108864 byte representation budget",
+          "file_offset": null
+        }
+      ]
+    },
+    "metadata": {
+      "status": "partial",
+      "version": null,
+      "stream_names": [],
+      "table_row_counts": {}
+    },
+    "module": null,
+    "assembly": null,
+    "target_frameworks": [],
+    "references": [],
+    "resources": [],
+    "attributes": [],
+    "coverage": {
+      "state": "partial",
+      "issues": [
+        {
+          "code": "resource-limit",
+          "scope": "metadata.representation",
+          "offset": null,
+          "detail": "Managed metadata exceeds the 67108864 byte representation budget"
+        }
+      ]
+    },
+    "limitations": [
+      "CLI metadata inspection stopped at its representation budget; omitted facts are unknown."
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "CLI metadata inspection stopped at its representation budget; omitted facts are unknown."
+  ],
+  "locations": [
+    {
+      "kind": "file-offset-range",
+      "start": 124768,
+      "end": 124840
+    }
+  ],
+  "evidence_links": []
+}

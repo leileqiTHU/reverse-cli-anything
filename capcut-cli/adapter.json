@@ -1,0 +1,52 @@
+{
+  "id": "capcut",
+  "name": "CapCut",
+  "directory": "capcut-cli",
+  "status": "validated",
+  "platform": "windows-x64",
+  "testedBuilds": [
+    "9.5.0.4050"
+  ],
+  "readme": "capcut-cli/README.md",
+  "entrypoint": "capcut-cli/capcut_agent.py",
+  "skill": "skills/reverse-cli-capcut/SKILL.md",
+  "interface": "json-cli",
+  "backend": "version-pinned native calls in the application process; isolated native media worker",
+  "requiresDesktopProcessForEditing": true,
+  "requiresMouseClicks": false,
+  "capabilityGroups": [
+    "project",
+    "media-bin-video-import",
+    "independent-timelines",
+    "video-editing",
+    "audio",
+    "captions",
+    "clip-properties",
+    "native-frame-preview",
+    "native-export",
+    "file-media-preview"
+  ],
+  "evidence": "capcut-cli/evidence/real-media-20261013.json",
+  "validatedOn": "2026-10-13",
+  "limitations": [
+    "one pinned application build",
+    "no MCP server",
+    "no empty-track creation",
+    "partial or unknown mutations are not automatically replayed"
+  ],
+  "demo": {
+    "video": "capcut-cli/assets/capcut-cli-demo.mp4",
+    "poster": "capcut-cli/assets/capcut-cli-demo.jpg",
+    "manifest": "docs/demos/manifest.json"
+  },
+  "toolSchema": "schemas/tools/capcut.json",
+  "acceptance": "acceptance/capcut.json",
+  "sharedEntrypoint": "reverse-cli.py",
+  "runtime": "capcut-cli/reverse_cli_adapter.py",
+  "regression": [
+    "examples/tools/regress-native.py",
+    "capcut"
+  ],
+  "root": "..",
+  "schemaVersion": 1
+}

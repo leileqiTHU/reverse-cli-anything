@@ -1,0 +1,58 @@
+{
+  "id": "shapr3d",
+  "name": "Shapr3D",
+  "directory": "shapr3d-cli",
+  "status": "pilot-validated",
+  "platform": "windows-x64",
+  "testedBuilds": [
+    "26.180.11926.0"
+  ],
+  "readme": "shapr3d-cli/README.md",
+  "entrypoint": "shapr3d-cli/pilot.py",
+  "interface": "json-cli",
+  "backend": "version-pinned in-process C++/WinRT calls on the application dispatcher",
+  "requiresDesktopProcessForEditing": true,
+  "requiresMouseClicks": false,
+  "capabilityGroups": [
+    "native-project-create",
+    "native-shapr-import",
+    "history-read",
+    "numeric-history-edit",
+    "same-session-save-close-reopen",
+    "native-low-resolution-stl-export",
+    "attach-visible-editor",
+    "native-dxf-import",
+    "visible-extrusion",
+    "hole-face-move",
+    "center-through-hole",
+    "native-shapr-export"
+  ],
+  "evidence": "shapr3d-cli/evidence/native-model-proof-20261013.json",
+  "validatedOn": "2026-10-13",
+  "limitations": [
+    "general project list/navigation not implemented",
+    "project reopen limited to same-session handles",
+    "normal login and onboarding required",
+    "one pinned build",
+    "visible geometry tools scoped to the XY mounting-plate demo",
+    "no arbitrary sketch API or STEP export",
+    "native Low-resolution STL",
+    "no MCP server"
+  ],
+  "demo": {
+    "video": "shapr3d-cli/assets/shapr3d-cli-demo.mp4",
+    "poster": "shapr3d-cli/assets/shapr3d-cli-demo.jpg",
+    "manifest": "docs/demos/manifest.json"
+  },
+  "skill": "skills/reverse-cli-shapr3d/SKILL.md",
+  "toolSchema": "schemas/tools/shapr3d.json",
+  "acceptance": "acceptance/shapr3d.json",
+  "sharedEntrypoint": "reverse-cli.py",
+  "runtime": "shapr3d-cli/reverse_cli_adapter.py",
+  "regression": [
+    "examples/tools/regress-native.py",
+    "shapr3d"
+  ],
+  "root": "..",
+  "schemaVersion": 1
+}

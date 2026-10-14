@@ -1,0 +1,755 @@
+{
+  "schemaVersion": 1,
+  "adapter": "axure",
+  "tools": [
+    {
+      "name": "status",
+      "command": [
+        "status"
+      ],
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "timeout": {
+            "type": "number",
+            "x-cli-flag": "--timeout",
+            "x-global": true
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "adapter": "axure",
+      "mutates": false,
+      "outputSchema": {
+        "$ref": "../legacy-response.schema.json"
+      },
+      "execution": "version-pinned desktop adapter; native validation also applies",
+      "evidenceIndex": "../../acceptance/axure.json",
+      "provenance": "recovered-internal"
+    },
+    {
+      "name": "inspect",
+      "command": [
+        "inspect"
+      ],
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "timeout": {
+            "type": "number",
+            "x-cli-flag": "--timeout",
+            "x-global": true
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "adapter": "axure",
+      "mutates": false,
+      "outputSchema": {
+        "$ref": "../legacy-response.schema.json"
+      },
+      "execution": "version-pinned desktop adapter; native validation also applies",
+      "evidenceIndex": "../../acceptance/axure.json",
+      "provenance": "recovered-internal"
+    },
+    {
+      "name": "undo",
+      "command": [
+        "undo"
+      ],
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "timeout": {
+            "type": "number",
+            "x-cli-flag": "--timeout",
+            "x-global": true
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "adapter": "axure",
+      "mutates": true,
+      "outputSchema": {
+        "$ref": "../legacy-response.schema.json"
+      },
+      "execution": "version-pinned desktop adapter; native validation also applies",
+      "evidenceIndex": "../../acceptance/axure.json",
+      "provenance": "recovered-internal"
+    },
+    {
+      "name": "redo",
+      "command": [
+        "redo"
+      ],
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "timeout": {
+            "type": "number",
+            "x-cli-flag": "--timeout",
+            "x-global": true
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "adapter": "axure",
+      "mutates": true,
+      "outputSchema": {
+        "$ref": "../legacy-response.schema.json"
+      },
+      "execution": "version-pinned desktop adapter; native validation also applies",
+      "evidenceIndex": "../../acceptance/axure.json",
+      "provenance": "recovered-internal"
+    },
+    {
+      "name": "capabilities",
+      "command": [
+        "capabilities"
+      ],
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "timeout": {
+            "type": "number",
+            "x-cli-flag": "--timeout",
+            "x-global": true
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "adapter": "axure",
+      "mutates": false,
+      "outputSchema": {
+        "$ref": "../legacy-response.schema.json"
+      },
+      "execution": "version-pinned desktop adapter; native validation also applies",
+      "evidenceIndex": "../../acceptance/axure.json",
+      "provenance": "adapter-infrastructure"
+    },
+    {
+      "name": "launch",
+      "command": [
+        "launch"
+      ],
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "timeout": {
+            "type": "number",
+            "x-cli-flag": "--timeout",
+            "x-global": true
+          },
+          "project": {
+            "type": "string",
+            "x-cli-flag": "--project",
+            "x-global": false
+          },
+          "app": {
+            "type": "string",
+            "x-cli-flag": "--app",
+            "x-global": false
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "adapter": "axure",
+      "mutates": true,
+      "outputSchema": {
+        "$ref": "../legacy-response.schema.json"
+      },
+      "execution": "version-pinned desktop adapter; native validation also applies",
+      "evidenceIndex": "../../acceptance/axure.json",
+      "provenance": "recovered-internal"
+    },
+    {
+      "name": "widget.list",
+      "command": [
+        "widget",
+        "list"
+      ],
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "timeout": {
+            "type": "number",
+            "x-cli-flag": "--timeout",
+            "x-global": true
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "adapter": "axure",
+      "mutates": false,
+      "outputSchema": {
+        "$ref": "../legacy-response.schema.json"
+      },
+      "execution": "version-pinned desktop adapter; native validation also applies",
+      "evidenceIndex": "../../acceptance/axure.json",
+      "provenance": "recovered-internal"
+    },
+    {
+      "name": "widget.create",
+      "command": [
+        "widget",
+        "create"
+      ],
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "timeout": {
+            "type": "number",
+            "x-cli-flag": "--timeout",
+            "x-global": true
+          },
+          "text": {
+            "type": "string",
+            "x-cli-flag": "--text",
+            "x-global": false
+          },
+          "name": {
+            "type": "string",
+            "x-cli-flag": "--name",
+            "x-global": false
+          },
+          "kind": {
+            "type": "string",
+            "x-cli-flag": "--kind",
+            "x-global": false,
+            "enum": [
+              "paragraph",
+              "button",
+              "input"
+            ]
+          },
+          "password": {
+            "type": "boolean",
+            "x-cli-flag": "--password",
+            "x-global": false
+          },
+          "placeholder": {
+            "type": "string",
+            "x-cli-flag": "--placeholder",
+            "x-global": false
+          },
+          "x": {
+            "type": "number",
+            "x-cli-flag": "--x",
+            "x-global": false
+          },
+          "y": {
+            "type": "number",
+            "x-cli-flag": "--y",
+            "x-global": false
+          },
+          "width": {
+            "type": "number",
+            "x-cli-flag": "--width",
+            "x-global": false
+          },
+          "height": {
+            "type": "number",
+            "x-cli-flag": "--height",
+            "x-global": false
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "adapter": "axure",
+      "mutates": true,
+      "outputSchema": {
+        "$ref": "../legacy-response.schema.json"
+      },
+      "execution": "version-pinned desktop adapter; native validation also applies",
+      "evidenceIndex": "../../acceptance/axure.json",
+      "provenance": "recovered-internal"
+    },
+    {
+      "name": "widget.bounds",
+      "command": [
+        "widget",
+        "bounds"
+      ],
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "timeout": {
+            "type": "number",
+            "x-cli-flag": "--timeout",
+            "x-global": true
+          },
+          "id": {
+            "type": "string",
+            "x-cli-flag": "--id",
+            "x-global": false
+          },
+          "x": {
+            "type": "number",
+            "x-cli-flag": "--x",
+            "x-global": false
+          },
+          "y": {
+            "type": "number",
+            "x-cli-flag": "--y",
+            "x-global": false
+          },
+          "width": {
+            "type": "number",
+            "x-cli-flag": "--width",
+            "x-global": false
+          },
+          "height": {
+            "type": "number",
+            "x-cli-flag": "--height",
+            "x-global": false
+          }
+        },
+        "required": [
+          "id"
+        ],
+        "additionalProperties": false
+      },
+      "adapter": "axure",
+      "mutates": true,
+      "outputSchema": {
+        "$ref": "../legacy-response.schema.json"
+      },
+      "execution": "version-pinned desktop adapter; native validation also applies",
+      "evidenceIndex": "../../acceptance/axure.json",
+      "provenance": "recovered-internal"
+    },
+    {
+      "name": "widget.text",
+      "command": [
+        "widget",
+        "text"
+      ],
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "timeout": {
+            "type": "number",
+            "x-cli-flag": "--timeout",
+            "x-global": true
+          },
+          "id": {
+            "type": "string",
+            "x-cli-flag": "--id",
+            "x-global": false
+          },
+          "text": {
+            "type": "string",
+            "x-cli-flag": "--text",
+            "x-global": false
+          }
+        },
+        "required": [
+          "id",
+          "text"
+        ],
+        "additionalProperties": false
+      },
+      "adapter": "axure",
+      "mutates": true,
+      "outputSchema": {
+        "$ref": "../legacy-response.schema.json"
+      },
+      "execution": "version-pinned desktop adapter; native validation also applies",
+      "evidenceIndex": "../../acceptance/axure.json",
+      "provenance": "recovered-internal"
+    },
+    {
+      "name": "page.list",
+      "command": [
+        "page",
+        "list"
+      ],
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "timeout": {
+            "type": "number",
+            "x-cli-flag": "--timeout",
+            "x-global": true
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "adapter": "axure",
+      "mutates": false,
+      "outputSchema": {
+        "$ref": "../legacy-response.schema.json"
+      },
+      "execution": "version-pinned desktop adapter; native validation also applies",
+      "evidenceIndex": "../../acceptance/axure.json",
+      "provenance": "built-in-document-service"
+    },
+    {
+      "name": "page.create",
+      "command": [
+        "page",
+        "create"
+      ],
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "timeout": {
+            "type": "number",
+            "x-cli-flag": "--timeout",
+            "x-global": true
+          },
+          "name": {
+            "type": "string",
+            "x-cli-flag": "--name",
+            "x-global": false
+          }
+        },
+        "required": [
+          "name"
+        ],
+        "additionalProperties": false
+      },
+      "adapter": "axure",
+      "mutates": true,
+      "outputSchema": {
+        "$ref": "../legacy-response.schema.json"
+      },
+      "execution": "version-pinned desktop adapter; native validation also applies",
+      "evidenceIndex": "../../acceptance/axure.json",
+      "provenance": "recovered-internal"
+    },
+    {
+      "name": "page.open",
+      "command": [
+        "page",
+        "open"
+      ],
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "timeout": {
+            "type": "number",
+            "x-cli-flag": "--timeout",
+            "x-global": true
+          },
+          "id": {
+            "type": "string",
+            "x-cli-flag": "--id",
+            "x-global": false
+          }
+        },
+        "required": [
+          "id"
+        ],
+        "additionalProperties": false
+      },
+      "adapter": "axure",
+      "mutates": true,
+      "outputSchema": {
+        "$ref": "../legacy-response.schema.json"
+      },
+      "execution": "version-pinned desktop adapter; native validation also applies",
+      "evidenceIndex": "../../acceptance/axure.json",
+      "provenance": "recovered-internal"
+    },
+    {
+      "name": "interaction.get",
+      "command": [
+        "interaction",
+        "get"
+      ],
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "timeout": {
+            "type": "number",
+            "x-cli-flag": "--timeout",
+            "x-global": true
+          },
+          "id": {
+            "type": "string",
+            "x-cli-flag": "--id",
+            "x-global": false
+          }
+        },
+        "required": [
+          "id"
+        ],
+        "additionalProperties": false
+      },
+      "adapter": "axure",
+      "mutates": false,
+      "outputSchema": {
+        "$ref": "../legacy-response.schema.json"
+      },
+      "execution": "version-pinned desktop adapter; native validation also applies",
+      "evidenceIndex": "../../acceptance/axure.json",
+      "provenance": "recovered-internal"
+    },
+    {
+      "name": "interaction.set",
+      "command": [
+        "interaction",
+        "set"
+      ],
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "timeout": {
+            "type": "number",
+            "x-cli-flag": "--timeout",
+            "x-global": true
+          },
+          "id": {
+            "type": "string",
+            "x-cli-flag": "--id",
+            "x-global": false
+          },
+          "spec": {
+            "type": "string",
+            "x-cli-flag": "--spec",
+            "x-global": false
+          }
+        },
+        "required": [
+          "id",
+          "spec"
+        ],
+        "additionalProperties": false
+      },
+      "adapter": "axure",
+      "mutates": true,
+      "outputSchema": {
+        "$ref": "../legacy-response.schema.json"
+      },
+      "execution": "version-pinned desktop adapter; native validation also applies",
+      "evidenceIndex": "../../acceptance/axure.json",
+      "provenance": "recovered-internal"
+    },
+    {
+      "name": "project.new",
+      "command": [
+        "project",
+        "new"
+      ],
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "timeout": {
+            "type": "number",
+            "x-cli-flag": "--timeout",
+            "x-global": true
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "adapter": "axure",
+      "mutates": true,
+      "outputSchema": {
+        "$ref": "../legacy-response.schema.json"
+      },
+      "execution": "version-pinned desktop adapter; native validation also applies",
+      "evidenceIndex": "../../acceptance/axure.json",
+      "provenance": "recovered-internal"
+    },
+    {
+      "name": "project.close",
+      "command": [
+        "project",
+        "close"
+      ],
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "timeout": {
+            "type": "number",
+            "x-cli-flag": "--timeout",
+            "x-global": true
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "adapter": "axure",
+      "mutates": true,
+      "outputSchema": {
+        "$ref": "../legacy-response.schema.json"
+      },
+      "execution": "version-pinned desktop adapter; native validation also applies",
+      "evidenceIndex": "../../acceptance/axure.json",
+      "provenance": "recovered-internal"
+    },
+    {
+      "name": "project.sitemap",
+      "command": [
+        "project",
+        "sitemap"
+      ],
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "timeout": {
+            "type": "number",
+            "x-cli-flag": "--timeout",
+            "x-global": true
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "adapter": "axure",
+      "mutates": false,
+      "outputSchema": {
+        "$ref": "../legacy-response.schema.json"
+      },
+      "execution": "version-pinned desktop adapter; native validation also applies",
+      "evidenceIndex": "../../acceptance/axure.json",
+      "provenance": "built-in-document-service"
+    },
+    {
+      "name": "project.save",
+      "command": [
+        "project",
+        "save"
+      ],
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "timeout": {
+            "type": "number",
+            "x-cli-flag": "--timeout",
+            "x-global": true
+          },
+          "path": {
+            "type": "string",
+            "x-cli-flag": "--path",
+            "x-global": false
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "adapter": "axure",
+      "mutates": true,
+      "outputSchema": {
+        "$ref": "../legacy-response.schema.json"
+      },
+      "execution": "version-pinned desktop adapter; native validation also applies",
+      "evidenceIndex": "../../acceptance/axure.json",
+      "provenance": "recovered-internal"
+    },
+    {
+      "name": "project.open",
+      "command": [
+        "project",
+        "open"
+      ],
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "timeout": {
+            "type": "number",
+            "x-cli-flag": "--timeout",
+            "x-global": true
+          },
+          "path": {
+            "type": "string",
+            "x-cli-flag": "--path",
+            "x-global": false
+          }
+        },
+        "required": [
+          "path"
+        ],
+        "additionalProperties": false
+      },
+      "adapter": "axure",
+      "mutates": true,
+      "outputSchema": {
+        "$ref": "../legacy-response.schema.json"
+      },
+      "execution": "version-pinned desktop adapter; native validation also applies",
+      "evidenceIndex": "../../acceptance/axure.json",
+      "provenance": "recovered-internal"
+    },
+    {
+      "name": "export.html",
+      "command": [
+        "export",
+        "html"
+      ],
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "timeout": {
+            "type": "number",
+            "x-cli-flag": "--timeout",
+            "x-global": true
+          },
+          "output": {
+            "type": "string",
+            "x-cli-flag": "--output",
+            "x-global": false
+          }
+        },
+        "required": [
+          "output"
+        ],
+        "additionalProperties": false
+      },
+      "adapter": "axure",
+      "mutates": true,
+      "outputSchema": {
+        "$ref": "../legacy-response.schema.json"
+      },
+      "execution": "version-pinned desktop adapter; native validation also applies",
+      "evidenceIndex": "../../acceptance/axure.json",
+      "provenance": "recovered-internal"
+    },
+    {
+      "name": "settings.cache",
+      "command": [
+        "settings",
+        "cache"
+      ],
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "timeout": {
+            "type": "number",
+            "x-cli-flag": "--timeout",
+            "x-global": true
+          },
+          "path": {
+            "type": "string",
+            "x-cli-flag": "--path",
+            "x-global": false
+          }
+        },
+        "required": [
+          "path"
+        ],
+        "additionalProperties": false
+      },
+      "adapter": "axure",
+      "mutates": true,
+      "outputSchema": {
+        "$ref": "../legacy-response.schema.json"
+      },
+      "execution": "version-pinned desktop adapter; native validation also applies",
+      "evidenceIndex": "../../acceptance/axure.json",
+      "provenance": "recovered-internal"
+    }
+  ],
+  "scope": "Argument schemas plus adapter runtime validation; descriptions do not expand native support."
+}

@@ -1,0 +1,16 @@
+{
+  "source": "https://axure.cachefly.net/AxureRP-Setup.zip",
+  "officialInstructions": "https://docs.axure.com/axure-rp/reference/installing-on-windows/",
+  "method": "official no-install ZIP deployed to D drive",
+  "installedPath": "D:\\Apps\\Axure\\Axure RP 11",
+  "version": "11.0.0.4150",
+  "signer": "CN=\"Axure Software Solutions, Inc\", O=\"Axure Software Solutions, Inc\", S=California, C=US, OID.2.5.4.15=Private Organization, OID.1.3.6.1.4.1.311.60.2.1.2=California, OID.1.3.6.1.4.1.311.60.2.1.3=US, SERIALNUMBER=2277897",
+  "signatureStatus": "Valid",
+  "packageSha256": "f9f374412306629dadb78cbd5db643353df83fb7c2d7a7e987687865b876dfe0",
+  "assemblySha256": "dae5748f6be3e69c063ef117bab0b400586d94adf119f5a9ba260df59dc4e4a7",
+  "runtime": "bundled .NET 10.0.10",
+  "cache": "D:\\Caches\\Axure\\Application",
+  "processTemp": "D:\\Caches\\Axure\\Temp",
+  "existingDataMoved": false,
+  "initialCDriveFilesPreserved": true
+}

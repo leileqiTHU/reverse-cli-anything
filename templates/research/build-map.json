@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "adapter": "target-app",
+  "profiles": [
+    {
+      "id": "candidate",
+      "status": "unverified",
+      "architecture": "unknown",
+      "modules": [],
+      "bindings": [],
+      "readiness": [],
+      "supportedLifecycles": [],
+      "evidence": []
+    }
+  ]
+}

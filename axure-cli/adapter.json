@@ -1,0 +1,55 @@
+{
+  "id": "axure",
+  "name": "Axure RP",
+  "directory": "axure-cli",
+  "status": "pilot-validated",
+  "platform": "windows-x64",
+  "testedBuilds": [
+    "11.0.0.4150"
+  ],
+  "readme": "axure-cli/README.md",
+  "entrypoint": "axure-cli/axure_cli.py",
+  "interface": "json-cli",
+  "backend": "version-pinned in-process .NET startup hook and native editor transactions on the UI thread",
+  "requiresDesktopProcessForEditing": true,
+  "requiresMouseClicks": false,
+  "capabilityGroups": [
+    "project-lifecycle",
+    "page-create-and-switch",
+    "paragraph-button-input-create",
+    "widget-position-and-size",
+    "click-conditions-and-actions",
+    "widget-text-edit",
+    "native-undo-redo",
+    "save-and-cold-start-reopen",
+    "native-html-export",
+    "read-only-sitemap",
+    "configurable-native-cache"
+  ],
+  "evidence": "axure-cli/evidence/native-login-acceptance.json",
+  "validatedOn": "2026-10-13",
+  "limitations": [
+    "one pinned build",
+    "root-level pages and current-page paragraph, Button and TextBox widgets",
+    "plain-text replacement uses first-run formatting",
+    "normal activation required",
+    "click installation requires empty interaction map; equals/any/all, setText and navigate only",
+    "no write MCP server"
+  ],
+  "demo": {
+    "video": "axure-cli/assets/axure-cli-demo.mp4",
+    "poster": "axure-cli/assets/axure-cli-demo.jpg",
+    "manifest": "docs/demos/manifest.json"
+  },
+  "skill": "skills/reverse-cli-axure/SKILL.md",
+  "toolSchema": "schemas/tools/axure.json",
+  "acceptance": "acceptance/axure.json",
+  "sharedEntrypoint": "reverse-cli.py",
+  "runtime": "axure-cli/reverse_cli_adapter.py",
+  "regression": [
+    "examples/tools/regress-native.py",
+    "axure"
+  ],
+  "root": "..",
+  "schemaVersion": 1
+}

@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "target": "D:\\Apps\\Axure\\Axure RP 11\\AxureRP11.dll",
+  "version": "11.0.0.4150",
+  "sha256": "dae5748f6be3e69c063ef117bab0b400586d94adf119f5a9ba260df59dc4e4a7",
+  "reaEvidenceId": "ev_e29c588cceaa189a8c3d87f9dd7a5e28e7bd8a65bf8773ddb6a485e6f18273e8",
+  "reaLimit": "Existing metadata inspection was partial because of the 64 MiB parser limit; no duplicate inspection performed.",
+  "analysis": "ILSpy execution-free targeted decompilation against the installed binary; runtime validation is delegated to the parent task.",
+  "entrypoints": [
+    {
+      "operation": "page.list",
+      "type": "Axure.McpServer.Mapping.SitemapMapper",
+      "method": "MapSitemap",
+      "token": "0x060076E8",
+      "observation": "Maps current document sitemap nodes to Id/Name/Type/Children using stable page package GUIDs."
+    },
+    {
+      "operation": "page.open",
+      "type": "W30.M3m",
+      "method": "TImN(Guid, Guid, bool)",
+      "token": "0x0600065B",
+      "observation": "Native main client page loading/switch entry; GUID argument identifies the page package. CLI passes Guid.Empty,false for remaining arguments and checks active KE5 afterward."
+    },
+    {
+      "operation": "page.create",
+      "type": "ESDL.lSDD",
+      "method": ".ctor(TreeEditType, FNry, IEnumerable<QJlk>)",
+      "token": "0x0600AC68",
+      "observation": "Native tree AddNode edit. TSDA sets insertion index; pSDd sets package GUID; tSDy supplies a detached QJlk created with the native constructor and OJl6(Tree); tSDY supplies initial name. Native AddNode numbering always appends a suffix, so an additional lSDD RenameNode edit is combined with AddNode using native BS11.pS1H."
+    },
+    {
+      "operation": "page.create.commit",
+      "type": "Jc4.XcY",
+      "method": "QIml(bS31)",
+      "token": "0x06000814",
+      "observation": "Native workspace dispatcher passes the compound AddNode+RenameNode edit to client.CImW. CgQ calls edit.Commit and records one native undo item. pS1H commits children in order and rolls them back in reverse; RenameNode sets the exact requested name via HJvI.XIwn."
+    }
+  ],
+  "undoObservation": "lSDD reverse path SSDi captures PtdG metadata and removes the package; subsequent Commit restores captured metadata and tree node. CLI intentionally leaves active page unchanged for this workspace history entry.",
+  "scope": "Root-level page creation, sitemap listing and page opening only. No mouse or keyboard events, no app launch/attach/stop in this research scope.",
+  "runtimeStatus": "not_run_by_this_scope",
+  "files": [
+    "PageCommands.cs",
+    ".runtime/page-research/lSDD.cs",
+    ".runtime/page-research/WBuT.cs",
+    ".runtime/page-research/HJvI.cs",
+    ".runtime/page-research/FNry.cs",
+    ".runtime/page-research/XcY.cs",
+    ".runtime/page-research/SitemapMapper.cs",
+    ".runtime/page-research/tokens.json"
+  ],
+  "limits": [
+    "Version/hash pinned; future builds unsupported until mapped.",
+    "Page names are trimmed; existing page/folder names are rejected case-insensitively before mutation.",
+    "Page creation leaves original page selected; page.open explicitly switches to the returned page Id.",
+    "Parent observed original page create/open/undo/redo pass; exact-name compound update still requires parent runtime acceptance."
+  ]
+}

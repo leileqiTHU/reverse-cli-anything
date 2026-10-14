@@ -1,0 +1,3 @@
+# Native CLI uses Python's standard library. Bridge build requires PowerShell 7.6 / .NET 10.
+# Recording and image verification only:
+Pillow>=10,<13

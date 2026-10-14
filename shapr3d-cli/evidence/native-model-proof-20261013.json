@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-13",
+  "software": "Shapr3D",
+  "build": "26.180.11926.0",
+  "platform": "windows-x64",
+  "status": "native-modeling-pilot-validated",
+  "passed": true,
+  "checks": {
+    "normalNewProjectReachedNativeCreate": true,
+    "nativeImportCompletedWithoutErrorOrDiscardedContent": true,
+    "historyStepCount56": true,
+    "nativeMutationCallbackNoError": true,
+    "reopenedExpressionRetained": true,
+    "reopenedDistanceRetained": true,
+    "noHistoryWarningsOrErrors": true,
+    "savedProjectSqliteQuickCheck": true,
+    "twoReopensIdenticalCanonicalTriangles": true,
+    "publicCliExportMatchesReopenedGeometry": true,
+    "nativeExportHas8176Triangles": true,
+    "geometryChangedFromOriginal": true,
+    "portableCopyHashMatches": true
+  },
+  "method": "Version-pinned Frida bridge calls shipped C++/WinRT interfaces on CoreDispatcher UI thread; no editing through UI automation or direct project database writes.",
+  "projectId": "eb348820-7bf8-48fd-8760-977287ef4c25",
+  "input": "Vendor-installed Assets/SampleWorkspaces.bundle/airvalve.shapr; copied locally, not redistributed.",
+  "edit": {
+    "step": "Cover ear extrusion",
+    "parameter": "distance",
+    "beforeMm": -2,
+    "afterMm": -3,
+    "internalValueMeters": -0.003
+  },
+  "saveAndReopen": {
+    "sameApplicationProcess": true,
+    "completedReopenCycles": 2,
+    "databaseQuickCheck": "ok",
+    "coldApplicationRestartReopenValidated": false
+  },
+  "exports": {
+    "before": {
+      "bytes": 408884,
+      "sha256": "653ec82d9df50b239437e3fe0240988dfeca02ce4d6ad38b6eff61fbdb575d14",
+      "triangles": 8176,
+      "boundsMm": [
+        [
+          -90.0,
+          -90.01667022705078,
+          9.926111488312017e-07
+        ],
+        [
+          90.0,
+          90.0,
+          190.0
+        ]
+      ],
+      "signedVolumeMm3": 1134244.684453107,
+      "edgeUseCounts": {
+        "2": 11826,
+        "4": 219
+      },
+      "geometrySha256": "f2a836888af9210c4879977ae655a5c9126d301706e49d132a18789a5de0fb45"
+    },
+    "reopened": {
+      "bytes": 408884,
+      "sha256": "80ddfdd02199942af4c47bc4f8ee7b4f69467543de6a633733c5299b954eecbc",
+      "triangles": 8176,
+      "boundsMm": [
+        [
+          -90.0,
+          -90.01667022705078,
+          9.926111488312017e-07
+        ],
+        [
+          90.0,
+          90.0,
+          190.0
+        ]
+      ],
+      "signedVolumeMm3": 1134456.4485608223,
+      "edgeUseCounts": {
+        "2": 11826,
+        "4": 219
+      },
+      "geometrySha256": "9e91a665e2972f353a426bcf510c21f37b801714528abc8276f1c47ca48b8b0e"
+    },
+    "reopenedAgain": {
+      "bytes": 408884,
+      "sha256": "f812c1193a7eea405995b32fee054a952b8b35f2069e41551ef3e1ac6b0dc1e0",
+      "triangles": 8176,
+      "boundsMm": [
+        [
+          -90.0,
+          -90.01667022705078,
+          9.926111488312017e-07
+        ],
+        [
+          90.0,
+          90.0,
+          190.0
+        ]
+      ],
+      "signedVolumeMm3": 1134456.4485608223,
+      "edgeUseCounts": {
+        "2": 11826,
+        "4": 219
+      },
+      "geometrySha256": "9e91a665e2972f353a426bcf510c21f37b801714528abc8276f1c47ca48b8b0e"
+    },
+    "final": {
+      "bytes": 408884,
+      "sha256": "f812c1193a7eea405995b32fee054a952b8b35f2069e41551ef3e1ac6b0dc1e0",
+      "triangles": 8176,
+      "boundsMm": [
+        [
+          -90.0,
+          -90.01667022705078,
+          9.926111488312017e-07
+        ],
+        [
+          90.0,
+          90.0,
+          190.0
+        ]
+      ],
+      "signedVolumeMm3": 1134456.4485608223,
+      "edgeUseCounts": {
+        "2": 11826,
+        "4": 219
+      },
+      "geometrySha256": "9e91a665e2972f353a426bcf510c21f37b801714528abc8276f1c47ca48b8b0e"
+    }
+  },
+  "meshVolumeDeltaMm3": 211.76410771533847,
+  "artifact": "outputs/airvalve-modified.stl",
+  "lifecycleFix": [
+    "release temporary COM observers per operation",
+    "Editor.Defocus",
+    "set ActiveEditor=None and wait",
+    "native CloseProject/OpenProject with legitimately retained project token",
+    "set ActiveEditor=Model and wait, then Focus"
+  ],
+  "initialFailure": "Bare CloseProject/OpenProject caused a native UpdateHover lifetime crash; corrected combined lifecycle passed two cycles. No single-step causal isolation is claimed.",
+  "limits": [
+    "One Windows build only",
+    "Same-session newly created project lifecycle; general cold-start open-by-ID is not implemented",
+    "Low-resolution binary STL only",
+    "Normal account/onboarding and supported export entitlement required",
+    "Desktop process required; not a headless renderer",
+    "Do not switch projects concurrently during a pilot session"
+  ],
+  "reaEvidenceIds": [
+    "ev_81704466d788429812da4b17e064b7f81d2752a8cc27ce1444bc852e7039c27a",
+    "ev_3e38d36f40f0744886e3ed6468549a03b26065e236abb8c500bdfe767b984fa5",
+    "ev_e4439d17c4b8129c7cd092fe7651bd81fd59e0da6a88fc50d433df7a0f28aa16"
+  ]
+}

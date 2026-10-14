@@ -1,0 +1,1888 @@
+{
+  "schemaVersion": 1,
+  "adapter": "capcut",
+  "tools": [
+    {
+      "name": "capabilities",
+      "command": [
+        "capabilities"
+      ],
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "capcut_dir": {
+            "type": "string",
+            "x-cli-flag": "--capcut-dir",
+            "x-global": true
+          },
+          "timeout": {
+            "type": "integer",
+            "x-cli-flag": "--timeout",
+            "x-global": true
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "adapter": "capcut",
+      "mutates": false,
+      "outputSchema": {
+        "$ref": "../legacy-response.schema.json"
+      },
+      "execution": "version-pinned desktop adapter; native validation also applies",
+      "evidenceIndex": "../../acceptance/capcut.json",
+      "provenance": "adapter-infrastructure"
+    },
+    {
+      "name": "version",
+      "command": [
+        "version"
+      ],
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "capcut_dir": {
+            "type": "string",
+            "x-cli-flag": "--capcut-dir",
+            "x-global": true
+          },
+          "timeout": {
+            "type": "integer",
+            "x-cli-flag": "--timeout",
+            "x-global": true
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "adapter": "capcut",
+      "mutates": false,
+      "outputSchema": {
+        "$ref": "../legacy-response.schema.json"
+      },
+      "execution": "version-pinned desktop adapter; native validation also applies",
+      "evidenceIndex": "../../acceptance/capcut.json",
+      "provenance": "recovered-internal"
+    },
+    {
+      "name": "help",
+      "command": [
+        "help"
+      ],
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "capcut_dir": {
+            "type": "string",
+            "x-cli-flag": "--capcut-dir",
+            "x-global": true
+          },
+          "timeout": {
+            "type": "integer",
+            "x-cli-flag": "--timeout",
+            "x-global": true
+          },
+          "topic": {
+            "type": "string",
+            "x-cli-flag": "--topic",
+            "x-global": false,
+            "enum": [
+              "root",
+              "editor",
+              "project",
+              "media",
+              "probe",
+              "convert-image"
+            ]
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "adapter": "capcut",
+      "mutates": false,
+      "outputSchema": {
+        "$ref": "../legacy-response.schema.json"
+      },
+      "execution": "version-pinned desktop adapter; native validation also applies",
+      "evidenceIndex": "../../acceptance/capcut.json",
+      "provenance": "adapter-infrastructure"
+    },
+    {
+      "name": "probe",
+      "command": [
+        "probe"
+      ],
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "capcut_dir": {
+            "type": "string",
+            "x-cli-flag": "--capcut-dir",
+            "x-global": true
+          },
+          "timeout": {
+            "type": "integer",
+            "x-cli-flag": "--timeout",
+            "x-global": true
+          },
+          "input": {
+            "type": "string",
+            "x-cli-flag": "--input",
+            "x-global": false
+          }
+        },
+        "required": [
+          "input"
+        ],
+        "additionalProperties": false
+      },
+      "adapter": "capcut",
+      "mutates": false,
+      "outputSchema": {
+        "$ref": "../legacy-response.schema.json"
+      },
+      "execution": "version-pinned desktop adapter; native validation also applies",
+      "evidenceIndex": "../../acceptance/capcut.json",
+      "provenance": "recovered-internal"
+    },
+    {
+      "name": "media.frame",
+      "command": [
+        "media",
+        "frame"
+      ],
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "capcut_dir": {
+            "type": "string",
+            "x-cli-flag": "--capcut-dir",
+            "x-global": true
+          },
+          "timeout": {
+            "type": "integer",
+            "x-cli-flag": "--timeout",
+            "x-global": true
+          },
+          "input": {
+            "type": "string",
+            "x-cli-flag": "--input",
+            "x-global": false
+          },
+          "output": {
+            "type": "string",
+            "x-cli-flag": "--output",
+            "x-global": false
+          },
+          "at_us": {
+            "type": "integer",
+            "x-cli-flag": "--at-us",
+            "x-global": false,
+            "description": "Integer microseconds. Command-specific absolute/relative semantics remain in the adapter guide."
+          }
+        },
+        "required": [
+          "input",
+          "output",
+          "at_us"
+        ],
+        "additionalProperties": false
+      },
+      "adapter": "capcut",
+      "mutates": true,
+      "outputSchema": {
+        "$ref": "../legacy-response.schema.json"
+      },
+      "execution": "version-pinned desktop adapter; native validation also applies",
+      "evidenceIndex": "../../acceptance/capcut.json",
+      "provenance": "external-helper"
+    },
+    {
+      "name": "media.preview",
+      "command": [
+        "media",
+        "preview"
+      ],
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "capcut_dir": {
+            "type": "string",
+            "x-cli-flag": "--capcut-dir",
+            "x-global": true
+          },
+          "timeout": {
+            "type": "integer",
+            "x-cli-flag": "--timeout",
+            "x-global": true
+          },
+          "input": {
+            "type": "string",
+            "x-cli-flag": "--input",
+            "x-global": false
+          },
+          "output": {
+            "type": "string",
+            "x-cli-flag": "--output",
+            "x-global": false
+          },
+          "start_us": {
+            "type": "integer",
+            "x-cli-flag": "--start-us",
+            "x-global": false,
+            "description": "Integer microseconds. Command-specific absolute/relative semantics remain in the adapter guide."
+          },
+          "end_us": {
+            "type": "integer",
+            "x-cli-flag": "--end-us",
+            "x-global": false,
+            "description": "Integer microseconds. Command-specific absolute/relative semantics remain in the adapter guide."
+          }
+        },
+        "required": [
+          "input",
+          "output",
+          "start_us",
+          "end_us"
+        ],
+        "additionalProperties": false
+      },
+      "adapter": "capcut",
+      "mutates": true,
+      "outputSchema": {
+        "$ref": "../legacy-response.schema.json"
+      },
+      "execution": "version-pinned desktop adapter; native validation also applies",
+      "evidenceIndex": "../../acceptance/capcut.json",
+      "provenance": "external-helper"
+    },
+    {
+      "name": "convert-image",
+      "command": [
+        "convert-image"
+      ],
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "capcut_dir": {
+            "type": "string",
+            "x-cli-flag": "--capcut-dir",
+            "x-global": true
+          },
+          "timeout": {
+            "type": "integer",
+            "x-cli-flag": "--timeout",
+            "x-global": true
+          },
+          "input": {
+            "type": "string",
+            "x-cli-flag": "--input",
+            "x-global": false
+          },
+          "output": {
+            "type": "string",
+            "x-cli-flag": "--output",
+            "x-global": false
+          },
+          "format": {
+            "type": "string",
+            "x-cli-flag": "--format",
+            "x-global": false,
+            "enum": [
+              "jpg",
+              "jpeg",
+              "png"
+            ]
+          }
+        },
+        "required": [
+          "input",
+          "output"
+        ],
+        "additionalProperties": false
+      },
+      "adapter": "capcut",
+      "mutates": true,
+      "outputSchema": {
+        "$ref": "../legacy-response.schema.json"
+      },
+      "execution": "version-pinned desktop adapter; native validation also applies",
+      "evidenceIndex": "../../acceptance/capcut.json",
+      "provenance": "recovered-internal"
+    },
+    {
+      "name": "project.create",
+      "command": [
+        "project",
+        "create"
+      ],
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "capcut_dir": {
+            "type": "string",
+            "x-cli-flag": "--capcut-dir",
+            "x-global": true
+          },
+          "timeout": {
+            "type": "integer",
+            "x-cli-flag": "--timeout",
+            "x-global": true
+          },
+          "pid": {
+            "type": "integer",
+            "x-cli-flag": "--pid",
+            "x-global": false
+          },
+          "name": {
+            "type": "string",
+            "x-cli-flag": "--name",
+            "x-global": false
+          }
+        },
+        "required": [
+          "pid",
+          "name"
+        ],
+        "additionalProperties": false
+      },
+      "adapter": "capcut",
+      "mutates": true,
+      "outputSchema": {
+        "$ref": "../legacy-response.schema.json"
+      },
+      "execution": "version-pinned desktop adapter; native validation also applies",
+      "evidenceIndex": "../../acceptance/capcut.json",
+      "provenance": "recovered-internal"
+    },
+    {
+      "name": "project.import-media",
+      "command": [
+        "project",
+        "import-media"
+      ],
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "capcut_dir": {
+            "type": "string",
+            "x-cli-flag": "--capcut-dir",
+            "x-global": true
+          },
+          "timeout": {
+            "type": "integer",
+            "x-cli-flag": "--timeout",
+            "x-global": true
+          },
+          "pid": {
+            "type": "integer",
+            "x-cli-flag": "--pid",
+            "x-global": false
+          },
+          "input": {
+            "type": "string",
+            "x-cli-flag": "--input",
+            "x-global": false
+          },
+          "project": {
+            "type": "string",
+            "x-cli-flag": "--project",
+            "x-global": false
+          },
+          "project_id": {
+            "type": "string",
+            "x-cli-flag": "--project-id",
+            "x-global": false
+          }
+        },
+        "required": [
+          "pid",
+          "input"
+        ],
+        "additionalProperties": false,
+        "allOf": [
+          {
+            "oneOf": [
+              {
+                "required": [
+                  "project"
+                ],
+                "not": {
+                  "anyOf": [
+                    {
+                      "required": [
+                        "project_id"
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "required": [
+                  "project_id"
+                ],
+                "not": {
+                  "anyOf": [
+                    {
+                      "required": [
+                        "project"
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "adapter": "capcut",
+      "mutates": true,
+      "outputSchema": {
+        "$ref": "../legacy-response.schema.json"
+      },
+      "execution": "version-pinned desktop adapter; native validation also applies",
+      "evidenceIndex": "../../acceptance/capcut.json",
+      "provenance": "recovered-internal"
+    },
+    {
+      "name": "project.list",
+      "command": [
+        "project",
+        "list"
+      ],
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "capcut_dir": {
+            "type": "string",
+            "x-cli-flag": "--capcut-dir",
+            "x-global": true
+          },
+          "timeout": {
+            "type": "integer",
+            "x-cli-flag": "--timeout",
+            "x-global": true
+          },
+          "pid": {
+            "type": "integer",
+            "x-cli-flag": "--pid",
+            "x-global": false
+          }
+        },
+        "required": [
+          "pid"
+        ],
+        "additionalProperties": false
+      },
+      "adapter": "capcut",
+      "mutates": false,
+      "outputSchema": {
+        "$ref": "../legacy-response.schema.json"
+      },
+      "execution": "version-pinned desktop adapter; native validation also applies",
+      "evidenceIndex": "../../acceptance/capcut.json",
+      "provenance": "recovered-internal"
+    },
+    {
+      "name": "project.open",
+      "command": [
+        "project",
+        "open"
+      ],
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "capcut_dir": {
+            "type": "string",
+            "x-cli-flag": "--capcut-dir",
+            "x-global": true
+          },
+          "timeout": {
+            "type": "integer",
+            "x-cli-flag": "--timeout",
+            "x-global": true
+          },
+          "pid": {
+            "type": "integer",
+            "x-cli-flag": "--pid",
+            "x-global": false
+          },
+          "project": {
+            "type": "string",
+            "x-cli-flag": "--project",
+            "x-global": false
+          },
+          "project_id": {
+            "type": "string",
+            "x-cli-flag": "--project-id",
+            "x-global": false
+          }
+        },
+        "required": [
+          "pid"
+        ],
+        "additionalProperties": false,
+        "allOf": [
+          {
+            "oneOf": [
+              {
+                "required": [
+                  "project"
+                ],
+                "not": {
+                  "anyOf": [
+                    {
+                      "required": [
+                        "project_id"
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "required": [
+                  "project_id"
+                ],
+                "not": {
+                  "anyOf": [
+                    {
+                      "required": [
+                        "project"
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "adapter": "capcut",
+      "mutates": true,
+      "outputSchema": {
+        "$ref": "../legacy-response.schema.json"
+      },
+      "execution": "version-pinned desktop adapter; native validation also applies",
+      "evidenceIndex": "../../acceptance/capcut.json",
+      "provenance": "recovered-internal"
+    },
+    {
+      "name": "project.close",
+      "command": [
+        "project",
+        "close"
+      ],
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "capcut_dir": {
+            "type": "string",
+            "x-cli-flag": "--capcut-dir",
+            "x-global": true
+          },
+          "timeout": {
+            "type": "integer",
+            "x-cli-flag": "--timeout",
+            "x-global": true
+          },
+          "pid": {
+            "type": "integer",
+            "x-cli-flag": "--pid",
+            "x-global": false
+          },
+          "project": {
+            "type": "string",
+            "x-cli-flag": "--project",
+            "x-global": false
+          },
+          "project_id": {
+            "type": "string",
+            "x-cli-flag": "--project-id",
+            "x-global": false
+          }
+        },
+        "required": [
+          "pid"
+        ],
+        "additionalProperties": false,
+        "allOf": [
+          {
+            "oneOf": [
+              {
+                "required": [
+                  "project"
+                ],
+                "not": {
+                  "anyOf": [
+                    {
+                      "required": [
+                        "project_id"
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "required": [
+                  "project_id"
+                ],
+                "not": {
+                  "anyOf": [
+                    {
+                      "required": [
+                        "project"
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "adapter": "capcut",
+      "mutates": true,
+      "outputSchema": {
+        "$ref": "../legacy-response.schema.json"
+      },
+      "execution": "version-pinned desktop adapter; native validation also applies",
+      "evidenceIndex": "../../acceptance/capcut.json",
+      "provenance": "recovered-internal"
+    },
+    {
+      "name": "editor.sessions",
+      "command": [
+        "editor",
+        "sessions"
+      ],
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "capcut_dir": {
+            "type": "string",
+            "x-cli-flag": "--capcut-dir",
+            "x-global": true
+          },
+          "timeout": {
+            "type": "integer",
+            "x-cli-flag": "--timeout",
+            "x-global": true
+          },
+          "pid": {
+            "type": "integer",
+            "x-cli-flag": "--pid",
+            "x-global": false
+          }
+        },
+        "required": [
+          "pid"
+        ],
+        "additionalProperties": false
+      },
+      "adapter": "capcut",
+      "mutates": false,
+      "outputSchema": {
+        "$ref": "../legacy-response.schema.json"
+      },
+      "execution": "version-pinned desktop adapter; native validation also applies",
+      "evidenceIndex": "../../acceptance/capcut.json",
+      "provenance": "recovered-internal"
+    },
+    {
+      "name": "editor.inspect",
+      "command": [
+        "editor",
+        "inspect"
+      ],
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "capcut_dir": {
+            "type": "string",
+            "x-cli-flag": "--capcut-dir",
+            "x-global": true
+          },
+          "timeout": {
+            "type": "integer",
+            "x-cli-flag": "--timeout",
+            "x-global": true
+          },
+          "pid": {
+            "type": "integer",
+            "x-cli-flag": "--pid",
+            "x-global": false
+          },
+          "project": {
+            "type": "string",
+            "x-cli-flag": "--project",
+            "x-global": false
+          },
+          "timeline": {
+            "type": "string",
+            "x-cli-flag": "--timeline",
+            "x-global": false
+          }
+        },
+        "required": [
+          "pid",
+          "project"
+        ],
+        "additionalProperties": false
+      },
+      "adapter": "capcut",
+      "mutates": false,
+      "outputSchema": {
+        "$ref": "../legacy-response.schema.json"
+      },
+      "execution": "version-pinned desktop adapter; native validation also applies",
+      "evidenceIndex": "../../acceptance/capcut.json",
+      "provenance": "recovered-internal"
+    },
+    {
+      "name": "editor.add-video",
+      "command": [
+        "editor",
+        "add-video"
+      ],
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "capcut_dir": {
+            "type": "string",
+            "x-cli-flag": "--capcut-dir",
+            "x-global": true
+          },
+          "timeout": {
+            "type": "integer",
+            "x-cli-flag": "--timeout",
+            "x-global": true
+          },
+          "pid": {
+            "type": "integer",
+            "x-cli-flag": "--pid",
+            "x-global": false
+          },
+          "project": {
+            "type": "string",
+            "x-cli-flag": "--project",
+            "x-global": false
+          },
+          "timeline": {
+            "type": "string",
+            "x-cli-flag": "--timeline",
+            "x-global": false
+          },
+          "input": {
+            "type": "string",
+            "x-cli-flag": "--input",
+            "x-global": false
+          },
+          "start_us": {
+            "type": "integer",
+            "x-cli-flag": "--start-us",
+            "x-global": false,
+            "description": "Integer microseconds. Command-specific absolute/relative semantics remain in the adapter guide."
+          },
+          "duration_us": {
+            "type": "integer",
+            "x-cli-flag": "--duration-us",
+            "x-global": false,
+            "description": "Integer microseconds. Command-specific absolute/relative semantics remain in the adapter guide."
+          },
+          "track": {
+            "type": "integer",
+            "x-cli-flag": "--track",
+            "x-global": false
+          }
+        },
+        "required": [
+          "pid",
+          "project",
+          "input"
+        ],
+        "additionalProperties": false
+      },
+      "adapter": "capcut",
+      "mutates": true,
+      "outputSchema": {
+        "$ref": "../legacy-response.schema.json"
+      },
+      "execution": "version-pinned desktop adapter; native validation also applies",
+      "evidenceIndex": "../../acceptance/capcut.json",
+      "provenance": "recovered-internal"
+    },
+    {
+      "name": "editor.add-track",
+      "command": [
+        "editor",
+        "add-track"
+      ],
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "capcut_dir": {
+            "type": "string",
+            "x-cli-flag": "--capcut-dir",
+            "x-global": true
+          },
+          "timeout": {
+            "type": "integer",
+            "x-cli-flag": "--timeout",
+            "x-global": true
+          },
+          "pid": {
+            "type": "integer",
+            "x-cli-flag": "--pid",
+            "x-global": false
+          },
+          "project": {
+            "type": "string",
+            "x-cli-flag": "--project",
+            "x-global": false
+          },
+          "timeline": {
+            "type": "string",
+            "x-cli-flag": "--timeline",
+            "x-global": false
+          },
+          "input": {
+            "type": "string",
+            "x-cli-flag": "--input",
+            "x-global": false
+          },
+          "start_us": {
+            "type": "integer",
+            "x-cli-flag": "--start-us",
+            "x-global": false,
+            "description": "Integer microseconds. Command-specific absolute/relative semantics remain in the adapter guide."
+          },
+          "duration_us": {
+            "type": "integer",
+            "x-cli-flag": "--duration-us",
+            "x-global": false,
+            "description": "Integer microseconds. Command-specific absolute/relative semantics remain in the adapter guide."
+          }
+        },
+        "required": [
+          "pid",
+          "project",
+          "input"
+        ],
+        "additionalProperties": false
+      },
+      "adapter": "capcut",
+      "mutates": true,
+      "outputSchema": {
+        "$ref": "../legacy-response.schema.json"
+      },
+      "execution": "version-pinned desktop adapter; native validation also applies",
+      "evidenceIndex": "../../acceptance/capcut.json",
+      "provenance": "recovered-internal"
+    },
+    {
+      "name": "editor.add-timeline",
+      "command": [
+        "editor",
+        "add-timeline"
+      ],
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "capcut_dir": {
+            "type": "string",
+            "x-cli-flag": "--capcut-dir",
+            "x-global": true
+          },
+          "timeout": {
+            "type": "integer",
+            "x-cli-flag": "--timeout",
+            "x-global": true
+          },
+          "pid": {
+            "type": "integer",
+            "x-cli-flag": "--pid",
+            "x-global": false
+          },
+          "project": {
+            "type": "string",
+            "x-cli-flag": "--project",
+            "x-global": false
+          },
+          "timeline": {
+            "type": "string",
+            "x-cli-flag": "--timeline",
+            "x-global": false
+          },
+          "name": {
+            "type": "string",
+            "x-cli-flag": "--name",
+            "x-global": false
+          }
+        },
+        "required": [
+          "pid",
+          "project",
+          "name"
+        ],
+        "additionalProperties": false
+      },
+      "adapter": "capcut",
+      "mutates": true,
+      "outputSchema": {
+        "$ref": "../legacy-response.schema.json"
+      },
+      "execution": "version-pinned desktop adapter; native validation also applies",
+      "evidenceIndex": "../../acceptance/capcut.json",
+      "provenance": "recovered-internal"
+    },
+    {
+      "name": "editor.switch-timeline",
+      "command": [
+        "editor",
+        "switch-timeline"
+      ],
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "capcut_dir": {
+            "type": "string",
+            "x-cli-flag": "--capcut-dir",
+            "x-global": true
+          },
+          "timeout": {
+            "type": "integer",
+            "x-cli-flag": "--timeout",
+            "x-global": true
+          },
+          "pid": {
+            "type": "integer",
+            "x-cli-flag": "--pid",
+            "x-global": false
+          },
+          "project": {
+            "type": "string",
+            "x-cli-flag": "--project",
+            "x-global": false
+          },
+          "timeline": {
+            "type": "string",
+            "x-cli-flag": "--timeline",
+            "x-global": false
+          }
+        },
+        "required": [
+          "pid",
+          "project",
+          "timeline"
+        ],
+        "additionalProperties": false
+      },
+      "adapter": "capcut",
+      "mutates": true,
+      "outputSchema": {
+        "$ref": "../legacy-response.schema.json"
+      },
+      "execution": "version-pinned desktop adapter; native validation also applies",
+      "evidenceIndex": "../../acceptance/capcut.json",
+      "provenance": "recovered-internal"
+    },
+    {
+      "name": "editor.trim",
+      "command": [
+        "editor",
+        "trim"
+      ],
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "capcut_dir": {
+            "type": "string",
+            "x-cli-flag": "--capcut-dir",
+            "x-global": true
+          },
+          "timeout": {
+            "type": "integer",
+            "x-cli-flag": "--timeout",
+            "x-global": true
+          },
+          "pid": {
+            "type": "integer",
+            "x-cli-flag": "--pid",
+            "x-global": false
+          },
+          "project": {
+            "type": "string",
+            "x-cli-flag": "--project",
+            "x-global": false
+          },
+          "timeline": {
+            "type": "string",
+            "x-cli-flag": "--timeline",
+            "x-global": false
+          },
+          "segment": {
+            "type": "string",
+            "x-cli-flag": "--segment",
+            "x-global": false
+          },
+          "in_us": {
+            "type": "integer",
+            "x-cli-flag": "--in-us",
+            "x-global": false,
+            "description": "Integer microseconds. Command-specific absolute/relative semantics remain in the adapter guide."
+          },
+          "out_us": {
+            "type": "integer",
+            "x-cli-flag": "--out-us",
+            "x-global": false,
+            "description": "Integer microseconds. Command-specific absolute/relative semantics remain in the adapter guide."
+          }
+        },
+        "required": [
+          "pid",
+          "project",
+          "segment",
+          "in_us",
+          "out_us"
+        ],
+        "additionalProperties": false
+      },
+      "adapter": "capcut",
+      "mutates": true,
+      "outputSchema": {
+        "$ref": "../legacy-response.schema.json"
+      },
+      "execution": "version-pinned desktop adapter; native validation also applies",
+      "evidenceIndex": "../../acceptance/capcut.json",
+      "provenance": "recovered-internal"
+    },
+    {
+      "name": "editor.split",
+      "command": [
+        "editor",
+        "split"
+      ],
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "capcut_dir": {
+            "type": "string",
+            "x-cli-flag": "--capcut-dir",
+            "x-global": true
+          },
+          "timeout": {
+            "type": "integer",
+            "x-cli-flag": "--timeout",
+            "x-global": true
+          },
+          "pid": {
+            "type": "integer",
+            "x-cli-flag": "--pid",
+            "x-global": false
+          },
+          "project": {
+            "type": "string",
+            "x-cli-flag": "--project",
+            "x-global": false
+          },
+          "timeline": {
+            "type": "string",
+            "x-cli-flag": "--timeline",
+            "x-global": false
+          },
+          "segment": {
+            "type": "string",
+            "x-cli-flag": "--segment",
+            "x-global": false
+          },
+          "points_us": {
+            "type": "array",
+            "items": {
+              "type": "integer"
+            },
+            "minItems": 1,
+            "x-cli-flag": "--points-us",
+            "x-global": false,
+            "description": "Integer microseconds. Command-specific absolute/relative semantics remain in the adapter guide."
+          }
+        },
+        "required": [
+          "pid",
+          "project",
+          "segment",
+          "points_us"
+        ],
+        "additionalProperties": false
+      },
+      "adapter": "capcut",
+      "mutates": true,
+      "outputSchema": {
+        "$ref": "../legacy-response.schema.json"
+      },
+      "execution": "version-pinned desktop adapter; native validation also applies",
+      "evidenceIndex": "../../acceptance/capcut.json",
+      "provenance": "recovered-internal"
+    },
+    {
+      "name": "editor.move",
+      "command": [
+        "editor",
+        "move"
+      ],
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "capcut_dir": {
+            "type": "string",
+            "x-cli-flag": "--capcut-dir",
+            "x-global": true
+          },
+          "timeout": {
+            "type": "integer",
+            "x-cli-flag": "--timeout",
+            "x-global": true
+          },
+          "pid": {
+            "type": "integer",
+            "x-cli-flag": "--pid",
+            "x-global": false
+          },
+          "project": {
+            "type": "string",
+            "x-cli-flag": "--project",
+            "x-global": false
+          },
+          "timeline": {
+            "type": "string",
+            "x-cli-flag": "--timeline",
+            "x-global": false
+          },
+          "segment": {
+            "type": "string",
+            "x-cli-flag": "--segment",
+            "x-global": false
+          },
+          "start_us": {
+            "type": "integer",
+            "x-cli-flag": "--start-us",
+            "x-global": false,
+            "description": "Integer microseconds. Command-specific absolute/relative semantics remain in the adapter guide."
+          }
+        },
+        "required": [
+          "pid",
+          "project",
+          "segment",
+          "start_us"
+        ],
+        "additionalProperties": false
+      },
+      "adapter": "capcut",
+      "mutates": true,
+      "outputSchema": {
+        "$ref": "../legacy-response.schema.json"
+      },
+      "execution": "version-pinned desktop adapter; native validation also applies",
+      "evidenceIndex": "../../acceptance/capcut.json",
+      "provenance": "recovered-internal"
+    },
+    {
+      "name": "editor.remove",
+      "command": [
+        "editor",
+        "remove"
+      ],
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "capcut_dir": {
+            "type": "string",
+            "x-cli-flag": "--capcut-dir",
+            "x-global": true
+          },
+          "timeout": {
+            "type": "integer",
+            "x-cli-flag": "--timeout",
+            "x-global": true
+          },
+          "pid": {
+            "type": "integer",
+            "x-cli-flag": "--pid",
+            "x-global": false
+          },
+          "project": {
+            "type": "string",
+            "x-cli-flag": "--project",
+            "x-global": false
+          },
+          "timeline": {
+            "type": "string",
+            "x-cli-flag": "--timeline",
+            "x-global": false
+          },
+          "segment": {
+            "type": "string",
+            "x-cli-flag": "--segment",
+            "x-global": false
+          }
+        },
+        "required": [
+          "pid",
+          "project",
+          "segment"
+        ],
+        "additionalProperties": false
+      },
+      "adapter": "capcut",
+      "mutates": true,
+      "outputSchema": {
+        "$ref": "../legacy-response.schema.json"
+      },
+      "execution": "version-pinned desktop adapter; native validation also applies",
+      "evidenceIndex": "../../acceptance/capcut.json",
+      "provenance": "recovered-internal"
+    },
+    {
+      "name": "editor.undo",
+      "command": [
+        "editor",
+        "undo"
+      ],
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "capcut_dir": {
+            "type": "string",
+            "x-cli-flag": "--capcut-dir",
+            "x-global": true
+          },
+          "timeout": {
+            "type": "integer",
+            "x-cli-flag": "--timeout",
+            "x-global": true
+          },
+          "pid": {
+            "type": "integer",
+            "x-cli-flag": "--pid",
+            "x-global": false
+          },
+          "project": {
+            "type": "string",
+            "x-cli-flag": "--project",
+            "x-global": false
+          },
+          "timeline": {
+            "type": "string",
+            "x-cli-flag": "--timeline",
+            "x-global": false
+          },
+          "steps": {
+            "type": "integer",
+            "x-cli-flag": "--steps",
+            "x-global": false
+          }
+        },
+        "required": [
+          "pid",
+          "project"
+        ],
+        "additionalProperties": false
+      },
+      "adapter": "capcut",
+      "mutates": true,
+      "outputSchema": {
+        "$ref": "../legacy-response.schema.json"
+      },
+      "execution": "version-pinned desktop adapter; native validation also applies",
+      "evidenceIndex": "../../acceptance/capcut.json",
+      "provenance": "recovered-internal"
+    },
+    {
+      "name": "editor.redo",
+      "command": [
+        "editor",
+        "redo"
+      ],
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "capcut_dir": {
+            "type": "string",
+            "x-cli-flag": "--capcut-dir",
+            "x-global": true
+          },
+          "timeout": {
+            "type": "integer",
+            "x-cli-flag": "--timeout",
+            "x-global": true
+          },
+          "pid": {
+            "type": "integer",
+            "x-cli-flag": "--pid",
+            "x-global": false
+          },
+          "project": {
+            "type": "string",
+            "x-cli-flag": "--project",
+            "x-global": false
+          },
+          "timeline": {
+            "type": "string",
+            "x-cli-flag": "--timeline",
+            "x-global": false
+          },
+          "steps": {
+            "type": "integer",
+            "x-cli-flag": "--steps",
+            "x-global": false
+          }
+        },
+        "required": [
+          "pid",
+          "project"
+        ],
+        "additionalProperties": false
+      },
+      "adapter": "capcut",
+      "mutates": true,
+      "outputSchema": {
+        "$ref": "../legacy-response.schema.json"
+      },
+      "execution": "version-pinned desktop adapter; native validation also applies",
+      "evidenceIndex": "../../acceptance/capcut.json",
+      "provenance": "recovered-internal"
+    },
+    {
+      "name": "editor.export",
+      "command": [
+        "editor",
+        "export"
+      ],
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "capcut_dir": {
+            "type": "string",
+            "x-cli-flag": "--capcut-dir",
+            "x-global": true
+          },
+          "timeout": {
+            "type": "integer",
+            "x-cli-flag": "--timeout",
+            "x-global": true
+          },
+          "pid": {
+            "type": "integer",
+            "x-cli-flag": "--pid",
+            "x-global": false
+          },
+          "project": {
+            "type": "string",
+            "x-cli-flag": "--project",
+            "x-global": false
+          },
+          "timeline": {
+            "type": "string",
+            "x-cli-flag": "--timeline",
+            "x-global": false
+          },
+          "output": {
+            "type": "string",
+            "x-cli-flag": "--output",
+            "x-global": false
+          },
+          "width": {
+            "type": "integer",
+            "x-cli-flag": "--width",
+            "x-global": false
+          },
+          "height": {
+            "type": "integer",
+            "x-cli-flag": "--height",
+            "x-global": false
+          },
+          "fps": {
+            "type": "number",
+            "x-cli-flag": "--fps",
+            "x-global": false
+          }
+        },
+        "required": [
+          "pid",
+          "project",
+          "timeline",
+          "output"
+        ],
+        "additionalProperties": false
+      },
+      "adapter": "capcut",
+      "mutates": true,
+      "outputSchema": {
+        "$ref": "../legacy-response.schema.json"
+      },
+      "execution": "version-pinned desktop adapter; native validation also applies",
+      "evidenceIndex": "../../acceptance/capcut.json",
+      "provenance": "recovered-internal"
+    },
+    {
+      "name": "editor.frame",
+      "command": [
+        "editor",
+        "frame"
+      ],
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "capcut_dir": {
+            "type": "string",
+            "x-cli-flag": "--capcut-dir",
+            "x-global": true
+          },
+          "timeout": {
+            "type": "integer",
+            "x-cli-flag": "--timeout",
+            "x-global": true
+          },
+          "pid": {
+            "type": "integer",
+            "x-cli-flag": "--pid",
+            "x-global": false
+          },
+          "project": {
+            "type": "string",
+            "x-cli-flag": "--project",
+            "x-global": false
+          },
+          "timeline": {
+            "type": "string",
+            "x-cli-flag": "--timeline",
+            "x-global": false
+          },
+          "output": {
+            "type": "string",
+            "x-cli-flag": "--output",
+            "x-global": false
+          },
+          "at_us": {
+            "type": "integer",
+            "x-cli-flag": "--at-us",
+            "x-global": false,
+            "description": "Integer microseconds. Command-specific absolute/relative semantics remain in the adapter guide."
+          },
+          "short_side": {
+            "type": "integer",
+            "x-cli-flag": "--short-side",
+            "x-global": false
+          }
+        },
+        "required": [
+          "pid",
+          "project",
+          "timeline",
+          "output",
+          "at_us"
+        ],
+        "additionalProperties": false
+      },
+      "adapter": "capcut",
+      "mutates": true,
+      "outputSchema": {
+        "$ref": "../legacy-response.schema.json"
+      },
+      "execution": "version-pinned desktop adapter; native validation also applies",
+      "evidenceIndex": "../../acceptance/capcut.json",
+      "provenance": "recovered-internal"
+    },
+    {
+      "name": "editor.preview",
+      "command": [
+        "editor",
+        "preview"
+      ],
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "capcut_dir": {
+            "type": "string",
+            "x-cli-flag": "--capcut-dir",
+            "x-global": true
+          },
+          "timeout": {
+            "type": "integer",
+            "x-cli-flag": "--timeout",
+            "x-global": true
+          },
+          "pid": {
+            "type": "integer",
+            "x-cli-flag": "--pid",
+            "x-global": false
+          },
+          "project": {
+            "type": "string",
+            "x-cli-flag": "--project",
+            "x-global": false
+          },
+          "timeline": {
+            "type": "string",
+            "x-cli-flag": "--timeline",
+            "x-global": false
+          },
+          "output": {
+            "type": "string",
+            "x-cli-flag": "--output",
+            "x-global": false
+          },
+          "width": {
+            "type": "integer",
+            "x-cli-flag": "--width",
+            "x-global": false
+          },
+          "height": {
+            "type": "integer",
+            "x-cli-flag": "--height",
+            "x-global": false
+          },
+          "fps": {
+            "type": "number",
+            "x-cli-flag": "--fps",
+            "x-global": false
+          },
+          "start_us": {
+            "type": "integer",
+            "x-cli-flag": "--start-us",
+            "x-global": false,
+            "description": "Integer microseconds. Command-specific absolute/relative semantics remain in the adapter guide."
+          },
+          "end_us": {
+            "type": "integer",
+            "x-cli-flag": "--end-us",
+            "x-global": false,
+            "description": "Integer microseconds. Command-specific absolute/relative semantics remain in the adapter guide."
+          }
+        },
+        "required": [
+          "pid",
+          "project",
+          "timeline",
+          "output",
+          "start_us",
+          "end_us"
+        ],
+        "additionalProperties": false
+      },
+      "adapter": "capcut",
+      "mutates": true,
+      "outputSchema": {
+        "$ref": "../legacy-response.schema.json"
+      },
+      "execution": "version-pinned desktop adapter; native validation also applies",
+      "evidenceIndex": "../../acceptance/capcut.json",
+      "provenance": "recovered-internal"
+    },
+    {
+      "name": "editor.add-audio",
+      "command": [
+        "editor",
+        "add-audio"
+      ],
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "capcut_dir": {
+            "type": "string",
+            "x-cli-flag": "--capcut-dir",
+            "x-global": true
+          },
+          "timeout": {
+            "type": "integer",
+            "x-cli-flag": "--timeout",
+            "x-global": true
+          },
+          "pid": {
+            "type": "integer",
+            "x-cli-flag": "--pid",
+            "x-global": false
+          },
+          "project": {
+            "type": "string",
+            "x-cli-flag": "--project",
+            "x-global": false
+          },
+          "timeline": {
+            "type": "string",
+            "x-cli-flag": "--timeline",
+            "x-global": false
+          },
+          "request_id": {
+            "type": "string",
+            "x-cli-flag": "--request-id",
+            "x-global": false
+          },
+          "input": {
+            "type": "string",
+            "x-cli-flag": "--input",
+            "x-global": false
+          },
+          "start_us": {
+            "type": "integer",
+            "x-cli-flag": "--start-us",
+            "x-global": false,
+            "description": "Integer microseconds. Command-specific absolute/relative semantics remain in the adapter guide."
+          },
+          "duration_us": {
+            "type": "integer",
+            "x-cli-flag": "--duration-us",
+            "x-global": false,
+            "description": "Integer microseconds. Command-specific absolute/relative semantics remain in the adapter guide."
+          },
+          "source_in_us": {
+            "type": "integer",
+            "x-cli-flag": "--source-in-us",
+            "x-global": false,
+            "description": "Integer microseconds. Command-specific absolute/relative semantics remain in the adapter guide."
+          },
+          "volume_linear": {
+            "type": "number",
+            "x-cli-flag": "--volume-linear",
+            "x-global": false
+          },
+          "gain_db": {
+            "type": "number",
+            "x-cli-flag": "--gain-db",
+            "x-global": false
+          },
+          "fade_in_us": {
+            "type": "integer",
+            "x-cli-flag": "--fade-in-us",
+            "x-global": false,
+            "description": "Integer microseconds. Command-specific absolute/relative semantics remain in the adapter guide."
+          },
+          "fade_out_us": {
+            "type": "integer",
+            "x-cli-flag": "--fade-out-us",
+            "x-global": false,
+            "description": "Integer microseconds. Command-specific absolute/relative semantics remain in the adapter guide."
+          }
+        },
+        "required": [
+          "pid",
+          "project",
+          "timeline",
+          "input",
+          "duration_us"
+        ],
+        "additionalProperties": false,
+        "allOf": [
+          {
+            "oneOf": [
+              {
+                "required": [
+                  "volume_linear"
+                ],
+                "not": {
+                  "anyOf": [
+                    {
+                      "required": [
+                        "gain_db"
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "required": [
+                  "gain_db"
+                ],
+                "not": {
+                  "anyOf": [
+                    {
+                      "required": [
+                        "volume_linear"
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "not": {
+                  "anyOf": [
+                    {
+                      "required": [
+                        "volume_linear"
+                      ]
+                    },
+                    {
+                      "required": [
+                        "gain_db"
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "adapter": "capcut",
+      "mutates": true,
+      "outputSchema": {
+        "$ref": "../legacy-response.schema.json"
+      },
+      "execution": "version-pinned desktop adapter; native validation also applies",
+      "evidenceIndex": "../../acceptance/capcut.json",
+      "provenance": "recovered-internal"
+    },
+    {
+      "name": "editor.captions-import",
+      "command": [
+        "editor",
+        "captions-import"
+      ],
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "capcut_dir": {
+            "type": "string",
+            "x-cli-flag": "--capcut-dir",
+            "x-global": true
+          },
+          "timeout": {
+            "type": "integer",
+            "x-cli-flag": "--timeout",
+            "x-global": true
+          },
+          "pid": {
+            "type": "integer",
+            "x-cli-flag": "--pid",
+            "x-global": false
+          },
+          "project": {
+            "type": "string",
+            "x-cli-flag": "--project",
+            "x-global": false
+          },
+          "timeline": {
+            "type": "string",
+            "x-cli-flag": "--timeline",
+            "x-global": false
+          },
+          "request_id": {
+            "type": "string",
+            "x-cli-flag": "--request-id",
+            "x-global": false
+          },
+          "input": {
+            "type": "string",
+            "x-cli-flag": "--input",
+            "x-global": false
+          },
+          "format": {
+            "type": "string",
+            "x-cli-flag": "--format",
+            "x-global": false,
+            "enum": [
+              "srt",
+              "json"
+            ]
+          },
+          "offset_us": {
+            "type": "integer",
+            "x-cli-flag": "--offset-us",
+            "x-global": false,
+            "description": "Integer microseconds. Command-specific absolute/relative semantics remain in the adapter guide."
+          },
+          "style": {
+            "type": "string",
+            "x-cli-flag": "--style",
+            "x-global": false
+          }
+        },
+        "required": [
+          "pid",
+          "project",
+          "timeline",
+          "input"
+        ],
+        "additionalProperties": false
+      },
+      "adapter": "capcut",
+      "mutates": true,
+      "outputSchema": {
+        "$ref": "../legacy-response.schema.json"
+      },
+      "execution": "version-pinned desktop adapter; native validation also applies",
+      "evidenceIndex": "../../acceptance/capcut.json",
+      "provenance": "recovered-internal"
+    },
+    {
+      "name": "editor.set-clip",
+      "command": [
+        "editor",
+        "set-clip"
+      ],
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "capcut_dir": {
+            "type": "string",
+            "x-cli-flag": "--capcut-dir",
+            "x-global": true
+          },
+          "timeout": {
+            "type": "integer",
+            "x-cli-flag": "--timeout",
+            "x-global": true
+          },
+          "pid": {
+            "type": "integer",
+            "x-cli-flag": "--pid",
+            "x-global": false
+          },
+          "project": {
+            "type": "string",
+            "x-cli-flag": "--project",
+            "x-global": false
+          },
+          "timeline": {
+            "type": "string",
+            "x-cli-flag": "--timeline",
+            "x-global": false
+          },
+          "request_id": {
+            "type": "string",
+            "x-cli-flag": "--request-id",
+            "x-global": false
+          },
+          "segment": {
+            "type": "string",
+            "x-cli-flag": "--segment",
+            "x-global": false
+          },
+          "patch": {
+            "type": "string",
+            "x-cli-flag": "--patch",
+            "x-global": false
+          }
+        },
+        "required": [
+          "pid",
+          "project",
+          "timeline",
+          "segment",
+          "patch"
+        ],
+        "additionalProperties": false
+      },
+      "adapter": "capcut",
+      "mutates": true,
+      "outputSchema": {
+        "$ref": "../legacy-response.schema.json"
+      },
+      "execution": "version-pinned desktop adapter; native validation also applies",
+      "evidenceIndex": "../../acceptance/capcut.json",
+      "provenance": "recovered-internal"
+    }
+  ],
+  "scope": "Argument schemas plus adapter runtime validation; descriptions do not expand native support."
+}

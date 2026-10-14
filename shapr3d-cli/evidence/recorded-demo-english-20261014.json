@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 2,
+  "passed": true,
+  "output": {
+    "path": "exports/shapr3d-cli-demo-english-20261014.mp4",
+    "sha256": "ec2324b32476923e33107190079f008a5defa39e1e25b72c158ca125b30395ac",
+    "bytes": 1677653,
+    "width": 1920,
+    "height": 1440,
+    "fps": 30,
+    "seconds": 56.0,
+    "decodedFrames": 1680
+  },
+  "source": {
+    "path": "outputs/full-build-visible-20261013/full-build.mp4",
+    "sha256": "0edd8f2650edf161416249ca87eb28159f5e45df160e158de096b68990eb5488",
+    "frames": 735,
+    "seconds": 49,
+    "fps": 15,
+    "cropBoundsInOutput": [
+      307,
+      0,
+      1305,
+      1020
+    ]
+  },
+  "presentation": {
+    "language": "English",
+    "introSeconds": 0,
+    "layout": "Native app above dark command footer",
+    "font": "Consolas 23 / 26 px",
+    "rawFootageSpeed": 1,
+    "verificationHoldSeconds": 7,
+    "receiptCount": 38,
+    "displayedNativeCommands": 28,
+    "cliDisplay": "PowerShell equivalents reconstructed from verified requests; not re-executed.",
+    "originalUiLanguage": "Chinese, unchanged original application pixels"
+  },
+  "checks": {
+    "decodeExitCode": 0,
+    "sourceUnchanged": true,
+    "allReceiptsMatch": true,
+    "geometryPassed": true,
+    "geometryChecks": 78,
+    "commandsFitWithoutTruncation": true,
+    "sourceRegionSsim": 0.997283,
+    "sourceRegionComparisonPassed": true,
+    "powershellTranscriptParseErrors": 0,
+    "cliCommandCount": 29
+  },
+  "visualReview": {
+    "passed": true,
+    "encodedSamplesReviewed": 13,
+    "coverage": "opening frame, all 12 stages, final verification hold",
+    "findings": [
+      "No intro/title card",
+      "Native app above command footer",
+      "All added labels in English",
+      "Full CLI syntax legible and not clipped",
+      "Styles match CapCut/Axure colors, font, and layout"
+    ]
+  },
+  "date": "2026-10-14",
+  "originalRecordingDate": "2026-10-13",
+  "documentation": "RECORDED-DEMO.md"
+}

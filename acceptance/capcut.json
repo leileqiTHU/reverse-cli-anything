@@ -1,0 +1,261 @@
+{
+  "schemaVersion": 1,
+  "adapter": "capcut",
+  "build": "9.5.0.4050",
+  "checklist": [
+    {
+      "id": "environment",
+      "assertion": "Pinned build, explicit paths, process and doctor; activation/editability checked separately."
+    },
+    {
+      "id": "request",
+      "assertion": "Correct identity and units; malformed requests rejected; JSON results and legacy compatibility retained."
+    },
+    {
+      "id": "receipt",
+      "assertion": "Operation state, ID/input collision, write serialization, timeout, late completion and no automatic mutation replay."
+    },
+    {
+      "id": "native-state",
+      "assertion": "Inspect actual before/after objects and preserve unrelated content."
+    },
+    {
+      "id": "persistence",
+      "assertion": "Save convergence and explicitly scoped reopen; distinguish same-session from cold startup."
+    },
+    {
+      "id": "artifact",
+      "assertion": "Native output and independent media/browser/geometry validation; absence of overwrite."
+    },
+    {
+      "id": "restoration",
+      "assertion": "Retain failures, restore previous user project or verified model parameters; no mouse input."
+    }
+  ],
+  "tools": [
+    {
+      "name": "capabilities",
+      "coverage": "not-run",
+      "evidence": [],
+      "scope": "No current native acceptance claim; see schema, adapter guide and offline tests."
+    },
+    {
+      "name": "version",
+      "coverage": "not-run",
+      "evidence": [],
+      "scope": "No current native acceptance claim; see schema, adapter guide and offline tests."
+    },
+    {
+      "name": "help",
+      "coverage": "not-run",
+      "evidence": [],
+      "scope": "No current native acceptance claim; see schema, adapter guide and offline tests."
+    },
+    {
+      "name": "probe",
+      "coverage": "not-run",
+      "evidence": [],
+      "scope": "No current native acceptance claim; see schema, adapter guide and offline tests."
+    },
+    {
+      "name": "media.frame",
+      "coverage": "not-run",
+      "evidence": [],
+      "scope": "No current native acceptance claim; see schema, adapter guide and offline tests."
+    },
+    {
+      "name": "media.preview",
+      "coverage": "not-run",
+      "evidence": [],
+      "scope": "No current native acceptance claim; see schema, adapter guide and offline tests."
+    },
+    {
+      "name": "convert-image",
+      "coverage": "not-run",
+      "evidence": [],
+      "scope": "No current native acceptance claim; see schema, adapter guide and offline tests."
+    },
+    {
+      "name": "project.create",
+      "coverage": "current-native",
+      "evidence": [
+        "evidence/upgrade-20261014.json"
+      ],
+      "scope": "Exact command executed in the dated bounded workflow; not every argument combination."
+    },
+    {
+      "name": "project.import-media",
+      "coverage": "current-native",
+      "evidence": [
+        "evidence/upgrade-20261014.json"
+      ],
+      "scope": "Exact command executed in the dated bounded workflow; not every argument combination."
+    },
+    {
+      "name": "project.list",
+      "coverage": "current-native",
+      "evidence": [
+        "evidence/upgrade-20261014.json"
+      ],
+      "scope": "Exact command executed in the dated bounded workflow; not every argument combination."
+    },
+    {
+      "name": "project.open",
+      "coverage": "current-native",
+      "evidence": [
+        "evidence/upgrade-20261014.json"
+      ],
+      "scope": "Exact command executed in the dated bounded workflow; not every argument combination."
+    },
+    {
+      "name": "project.close",
+      "coverage": "current-native",
+      "evidence": [
+        "evidence/upgrade-20261014.json"
+      ],
+      "scope": "Exact command executed in the dated bounded workflow; not every argument combination."
+    },
+    {
+      "name": "editor.sessions",
+      "coverage": "not-run",
+      "evidence": [],
+      "scope": "No current native acceptance claim; see schema, adapter guide and offline tests."
+    },
+    {
+      "name": "editor.inspect",
+      "coverage": "current-native",
+      "evidence": [
+        "evidence/upgrade-20261014.json"
+      ],
+      "scope": "Exact command executed in the dated bounded workflow; not every argument combination."
+    },
+    {
+      "name": "editor.add-video",
+      "coverage": "current-native",
+      "evidence": [
+        "evidence/upgrade-20261014.json"
+      ],
+      "scope": "Exact command executed in the dated bounded workflow; not every argument combination."
+    },
+    {
+      "name": "editor.add-track",
+      "coverage": "current-native",
+      "evidence": [
+        "evidence/upgrade-20261014.json"
+      ],
+      "scope": "Exact command executed in the dated bounded workflow; not every argument combination."
+    },
+    {
+      "name": "editor.add-timeline",
+      "coverage": "current-native",
+      "evidence": [
+        "evidence/upgrade-20261014.json"
+      ],
+      "scope": "Exact command executed in the dated bounded workflow; not every argument combination."
+    },
+    {
+      "name": "editor.switch-timeline",
+      "coverage": "current-native",
+      "evidence": [
+        "evidence/upgrade-20261014.json"
+      ],
+      "scope": "Exact command executed in the dated bounded workflow; not every argument combination."
+    },
+    {
+      "name": "editor.trim",
+      "coverage": "current-native",
+      "evidence": [
+        "evidence/upgrade-20261014.json"
+      ],
+      "scope": "Exact command executed in the dated bounded workflow; not every argument combination."
+    },
+    {
+      "name": "editor.split",
+      "coverage": "current-native",
+      "evidence": [
+        "evidence/upgrade-20261014.json"
+      ],
+      "scope": "Exact command executed in the dated bounded workflow; not every argument combination."
+    },
+    {
+      "name": "editor.move",
+      "coverage": "current-native",
+      "evidence": [
+        "evidence/upgrade-20261014.json"
+      ],
+      "scope": "Exact command executed in the dated bounded workflow; not every argument combination."
+    },
+    {
+      "name": "editor.remove",
+      "coverage": "current-native",
+      "evidence": [
+        "evidence/upgrade-20261014.json"
+      ],
+      "scope": "Exact command executed in the dated bounded workflow; not every argument combination."
+    },
+    {
+      "name": "editor.undo",
+      "coverage": "current-native",
+      "evidence": [
+        "evidence/upgrade-20261014.json"
+      ],
+      "scope": "Exact command executed in the dated bounded workflow; not every argument combination."
+    },
+    {
+      "name": "editor.redo",
+      "coverage": "current-native",
+      "evidence": [
+        "evidence/upgrade-20261014.json"
+      ],
+      "scope": "Exact command executed in the dated bounded workflow; not every argument combination."
+    },
+    {
+      "name": "editor.export",
+      "coverage": "current-native",
+      "evidence": [
+        "evidence/upgrade-20261014.json"
+      ],
+      "scope": "Exact command executed in the dated bounded workflow; not every argument combination."
+    },
+    {
+      "name": "editor.frame",
+      "coverage": "current-native",
+      "evidence": [
+        "evidence/upgrade-20261014.json"
+      ],
+      "scope": "Exact command executed in the dated bounded workflow; not every argument combination."
+    },
+    {
+      "name": "editor.preview",
+      "coverage": "current-native",
+      "evidence": [
+        "evidence/upgrade-20261014.json"
+      ],
+      "scope": "Exact command executed in the dated bounded workflow; not every argument combination."
+    },
+    {
+      "name": "editor.add-audio",
+      "coverage": "current-native",
+      "evidence": [
+        "evidence/upgrade-20261014.json"
+      ],
+      "scope": "Exact command executed in the dated bounded workflow; not every argument combination."
+    },
+    {
+      "name": "editor.captions-import",
+      "coverage": "current-native",
+      "evidence": [
+        "evidence/upgrade-20261014.json"
+      ],
+      "scope": "Exact command executed in the dated bounded workflow; not every argument combination."
+    },
+    {
+      "name": "editor.set-clip",
+      "coverage": "current-native",
+      "evidence": [
+        "evidence/upgrade-20261014.json"
+      ],
+      "scope": "Exact command executed in the dated bounded workflow; not every argument combination."
+    }
+  ]
+}

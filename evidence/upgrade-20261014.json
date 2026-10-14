@@ -1,0 +1,998 @@
+{
+  "schemaVersion": 1,
+  "passed": true,
+  "date": "2026-10-14",
+  "generatedAt": "2026-10-14T03:47:32.950957+00:00",
+  "mouseClicks": 0,
+  "adapters": {
+    "capcut": {
+      "passed": true,
+      "executedTools": [
+        "editor.add-audio",
+        "editor.add-timeline",
+        "editor.add-track",
+        "editor.add-video",
+        "editor.captions-import",
+        "editor.export",
+        "editor.frame",
+        "editor.inspect",
+        "editor.move",
+        "editor.preview",
+        "editor.redo",
+        "editor.remove",
+        "editor.set-clip",
+        "editor.split",
+        "editor.switch-timeline",
+        "editor.trim",
+        "editor.undo",
+        "project.close",
+        "project.create",
+        "project.import-media",
+        "project.list",
+        "project.open"
+      ],
+      "orchestrationAssertions": 6,
+      "workflowSteps": 33,
+      "fixtureAssertions": 3,
+      "checks": [
+        {
+          "name": "script verify_cli_workflow.py",
+          "passed": true
+        },
+        {
+          "name": "existing CLI workflow and reopen",
+          "passed": true
+        },
+        {
+          "name": "duplicate shared operation leaves native items unchanged",
+          "passed": true
+        },
+        {
+          "name": "edited items persist before render",
+          "passed": true
+        },
+        {
+          "name": "native export exists after adapter decode validation",
+          "passed": true
+        },
+        {
+          "name": "audio captions properties survive reopen",
+          "passed": true
+        }
+      ],
+      "reports": [
+        {
+          "path": "outputs/upgrade-20261014/capcut-clean-session/regression.json",
+          "sha256": "8224ca1f9c63b57b1eb4f75e43c40578e5499f7521a28bb33dab8452146f4ffc"
+        },
+        {
+          "path": "outputs/upgrade-20261014/capcut-clean-session/workflow.json",
+          "sha256": "027840a64a771e841dc6a8f776603110d7beca0ad66dc9c61ae2c79a0dc4024e"
+        },
+        {
+          "path": "outputs/upgrade-20261014/capcut-clean-session/fixture.json",
+          "sha256": "0df0f16ab2b13796104ce7e6c172fbd6822ea9e8609a4d60626ae753dbb0d377"
+        }
+      ],
+      "artifacts": [
+        {
+          "path": "outputs/upgrade-20261014/capcut-clean-session/native-final.mp4",
+          "bytes": 1661685,
+          "sha256": "011cd4f80c2cf8d85e94d7e875566f3bb9d831492038bf5b027aae85ba3ff3b7"
+        },
+        {
+          "path": "outputs/upgrade-20261014/capcut-clean-session/native-frame.png",
+          "bytes": 478369,
+          "sha256": "3400edfff33d4b8f2eae152651f314f94aaeabb7116d17adaad946822c8547a7"
+        },
+        {
+          "path": "outputs/upgrade-20261014/capcut-clean-session/native-preview.mp4",
+          "bytes": 884836,
+          "sha256": "a236d3bf2340ec8fab2c6801cdbd5f1aae7153115bf7152c7db978882b370934"
+        }
+      ],
+      "receiptCount": 53,
+      "receiptReferences": [
+        {
+          "path": ".reverse-cli/operations/capcut-native-684c23c5645046279c8036c01624a469.json",
+          "sha256": "9fd788d57c65a07f204a6bd9e3f833e4b7e0b12410952e29d23a9947845ab8e8"
+        },
+        {
+          "path": ".reverse-cli/operations/capcut-native-d9f81810d8e94e2793b34d004c35062d.json",
+          "sha256": "9f6c8699c43f84b2c7d95c0a1c21111400db41b490ae87450d0ef091ca7da128"
+        },
+        {
+          "path": ".reverse-cli/operations/capcut-native-8c543f6222724eb282b73ee34e8ed464.json",
+          "sha256": "d2ebde5ae9cc0f822bac4e8b3ea4de42a434be7aba4487723db9db95bb64a9e2"
+        },
+        {
+          "path": ".reverse-cli/operations/capcut-native-6e7c989881234f5ab847e1576c8ba0c9.json",
+          "sha256": "7318937bd9c6b160304c2ff3302d3bbb51f0a435a00b60f5cd115744bbeda94c"
+        },
+        {
+          "path": ".reverse-cli/operations/capcut-native-b417543c1b9e43cc84f3570f2a77e3bb.json",
+          "sha256": "6b8c2b7652bea2525748f3c4b7e372871befe5579a545edcd6dc33274863c9e4"
+        },
+        {
+          "path": ".reverse-cli/operations/capcut-native-property-126b929e0d0a48c59fd6c848e3f688e2.json",
+          "sha256": "9e2d6f050de241f06808a9b884e8c8011f02a58796c51f093a3181013c4488cd"
+        },
+        {
+          "path": ".reverse-cli/operations/capcut-native-77d69ca17e9b4838b87bde79432a47a5.json",
+          "sha256": "9f375c3e7a626f2349e40203c468a2957dbbefeb8bd76facaf830e6991d57821"
+        },
+        {
+          "path": ".reverse-cli/operations/capcut-native-property-126b929e0d0a48c59fd6c848e3f688e2.json",
+          "sha256": "9e2d6f050de241f06808a9b884e8c8011f02a58796c51f093a3181013c4488cd"
+        },
+        {
+          "path": ".reverse-cli/operations/capcut-native-c80fcdafa0f54caab01499e9e79709b2.json",
+          "sha256": "242a442d2e151911a450e52a775531e30b0e2f59d16202a668942e4938ba2e50"
+        },
+        {
+          "path": ".reverse-cli/operations/capcut-native-7cb0eb2f16a64221a10019806693f363.json",
+          "sha256": "2f80ef324944f6eedb701113cb572c926ba4e13b0c25d056ec2cdebe947e3482"
+        },
+        {
+          "path": ".reverse-cli/operations/capcut-native-30caea03d822433ab9b50a252869b716.json",
+          "sha256": "c3e836f75f093072287fafc2492f703efa2ac20ad47c4a283fe0fa976b2ff389"
+        },
+        {
+          "path": ".reverse-cli/operations/capcut-native-e4fbfc15eb974bb2a41a584f4c3e9f7e.json",
+          "sha256": "d3fa6cadbb7eb9c54a14b0e646c53981f034c8ee71bfc0f834cd078daca78dde"
+        },
+        {
+          "path": ".reverse-cli/operations/capcut-native-0a4966007585499f8fc16495ad1f4458.json",
+          "sha256": "7c45a353b228b922506691a98435cc54b69deef62f4ea991d5a684e0cee1c3d5"
+        },
+        {
+          "path": ".reverse-cli/operations/capcut-native-0253d3f71e3a434d8c50ec56edeaea43.json",
+          "sha256": "aa4b4c3e220b85e0d857235e597f106ef91a28546eddfa3bc1f62d8e55ab84cf"
+        },
+        {
+          "path": ".reverse-cli/operations/capcut-native-b1911227b48e4708867c80a3331b7211.json",
+          "sha256": "19f00b2dbe6c2225823afea1d8a050e0dffd709d4d756d8c274680e0d0d24d35"
+        },
+        {
+          "path": ".reverse-cli/operations/capcut-native-5abc7e86860a4bcfb7ce60ca183a455e.json",
+          "sha256": "40ace9c251b0287b49c26f0bcbfdd789746675964404ff9398ec32f039856f16"
+        },
+        {
+          "path": ".reverse-cli/operations/capcut-native-3303bfd8ae8448bba67d4d30c34c02ef.json",
+          "sha256": "ad0f465aae9feeb3e93e3f9d9ab7049df24249d9b2383753fa89278ab044264f"
+        },
+        {
+          "path": ".reverse-cli/operations/capcut-native-c77c2456ac6746d1a81bbe5e5b8d6b09.json",
+          "sha256": "7ea7987d0db3ca090d71d686b2f8f1f042086b99c56261db1900053df52f0318"
+        },
+        {
+          "path": ".reverse-cli/operations/capcut-native-172dfb1f3c7546a28948350a904c7733.json",
+          "sha256": "30b29c983222f580082efe3de91c7c95388bc77f894f7e7f62bbae46c95b7b3d"
+        },
+        {
+          "path": ".reverse-cli/operations/capcut-native-e5cd10b32326463c925cd73ee6df4229.json",
+          "sha256": "a8b9243721c62d6a42a99820821f9697667a58f10b82364f59d9afa2796aad5c"
+        },
+        {
+          "path": ".reverse-cli/operations/capcut-native-6f35c0fa20214ddbb6064830e44d382a.json",
+          "sha256": "eaf37ab0933c2c1b2b96a7dfcea24eec7be5728d3997ee076bfc87833aa50b54"
+        },
+        {
+          "path": ".reverse-cli/operations/capcut-native-3c6c4c08ca60495282fdf69c6e6c7a96.json",
+          "sha256": "cf064f2e1c228bf40841568c4856887fe38ac2395be810aea2361520222d5826"
+        },
+        {
+          "path": ".reverse-cli/operations/capcut-native-10311b575f7042c3a71c183cadb2973a.json",
+          "sha256": "bffd6405313e65b5806615879a85b891df55dd89983cde1f455e3e66026bfa64"
+        },
+        {
+          "path": ".reverse-cli/operations/capcut-regression-6dfea05ad5814312b430af4eda8c6610.json",
+          "sha256": "6560422a17c8bd735c973e8dccd5df0a3bfdb7beba4bed3824570adeb416c358"
+        },
+        {
+          "path": ".reverse-cli/operations/capcut-regression-a647026a9b7a4eccbd5830543c0ab662.json",
+          "sha256": "ba7805fb4e9cc3026de3f4c0b9e05031948e078d7b1917e6b84f4b5001f74757"
+        },
+        {
+          "path": ".reverse-cli/operations/capcut-regression-f0ef0b37db894b6b9066de9ee2678f1f.json",
+          "sha256": "194f7310e53b662e2ba1c3a1034e9fa42aa949b1069bc1e30f03de7f16063f38"
+        },
+        {
+          "path": ".reverse-cli/operations/capcut-regression-295ce8056a13493691776d0df6e40011.json",
+          "sha256": "8d53918b07c10a478d1bcf670fb151df4fdcf707b5239331a0b5127f9f389dfe"
+        },
+        {
+          "path": ".reverse-cli/operations/capcut-regression-6869f93b012b42399c4ebe2a2d240c18.json",
+          "sha256": "f60c0badc2e8314d46fc498218b9e19e39d7e1703a8d6dc1cc983c77075e1cd0"
+        },
+        {
+          "path": ".reverse-cli/operations/capcut-regression-e2c05e53b2f04c739d048abe591dc498.json",
+          "sha256": "07799ec37d365dc227c81548225555b317aa5555c9b228040ef88d6910e074e9"
+        },
+        {
+          "path": ".reverse-cli/operations/capcut-regression-5895722d6f24486e81cbb8ef9f3d8296.json",
+          "sha256": "5ac5a0f60bf9b7532b9f78f7aa60b87ccc3d7437537e6d7995d715dfe6490284"
+        },
+        {
+          "path": ".reverse-cli/operations/capcut-regression-c9437ab436e74d63a0550c77c0ff95ab.json",
+          "sha256": "e7e864ee89c441b12a365f7b67aad7f24d13efd074bdcff580d895e19dbf247e"
+        },
+        {
+          "path": ".reverse-cli/operations/capcut-regression-93baac80f5e94138b6d3192817f92e9d.json",
+          "sha256": "d8f65eb5219e9b7839572e8a3937a91d75ef671d85eee6502cfb9f0e51369180"
+        },
+        {
+          "path": ".reverse-cli/operations/capcut-regression-5be77213d0904a6b9cd7fc1442f84195.json",
+          "sha256": "493e2d4ea9c88d0e978ace9d6090889e0a2b5d823a0939439002d94fae04ce34"
+        },
+        {
+          "path": ".reverse-cli/operations/capcut-regression-c7db4a9001af49f587f57f66243f9635.json",
+          "sha256": "87924ea7c3c397685f9dbfb850e8933524f6e7413b4770f0bceffdc9fbf2bd2d"
+        },
+        {
+          "path": ".reverse-cli/operations/capcut-regression-21a7b0b88f854c0992c66210490064b2.json",
+          "sha256": "05095dc87aa7534dfa37b5cca88044673b1a3e96267b6ced545044af2e5ddbbf"
+        },
+        {
+          "path": ".reverse-cli/operations/capcut-regression-780022d40dad4b1e9ed2cd4339855050.json",
+          "sha256": "b449030f9a5d56dccef96f6ad52cc76e62336ca39b2c75a24ed380b4ae1ed4a3"
+        },
+        {
+          "path": ".reverse-cli/operations/capcut-regression-e21f42f552c049e4b6f92768d065fb9f.json",
+          "sha256": "7c9ed1408f62db973457f4151c232f98469d6bb03f0bf96d8a7be4f399408b07"
+        },
+        {
+          "path": ".reverse-cli/operations/capcut-regression-9cb5d19f6a534b0fbb7d9c60768543c4.json",
+          "sha256": "a9ca26aaf3c8be5492dc423ec23415ef5339ddb3e203debaae571ca1369005da"
+        },
+        {
+          "path": ".reverse-cli/operations/capcut-regression-dc0af6abf4264359a96489687d1b9178.json",
+          "sha256": "bfa3145dcaad404257bc209ff5e159638e55a9d3137a9f76a2af34f54d4dabd6"
+        },
+        {
+          "path": ".reverse-cli/operations/capcut-regression-4b3d2f17ea984f74a0a1260c0497297a.json",
+          "sha256": "c1d90292a8cbd89cad9bc99c314e6aac16343999f7b2e2895ee05d2bc5f9705f"
+        },
+        {
+          "path": ".reverse-cli/operations/capcut-regression-1ab1c00b2e664366b975f586a355f816.json",
+          "sha256": "cba988d01acdbad6b9b18584f7c1484ccaabb2cb754296d8654969cebd17171a"
+        },
+        {
+          "path": ".reverse-cli/operations/capcut-regression-e9146559fd1d478f8c1279b4d3be66b5.json",
+          "sha256": "7cfe9ebfac6d01d87e84eb8ec628882c0b913ec4e0bc516b0793e43bb1ec7650"
+        },
+        {
+          "path": ".reverse-cli/operations/capcut-regression-45145d8ecc2f4ecca6453e39bbbf4e58.json",
+          "sha256": "0432c5e23a6e40c488b8122bd1537f01b70dcb98a777d5e88007363df366e40e"
+        },
+        {
+          "path": ".reverse-cli/operations/capcut-regression-399eaa36f30f4f719407aa532b3120d0.json",
+          "sha256": "cd2f2a401fce8b4cb08bc28cd6b926bc3576cce239ca28a355991084ec4e2a01"
+        },
+        {
+          "path": ".reverse-cli/operations/capcut-regression-42ae86669cb94fa0b9f8d3ebca7e76d9.json",
+          "sha256": "629a876abc3ddd018faa3048f58bf0d92f8d656fa5e3de72d6f2972ff558459d"
+        },
+        {
+          "path": ".reverse-cli/operations/capcut-regression-a705e5d26e64488793422192f25cd0ef.json",
+          "sha256": "4e2ed4ecce476a05bb5eca29cbaf085dbac84946ff64ddd6c30011a16dc8b276"
+        },
+        {
+          "path": ".reverse-cli/operations/capcut-regression-9988eae993bb4dd38b9658b69b1cc805.json",
+          "sha256": "c195048896443e9bea186953fd6cb15aea16d7a12bc979a478a107b5118ea25f"
+        },
+        {
+          "path": ".reverse-cli/operations/capcut-regression-e57b91e058ff4c8989c47ae3571b42f9.json",
+          "sha256": "eacaee6a10f4a25fb9d07240c2de084d966e1cbd036bb2cc31722af315bb5ad5"
+        },
+        {
+          "path": ".reverse-cli/operations/capcut-regression-be7a0e1b497a4caeba0bba9ecd803e79.json",
+          "sha256": "8ffafec2fefe9cb071aa922dbce1c0865d9240b75b2b9f58d00e129b780f5c52"
+        },
+        {
+          "path": ".reverse-cli/operations/capcut-regression-acc72b1801574cd6b5b049c45df5bf8f.json",
+          "sha256": "4f31cf4642c25cb17a1cac686ca661b7d989b594ae26649ee43cf1d40b56d029"
+        },
+        {
+          "path": ".reverse-cli/operations/capcut-regression-db3713d223c94a62bbebce238af4f031.json",
+          "sha256": "57ff764d82465fc9cd513c92da956864349e4aaddd4b0471355197e585bd635c"
+        },
+        {
+          "path": ".reverse-cli/operations/capcut-regression-01aa015134fc4b7ba673268f95da1218.json",
+          "sha256": "c38c84cd9ff54387f2c437b93fe38b1760ab284e8322315acccf57c9b8f455a7"
+        },
+        {
+          "path": ".reverse-cli/operations/capcut-regression-e5b375b4b1e94aabb463edfca24aa3c0.json",
+          "sha256": "c22a91b57495bf2811ff0ada5c2546133ad8dfa411dc0487051fce755e21184b"
+        }
+      ],
+      "limits": []
+    },
+    "axure": {
+      "passed": true,
+      "executedTools": [
+        "export.html",
+        "inspect",
+        "interaction.get",
+        "interaction.set",
+        "launch",
+        "page.create",
+        "page.list",
+        "page.open",
+        "project.close",
+        "project.new",
+        "project.open",
+        "project.save",
+        "redo",
+        "status",
+        "undo",
+        "widget.bounds",
+        "widget.create"
+      ],
+      "orchestrationAssertions": 7,
+      "nativeAssertions": 29,
+      "browserAssertions": 14,
+      "checks": [
+        {
+          "name": "original document saved",
+          "passed": true
+        },
+        {
+          "name": "script acceptance_login.py",
+          "passed": true
+        },
+        {
+          "name": "native login acceptance",
+          "passed": true
+        },
+        {
+          "name": "script verify_login.mjs",
+          "passed": true
+        },
+        {
+          "name": "native HTML interaction acceptance",
+          "passed": true
+        },
+        {
+          "name": "shared receipts cover successful native calls",
+          "passed": true
+        },
+        {
+          "name": "original project restored",
+          "passed": true
+        }
+      ],
+      "reports": [
+        {
+          "path": "outputs/upgrade-20261014/axure-final/regression.json",
+          "sha256": "3394ddb81d34fd9dabad1722fbedf28079648c13cc57378adc4e25942ca4a6a6"
+        },
+        {
+          "path": "outputs/upgrade-20261014/axure-final/native.json",
+          "sha256": "950e8571589d3d50851112c891b656f23912afd7d75510be4ace8c616e3534ca"
+        },
+        {
+          "path": "outputs/upgrade-20261014/axure-final/browser.json",
+          "sha256": "df5b0b02f4dfd1a84ea3b041960ff8beeb7335d076d144f215f2677a43391a16"
+        }
+      ],
+      "artifacts": [
+        {
+          "path": "axure-cli/outputs/login-20261014-110437/login-form.rp",
+          "bytes": 66050,
+          "sha256": "011016bf1c483cc0b71843f07272bb9a8a0e58d987576520ff8b9624c78f88f6"
+        },
+        {
+          "path": "axure-cli/outputs/login-20261014-110437/html/login.html",
+          "bytes": 6061,
+          "sha256": "ec5691b3d9b2d6c1dc2742306e411d5c24fa04cb2efd9315222ef2c7d4f4f4ed"
+        }
+      ],
+      "receiptCount": 101,
+      "receiptReferences": [
+        {
+          "path": ".reverse-cli/operations/axure-native-9df905d5d44249fda9de013f682d2208.json",
+          "sha256": "36c12636cb26f9d7cb6da75410aa450195fb803bc7aa367a107f709833579e69"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-native-4303759f28954c7db9d6652f7d2d8627.json",
+          "sha256": "6cf2c6388eda1da1d77697087e8cb713fde4afea2d78435446f80bd4232d015a"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-native-e47c795f7b0b496298e8a216aa462c82.json",
+          "sha256": "c067e96cb5e14585d63b54c4928cc74e5ce4a6d06a604ed425d8dd42b43e78ff"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-a7418f4bf9f2466ba8c02cbfc93789a7.json",
+          "sha256": "2760d9f7e7de73e64ecdc621a1ba228feebe61cc4dbe9c35c3148fd508b7defc"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-f4ef2d00010941e18d864ac575f7d4fb.json",
+          "sha256": "1463898ec9d16519a605f76ede75451c38b18f12159515e65f4215d11468a703"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-f043215885834698afe89141b3d2bc74.json",
+          "sha256": "97debe79688daf1dfb08c738365cee0597f834da4f4abdc6a19e3bbb7c3855ab"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-fb7346ae842d41b28927b309db6b7b50.json",
+          "sha256": "872a8d627cc3b0ef219be96a89fd72f6289bcb97b208974489710e88074bf669"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-e56b5c553fd646c682ff7b328c5eb452.json",
+          "sha256": "b78187ee96322de2c4a9c37a91112fbc229cee0d09ae566616cfee5e213c31e6"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-37e56709bfe74b49930c07f608dd5b59.json",
+          "sha256": "46d36f0f27e04a965a6cb80d685bc11172ae8f0d224880be719aba79534c1f93"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-6577cd6f331843bcbe0c2141b643c4ec.json",
+          "sha256": "63deb4b2645ee7dfa7c421a86ffdbb2522885fe71450e686b2c2e7773f287639"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-30fc7c7ff1dd423484d8487d8e01161f.json",
+          "sha256": "43a8ca24a030246cef63becd773675343518c9b9efd04b78fb354aaa2aaa2d2a"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-f07dbe61d44a48a79cc68dbd81e9289e.json",
+          "sha256": "18f4da1789203e15af73317d94fa26c71cced46fad79acebc96c8e1104334dc6"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-cea6325f76104e339a13cf8eb6cc9428.json",
+          "sha256": "451303da9dfea136cd62a758e790e38bea60a10b4a6058a5a8c43004baee5ea3"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-f467cd5691304c0580f16765605efe3f.json",
+          "sha256": "7248b24301b1fe63d2326e5456e5d7c45aa804bf51137294dc81a45bf63ab19a"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-81b49a6977194778958b900866a44971.json",
+          "sha256": "8212773db350ed8b5f4d071883b4791ce3a1c797dc958bca5b40fb0615eb0dd6"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-80265cb5bbe94f80899e36e16a185a84.json",
+          "sha256": "74b13f6c65cbf7e9532a65afbe479910458b0833a5c3fc57ad985310ee810e97"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-795f98d4a0e943c8b70816d2c862b362.json",
+          "sha256": "cf24cf7ab8b2091db5c420beb1021b7c45bbacb13a7622105facda54f6c1453b"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-ec2ec03c0793466287e000cab06f89ef.json",
+          "sha256": "4160d2d60664f2cfd47075bf3e004a09e2fb9b5e7fb38343b89c3fe9825e75e2"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-90cec3cea8de47f19c036d1d9915dfef.json",
+          "sha256": "14310a065278d65bfa7e80453e97288fb67bcb43cf32406643dbd8026cf2821b"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-13b268e7827c43faa2c5ddd0d3b45f81.json",
+          "sha256": "599fe8aeb7818c54186061190b92aabcc831ff884ce29771a7a035feaae5b717"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-8f0ff238cf98428aa0f810bceb4dee3f.json",
+          "sha256": "2277e275fe29131c44dedd196ad040a8535460092bb3161694286a9a77ebb2ef"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-01dcfd46498b471389b3f58baa119a1e.json",
+          "sha256": "3277b5a591c2a15a64bc2f13811bbf979d896ba39b191c4983bd6cc1067f0666"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-d0cff84a542a400cb18e6ed628f07619.json",
+          "sha256": "47e82c6124af0f877ed6639174a37adb9977e86a31440f44575cd9d6c92008a5"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-9f6bd742a01644b0b2a6e6615acf36df.json",
+          "sha256": "14270b8b2144e2e7a6cb320f7c208d4210f34402c950ec84a46a418fdc25f898"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-4144be55e22f470ea39919f0f1813e46.json",
+          "sha256": "866b2ae0f6d94df0a7a274a643f347bbc5fd330735637e58e2cdb38e5cc8782c"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-ade10bd54430433eb5a36dd219bc9199.json",
+          "sha256": "20e6e34e4401afb10b0661dd2de16e35c7bd7220a396d73e7341f755e7d7c146"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-2b4ecc5256ab4056be15140ba500764e.json",
+          "sha256": "b3f30ebfe333d164d72e3647d2265fcfc695294584b5f3be2cdf910dc1c2598d"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-d9946926d5854c1aa61c001a3feb31a7.json",
+          "sha256": "3ee81a4cc1100ccc7fd4dfe2c599c86657b1d68243df4caad912fc79ef110c25"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-ec386472bd5b47909cd0f0b659ba1c3b.json",
+          "sha256": "e03df243e0e647a52c8dd804b4bce7ecabf40d19970cfbcfe78da16333d3c7c1"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-5d0339e0ba2049dd859d98dc32703aff.json",
+          "sha256": "e15173f76ca74a266577e5c37493fb3c3f286374b88e6aca9dcc29a1cafb103b"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-7a6b81ec597f4651bc2e95c4841631b5.json",
+          "sha256": "ad6855edc18251e0a8b8b1a3bca40f547ebb4a820f0247acbb60db0aba122b00"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-281e09c8586f45d18984bfaccd7afd19.json",
+          "sha256": "7a0525171f4132035bb2966df7dbff74257a6c32b3f35dfe3a5470d2dd3ad5fc"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-26e3857a208c4cdcbebd4368438757bb.json",
+          "sha256": "5084592fab6e82ee5b4b0ebb18d7d1c949ddfb817ad03ca03a02cbf43b878c5e"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-a98d55a05673404f949f11e971b16bdb.json",
+          "sha256": "d395f0526f80e545cddf209fb3ba3764da309b6360166cc9811fb16f9e94e4f3"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-eba2fffe1e6a46e392dac4b1915290e7.json",
+          "sha256": "be7adc802e86a0b84aa062fd72db519de40fa14995098ec009a5bf35c17edac5"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-de1ab88e80784cb092b18657facf0650.json",
+          "sha256": "bf9e4b58feb9e00aebf30e283f46369442e070c150331fd46a3aa5a7f8258e8a"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-830d75a104404edeacc4b9527deca2e7.json",
+          "sha256": "c306678100a355a679d76ce06d9ed51f18998a79ba0c497574f2f8ff6e64a496"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-0b6afd1d656e45ecac6361c5d9cfb4b2.json",
+          "sha256": "d549a90c419fb59b944631a1aba6910b665f74a8d09a5ab83b93629ceea5c9d1"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-ea4d6c1aac53488383147ac0d13e90f4.json",
+          "sha256": "a536e0c37ef53254a13ff9557cf5b180522043d9fa7608a250492fde39b2f101"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-f74196e948fc4816ac9f0afcaf754fb3.json",
+          "sha256": "1e0299e8f34628261573d96205f6329749f4640be34e07be4196f5054a3bb5d0"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-ef719173cd984f0495066438f3ea4578.json",
+          "sha256": "38c57013363e95452a2835003a0d6ba9d2b8d52ea89dcbccb822de77c3808e32"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-3598eddb1380458aa8f5d20d89cf2a72.json",
+          "sha256": "b944ff058940c6850f384a4ae63039de46cfc48a20caab79a99a95db65371bf3"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-4661730a81104745a9f487cef6e48340.json",
+          "sha256": "679652985617cda5290bc9df31759eb243ef8de6091d55288a96a9fca0631f6a"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-ecfcdba9005849b8bc8096fae80cef58.json",
+          "sha256": "e5d89269efb85a23a49312738a5145f94fcd063c2902702782a504c7da2ffd9c"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-06446530679543af97ef81f99ec725b9.json",
+          "sha256": "84646a5763eba56d34b2f86fc4c08814fc5084885072ebfcd69d7cf7f058cebc"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-2951946e54b940dab21c33ca424a3936.json",
+          "sha256": "6819641727f7a0d0e7ca2d21529eebd29e74487806f56fca23454e0ae20cf5d6"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-2ab052916cbf4cf083c7aa34d946141a.json",
+          "sha256": "2284d2f46e4c69d67b976813cac259697ad6d5c7d5617688c782310ea34290ef"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-a97191ebc4f94695b24fcbee736fae0e.json",
+          "sha256": "d49912d6283ecc63a3ce9e7e956f652ea7c3e23746b18e43ec481a626bf4d94a"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-4dbc2adc11cf41a0b465eb26900fc75c.json",
+          "sha256": "d301eee6450757be66f1b7857b7a782b118b80128ef5d57a908f6676635ec076"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-c8d34d3b0b184ff3b1c2810aea86490a.json",
+          "sha256": "a22555ff216c675fb3af1ea04e152bd46f30de13e23d2afaf48c0e0767bee3ec"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-16f44887604c47eb9b87140517f8bcf1.json",
+          "sha256": "90dd3c5693eaa9378bd9cd9d22589db2c653723c031defc05117f4c9069da56c"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-d39cf8c8d42d41b99995fb5996a4277c.json",
+          "sha256": "05d6d825bcc0b564552b186de2fd050e0abf58e40f7902e3d6b071d504b25dfc"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-b0460d7de1c5466697aff41db7b8fbe2.json",
+          "sha256": "e654f7ea345e1c96959d7fa1c328b2264a913990005e028a30f52f49126b198a"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-a67c676b1c084e7c8cc031fa63686d2a.json",
+          "sha256": "b6dacba9e7d68e8a63d8d48c92094141d88796142026dcdcad1996d5c32b9007"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-212ebac528af430ca30e9eb0e25be7fb.json",
+          "sha256": "dfae01a3667c5ee66ff45cc8d0768f2322b440eecab2970077f7b1532fce620d"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-277068f53cd0445da8de71a76698c914.json",
+          "sha256": "8f7707def27f654edeb623ff6cb5bc40c5c1772743c94d0d7c799b4b3a27403e"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-f14c354b07c144a3967f6b939d4b3b2c.json",
+          "sha256": "91a82ba5b1cedcba87d63ff9db205f0aaac189214cb30945d16bb2b621ba2db8"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-d9f9d7a4b3704373be33649d39a612ec.json",
+          "sha256": "94da25a6a3e9ccce34f4f0951fd921ffe1405c8335096f2913850eaddb2930b5"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-06a269caddc74d4cbadf6eb3ba0ca5e1.json",
+          "sha256": "96d0939900efdeb782f0c8ea89f5e24db9682fb94d721da7a63030df392efc55"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-c7fe31baa4da4b5680e07f7f0a4f6d73.json",
+          "sha256": "d5c1f0e709bcc14a820503bcd238eb8687f2170397cd84184f8da875bf7acc3e"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-39ee3c15d2a84aa89905b359c23b0167.json",
+          "sha256": "aa5ef54b820d95ebbf5b3a8713a308ab532827de33ff5099b80be143d6780956"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-96db82c63be740e5ac49fdc4ae4a7dc2.json",
+          "sha256": "a9f0e5ff4a8cb883437d8ed7f63a78c710a88c8a9b839f96db131a3cfd236ae6"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-dd22cd3b75a049f5a0ad41ed5533df5e.json",
+          "sha256": "b1710a3971647505c8b2db4dcc5c6fd9f330ff702f8b98313d618314d34dba49"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-fffc300fa9e443f4a49e35a2f3e7a430.json",
+          "sha256": "c0231622bda2592b3c8c1facf85a450f3433b7d8f158e7fbc78040d381e6f131"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-4b550cce26454f3ea946deee1de7b9ac.json",
+          "sha256": "c5674a0fa335dcb6a57c8a7978e0482c3e90e00a1999f536ecc855a521b26a00"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-2ff8be9490b44de99008ecb01feb89c4.json",
+          "sha256": "fa80837f13f686a1636a8fcbc201b23190dd4a9740c019dd1842fa5dcb8104c7"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-85649eefafbd41628fab715d119ae4cd.json",
+          "sha256": "5cb840a0a020d82314d4149a9f6c22fcee9bdd31e8583ad42a064fb85660528c"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-ee4b1e1920294c93a7f4fb7e61b8e176.json",
+          "sha256": "308d8fa736f39e9f5b18b38241a08481a7e5122d9275f619721f72b25f0a5566"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-a03f838a47004f83bbd79c0f673d40cc.json",
+          "sha256": "09cb434acf9b67823aca3fb18d9f467bba9d99ac5f45eeb6c63321cdaca16df5"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-247c81521a314f23adef24937c5fc41c.json",
+          "sha256": "e24f9d7929b0f3bc2e02d0b766785a0ce6b6ccfda78d63348e096bae51c5fd09"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-4a909063734d4f70af7cc1a607a2dcc1.json",
+          "sha256": "998efa1c3cdb93336bc7e82b58eb4b7dfe753eb35840828bcceb50e8ba003c2c"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-2a8c555ef918454c83c6b186d397e36e.json",
+          "sha256": "f009e9df2d872ecffbb3a96023cfa088409200d04ab9a83d9e5f4e9614f8f293"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-de7eab31adc043d49c70acf0a254f170.json",
+          "sha256": "a2581c0149cfa13c843bde3244e0e7b5de33653eaf9d4a3a6e02fc136e3bd229"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-1e0739ac010741a19bf6522a4a1de4a7.json",
+          "sha256": "b84403b7637f239ce8919fe1cd8242300c838197a44be331fc82c628faae73cc"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-bb4ed127117c4270ba0a95f51959914d.json",
+          "sha256": "76ceb2f8cb6fe264902149d503af7c1dc40956d07bb4798b604de947702cb7a9"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-ac7b7e8afea94ababb673b209068985b.json",
+          "sha256": "2f61e8ccca7ea77d696d5541512211e91185a0941eb6dfc39c6bb47b6e1ee17e"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-995012e05b744f51b9f9128c4058a280.json",
+          "sha256": "b5e3d2b36fdda2a718a6db2bbc68c76680df3d8467974bd6f5823b4f01876bee"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-3077eeceffa04ee8a43f6d60d0bf7cb8.json",
+          "sha256": "8ca3afeececad5b5387cb4b17e89706294e80b4b6802367f8134ab165b321073"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-30f509aeaec2430daf3559a3c4cdf2b7.json",
+          "sha256": "0d576ea2a7f3054950f3072473917a6013c3901d31e3d344ea73c87d34b13c87"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-c3419e3ede4a46fd84753e338b9927e5.json",
+          "sha256": "38c6de1e6a48f416f8aac700f66208b7996423aaf5f698a7126a885e45f26c5a"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-4302052e5fd84888a229940d3f32b715.json",
+          "sha256": "9e9d606220745246f850f4cc136c2ea80362af32e9975da3e8b0d5dea0419069"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-c3983483c5dd4013866f626255f13d0f.json",
+          "sha256": "1af67c2ae7f6dc4fa80728818c5718d45360b29fd60c90b964373f9ced616c77"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-afc69556b551474a85858876f2db1e5a.json",
+          "sha256": "888ccbd28d8772a8ec86f706bc337b9af7943fc8a3b57a43ced3e9aca1ab8d6e"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-b71683fea84e472c94f6a9c31fb0b54b.json",
+          "sha256": "32c053ab72bfeed33b88702a2ae938596fc181c58cd193b7dd604772f2421a48"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-7babc3d6111644909a1b782d22aa5c53.json",
+          "sha256": "ea6a2ca49480906ac2c524bd1e9d6d84438ea6208d2cc21a08ba8023232e91c2"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-9271ff566fca46a59834591a09edd484.json",
+          "sha256": "69e94fdbd96e5f4628dba92ba7548cf3ce08936bc702641482c2f74a2d703b23"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-2c76d060d75b42a0ac8b953b79a2cd20.json",
+          "sha256": "71bcb53a41121a263d96a6f9b096f4d89174b961712871c52a47c72d79948f13"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-7b4f1227c1c648698701b2d4b5b41897.json",
+          "sha256": "3e6a4a86ea0ca21e73cc9eadde846418b70911687a14d19e30a31368feb3ebc8"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-ea35226740e94a1fa14945ade55daac8.json",
+          "sha256": "ba003a5ce87b993fef240f989fccf4f398b8e5152b73f42fd95b92e3df00b58c"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-2e4c824adf5c403580946381c5436b7c.json",
+          "sha256": "26affc8a8d5fb682bcce8d14873502817e8ed53080ac0e2f4238c31184c0e998"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-ee5f2c4b04f64f48965acefe3fd9d226.json",
+          "sha256": "21315328274a5b31249f0ed8cf06d66bac1fe8aee90a55c36eb60f93d73a07c3"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-a83dc9d6e98c4230bcd7aca1747af90d.json",
+          "sha256": "20522a843e164b4543c6d60f6b984b84e01212f2c4231234c723e7dc9d781cd1"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-c3b385113acc48b78eaccf61ca207ffc.json",
+          "sha256": "546270509d9a0020915a211432f552ed81d1190b6077dbe0dbd3f3e44605b3bf"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-224a7d75106b468cb382a833e2ee5b3f.json",
+          "sha256": "642cf0a86a6d863b6ece5824f5c4197c5e82da67358552a5f2d8cd9517f0372a"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-8d6acd92152b41ec98257b2a2df200fb.json",
+          "sha256": "19396d6231b8efee6f95534804edab90292d91dc2abdfc9fb51b516a92d03276"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-e655f8d26ebd42b5a0661639c7f0684e.json",
+          "sha256": "b1622aec7c8003dfbc007605ef06600af6ada997b1612c7a4950bc22700e53fe"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-050c2577e5564f27a2cf3d4f0e269212.json",
+          "sha256": "d3c91af75c6aaccb6dd599a9df552d6276d8e5dfbeecf4f75dad339f09e4c77f"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-65e663ee90b84b76a4e06140066aa23f.json",
+          "sha256": "77de7d22701fea9409dd47a28654bc93e0558b3d67fa5d54c00486fc4f13a13d"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-911b6e710f904c768ca85669e2a7804a.json",
+          "sha256": "b089418721ae55b439f78e328168b5b92ec6b924404f33e44cffbe00665e5d5c"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-ffded8f564ac42b089b4477713dad8b9.json",
+          "sha256": "897631933639b349a9048f380fde6668bdb6af4e9f11dd12d902d1e2b82b601f"
+        },
+        {
+          "path": ".reverse-cli/operations/axure-regression-edc60dfab4144936b296f5b0bbc1cf5a.json",
+          "sha256": "cf18a1054aec137c272b3af706617c0702b2655bc70b860281508733a8edf610"
+        }
+      ],
+      "limits": []
+    },
+    "shapr3d": {
+      "passed": true,
+      "executedTools": [
+        "export-shapr",
+        "export-stl",
+        "history",
+        "history-set"
+      ],
+      "orchestrationAssertions": 9,
+      "geometryAssertions": 78,
+      "checks": [
+        {
+          "name": "verified demo has one -8 mm through-cut",
+          "passed": true
+        },
+        {
+          "name": "native staging remains on D",
+          "passed": true
+        },
+        {
+          "name": "original three-hole geometry",
+          "passed": true
+        },
+        {
+          "name": "native cut distance changed",
+          "passed": true
+        },
+        {
+          "name": "independent verifier detects changed non-through hole",
+          "passed": true
+        },
+        {
+          "name": "exported native geometry changed",
+          "passed": true
+        },
+        {
+          "name": "restored geometry acceptance",
+          "passed": true
+        },
+        {
+          "name": "restored STL byte-identical to backup",
+          "passed": true
+        },
+        {
+          "name": "native history restored",
+          "passed": true
+        }
+      ],
+      "reports": [
+        {
+          "path": "outputs/upgrade-20261014/shapr3d/regression.json",
+          "sha256": "0600134c075db994761a040e32a5a7367154d2dcdfb82a7a576e98307fa19586"
+        },
+        {
+          "path": "outputs/upgrade-20261014/shapr3d/geometry-restored.json",
+          "sha256": "2f1968af610ba3b8670276eef195bfc06ebd1f75d59a1da0d70dce5eab9ecd1a"
+        }
+      ],
+      "artifacts": [
+        {
+          "path": "outputs/upgrade-20261014/shapr3d/restored.stl",
+          "bytes": 9484,
+          "sha256": "c9a350af5941ecd2e3618d67f7462c1d9b0474bb540162725d529df82e0c467f"
+        },
+        {
+          "path": "outputs/upgrade-20261014/shapr3d/restored.shapr",
+          "bytes": 863090,
+          "sha256": "58cf1abece140d610319129c5aa938bb78a7314a9b98bae52aa1af3318745b94"
+        }
+      ],
+      "receiptCount": 11,
+      "receiptReferences": [
+        {
+          "path": ".reverse-cli/operations/shapr3d-native-1da7bb7b8f304dbf9da9bd89433b4e2c.json",
+          "sha256": "2a8a2d9f9b184adeeb8284261f32055d4b572d6178c8238ea83b743f521ebb42"
+        },
+        {
+          "path": ".reverse-cli/operations/shapr3d-native-6448d0feeeca4bcfa925bec0774d1530.json",
+          "sha256": "cb1423685beedd95ce71acf8de951279bbe359b8ba503f7f017866b6f543bfce"
+        },
+        {
+          "path": ".reverse-cli/operations/shapr3d-native-18838bf0660443108f0a0c7aa8319b12.json",
+          "sha256": "3b6bda9f947256473aca1dead0e456d951fd0b98ab0822730e742aed7665f18b"
+        },
+        {
+          "path": ".reverse-cli/operations/shapr3d-native-48c44a2845da414ba7ba40820ec02d52.json",
+          "sha256": "edaf1875e1ff3d555aac9587a514969f4fa1efbee54124291a8e42e540526306"
+        },
+        {
+          "path": ".reverse-cli/operations/shapr3d-native-321d1cb239b546dc99ab4448e4014f72.json",
+          "sha256": "c53cb8ce7b378c4171e4d27e333c260a525a1c9bf454e7faaa3671b25508f064"
+        },
+        {
+          "path": ".reverse-cli/operations/shapr3d-native-af84506c24d04988b913f0b0aed89793.json",
+          "sha256": "cda387a66e3514c87dcca89c01ed8fad8e958fa8ae407e93fd57bfe94fee430e"
+        },
+        {
+          "path": ".reverse-cli/operations/shapr3d-native-259caf082ffe4f2599fcae213f0bd88c.json",
+          "sha256": "0202ba7b2fc8cd5fd1e1845264408294c0505a394374474aaff2564abdd3b96b"
+        },
+        {
+          "path": ".reverse-cli/operations/shapr3d-native-63589fd823964ffe813541ff14a78baf.json",
+          "sha256": "89fc43f793da5ea4d0f14a3ec71bf70cf5381db1b4bf0db4b0d4f0f912ad38e7"
+        },
+        {
+          "path": ".reverse-cli/operations/shapr3d-native-148e7d7107f24f1a8599fb67001a7d2d.json",
+          "sha256": "6776b373a2c57eef01f48921353628912918fa5494dc2ff61b26f1a8a6704264"
+        },
+        {
+          "path": ".reverse-cli/operations/shapr3d-native-cf6039cb383249d6aeeca78108746fd3.json",
+          "sha256": "bc2ff7739d8ca02aebca57a61c9a75bedef448101a140481c09e6ab159c66923"
+        },
+        {
+          "path": ".reverse-cli/operations/shapr3d-native-b00078289c624abb977d830e6b9c69a2.json",
+          "sha256": "6ce6e7b28d5147d74af528c6c003de7d482903a2207355bd00257632acb7e494"
+        }
+      ],
+      "limits": [
+        "Current visible plate only; no fresh same-session or cold-reopen claim."
+      ]
+    }
+  },
+  "tests": {
+    "shared": {
+      "run": 28,
+      "passed": 28,
+      "skipped": [],
+      "reportSha256": "8c5d8a45d153875e59ce3d0cce2b8bb3d0b63246e921990f8513022ab1c77794"
+    },
+    "capcut": {
+      "run": 101,
+      "passed": 97,
+      "skipped": [
+        {
+          "test": "test_01_identity_and_mismatch_refusal (test_capcut_editor.EditorTests.test_01_identity_and_mismatch_refusal)",
+          "reason": "Set CAPCUT_TEST_PID and CAPCUT_TEST_PROJECT to an open dedicated test draft"
+        },
+        {
+          "test": "test_02_invalid_range_does_not_edit (test_capcut_editor.EditorTests.test_02_invalid_range_does_not_edit)",
+          "reason": "Set CAPCUT_TEST_PID and CAPCUT_TEST_PROJECT to an open dedicated test draft"
+        },
+        {
+          "test": "test_03_add_video_existing_track (test_capcut_editor.EditorTests.test_03_add_video_existing_track)",
+          "reason": "Set CAPCUT_TEST_PID and CAPCUT_TEST_PROJECT to an open dedicated test draft"
+        },
+        {
+          "test": "test_04_create_track_with_unicode_media (test_capcut_editor.EditorTests.test_04_create_track_with_unicode_media)",
+          "reason": "Set CAPCUT_TEST_PID and CAPCUT_TEST_PROJECT to an open dedicated test draft"
+        }
+      ],
+      "reportSha256": "c6b90d288f376e61142393570e88de42c7b0135e8fff6701ba3cf6aa57c58e46"
+    }
+  },
+  "limits": [
+    "Current command execution is not exhaustive parameter coverage. Historical and untested commands are separated.",
+    "Shared receipt completion is not independent native state/persistence/artifact proof.",
+    "Existing interpreter installation on C: was reused; new dependencies, caches, outputs and native staging used D:."
+  ],
+  "portableSmoke": {
+    "passed": true,
+    "checks": 5,
+    "scope": "Discovery, original JSON entry points, schema generation and PowerShell launcher; no native project changes. No local.settings.json, native runtime state or root compatibility junctions copied."
+  },
+  "doctors": {
+    "capcut": {
+      "passed": true,
+      "checks": 12,
+      "nativeReadiness": "not-probed"
+    },
+    "axure": {
+      "passed": true,
+      "checks": 9,
+      "nativeReadiness": "not-probed"
+    },
+    "shapr3d": {
+      "passed": true,
+      "checks": 10,
+      "nativeReadiness": "not-probed"
+    }
+  },
+  "incidents": [
+    {
+      "adapter": "axure",
+      "finding": "Cold launch readiness could outlast a three-second status wait. Repeated only read-only readiness probes; exact late request journal resolved the earlier unknown result."
+    },
+    {
+      "adapter": "capcut",
+      "finding": "One add-audio worker timeout occurred before mutation submission: worker exited, native write journal absent and fresh state unchanged. Retained failed receipt and verified resolution; no blind replay."
+    },
+    {
+      "adapter": "capcut",
+      "finding": "Native export FINISH-page automatic AI crop hid text tracks. Exact content guard rejected the first output. An intermediate completed render lacked captions and failed independent fixture acceptance. Scoped project/thread-bound suppression now prevents the secondary crop, with actual suppression events and visible EN/ZH subtitles in the final regression."
+    },
+    {
+      "adapter": "capcut",
+      "finding": "An older background crop export blocked a later request. Native cancel did not confirm completion. Backed up the dedicated test draft, restarted the application and retained unknown/failure evidence. Fresh full regression passed; original user project was reopened."
+    }
+  ]
+}

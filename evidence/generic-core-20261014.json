@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 1,
+  "project": "reverse-cli-anything",
+  "date": "2026-10-14",
+  "generatedAt": "2026-10-14T04:22:38.468402+00:00",
+  "passed": true,
+  "scope": "Generic framework decoupling; no fresh native editing workflow was run.",
+  "core": {
+    "core": {
+      "passed": true,
+      "run": 31,
+      "passedTests": 31,
+      "skipped": [],
+      "source": {
+        "path": "outputs/generic-core-20261014/core-tests.json",
+        "sha256": "7e397253aadef0de8c4068cec2d6745dfdb909166e63b17d6b2b1f32fb860e92"
+      }
+    },
+    "isolatedSetup": {
+      "passed": true,
+      "checks": 11,
+      "commands": [
+        [
+          "tools/setup.py"
+        ],
+        [
+          "doctor"
+        ],
+        [
+          "list"
+        ],
+        [
+          "init",
+          "fresh-target",
+          "--output",
+          "D:\\Caches\\reverse-cli-anything\\core-only-0f9swll3\\fresh-target-cli"
+        ],
+        [
+          "register",
+          "D:\\Caches\\reverse-cli-anything\\core-only-0f9swll3\\fresh-target-cli\\adapter.json"
+        ],
+        [
+          "tools",
+          "fresh-target"
+        ],
+        [
+          "call",
+          "fresh-target",
+          "status",
+          "--args",
+          "{}",
+          "--operation-id",
+          "first"
+        ],
+        [
+          "call",
+          "fresh-target",
+          "status",
+          "--args",
+          "{}",
+          "--operation-id",
+          "first"
+        ],
+        [
+          "operation",
+          "get",
+          "first"
+        ],
+        [
+          "list"
+        ],
+        [
+          "reverse-cli-anything.ps1",
+          "list"
+        ]
+      ],
+      "source": {
+        "path": "outputs/generic-core-20261014/portable-smoke.json",
+        "sha256": "c02a6b46a8ad74d8c3f001c3200f427058362b3c4a1eea40e3767f50a20be7d8"
+      }
+    },
+    "newTargetContract": {
+      "passed": true,
+      "adapters": 1,
+      "tools": 1,
+      "source": {
+        "path": "outputs/generic-core-20261014/new-target-contract.json",
+        "sha256": "fe81fa6854cddddde3af6b25f27e434d3a4781dd40889dc3a21cf34ea08de1d7"
+      }
+    }
+  },
+  "optionalExampleCompatibility": {
+    "example-compat": {
+      "passed": true,
+      "run": 28,
+      "passedTests": 28,
+      "skipped": [],
+      "source": {
+        "path": "outputs/generic-core-20261014/example-compat-tests.json",
+        "sha256": "164007c0c275030beb12b8c3d441a62867d58290c63529117d33f36d4a6bfba7"
+      }
+    },
+    "capcut": {
+      "passed": true,
+      "run": 101,
+      "passedTests": 97,
+      "skipped": [
+        {
+          "test": "test_01_identity_and_mismatch_refusal (test_capcut_editor.EditorTests.test_01_identity_and_mismatch_refusal)",
+          "reason": "Set CAPCUT_TEST_PID and CAPCUT_TEST_PROJECT to an open dedicated test draft"
+        },
+        {
+          "test": "test_02_invalid_range_does_not_edit (test_capcut_editor.EditorTests.test_02_invalid_range_does_not_edit)",
+          "reason": "Set CAPCUT_TEST_PID and CAPCUT_TEST_PROJECT to an open dedicated test draft"
+        },
+        {
+          "test": "test_03_add_video_existing_track (test_capcut_editor.EditorTests.test_03_add_video_existing_track)",
+          "reason": "Set CAPCUT_TEST_PID and CAPCUT_TEST_PROJECT to an open dedicated test draft"
+        },
+        {
+          "test": "test_04_create_track_with_unicode_media (test_capcut_editor.EditorTests.test_04_create_track_with_unicode_media)",
+          "reason": "Set CAPCUT_TEST_PID and CAPCUT_TEST_PROJECT to an open dedicated test draft"
+        }
+      ],
+      "source": {
+        "path": "outputs/generic-core-20261014/capcut-tests.json",
+        "sha256": "d5d3e77b831c0c1a816c697199b80977aef177874e32fa00b7c5a3fb599345a4"
+      }
+    },
+    "catalog": {
+      "passed": true,
+      "tools": 73,
+      "scope": "Saved tool catalogs still match maintained example parsers; this is not fresh native execution coverage."
+    }
+  },
+  "limits": [
+    "The isolated copy excludes showcase code and target dependencies; target applications installed elsewhere on the host were not accessed by this smoke test.",
+    "The new adapter is a synthetic infrastructure scaffold, not a recovered software interface.",
+    "Native acceptance assertions remain adapter-specific; the generic checker validates completeness and evidence hashes.",
+    "Existing Python on C: was reused. New code, caches and reports are on D:."
+  ]
+}

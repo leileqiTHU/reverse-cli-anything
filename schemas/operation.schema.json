@@ -1,0 +1,100 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Durable reverse-cli operation receipt v1",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "operationId",
+    "adapter",
+    "request",
+    "requestDigest",
+    "state",
+    "ok",
+    "createdAt",
+    "updatedAt",
+    "nativeEvidence",
+    "verification"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "operationId": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9_.-]{0,95}$"
+    },
+    "adapter": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9-]{0,63}$"
+    },
+    "request": {
+      "type": "object",
+      "required": [
+        "adapter",
+        "argv"
+      ],
+      "properties": {
+        "adapter": {
+          "type": "string"
+        },
+        "argv": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "requestDigest": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "state": {
+      "enum": [
+        "not-submitted",
+        "running",
+        "completed",
+        "partially-applied",
+        "unknown"
+      ]
+    },
+    "ok": {
+      "type": "boolean"
+    },
+    "createdAt": {
+      "type": "string"
+    },
+    "updatedAt": {
+      "type": "string"
+    },
+    "nativeEvidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "kind",
+          "path"
+        ]
+      }
+    },
+    "verification": {
+      "type": "object",
+      "required": [
+        "nativeState",
+        "persistence",
+        "artifact"
+      ],
+      "properties": {
+        "nativeState": {
+          "type": "boolean"
+        },
+        "persistence": {
+          "type": "boolean"
+        },
+        "artifact": {
+          "type": "boolean"
+        }
+      }
+    }
+  }
+}

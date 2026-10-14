@@ -1,0 +1,9 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://reverse-cli.local/schemas/legacy-response.schema.json",
+  "title": "Adapter response; domain result remains adapter-specific",
+  "type": "object",
+  "anyOf": [{"required": ["ok"]}, {"required": ["ready", "session"]}],
+  "properties": {"ok": {"type": "boolean"}, "ready": {"type": "boolean"}, "session": {"type": "string"}, "result": {}, "error": {}},
+  "additionalProperties": true
+}

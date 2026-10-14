@@ -1,0 +1,387 @@
+{
+  "version": "11.0.0.4150",
+  "assembly": "D:\\Apps\\Axure\\Axure RP 11\\AxureRP11.dll",
+  "sha256": "dae5748f6be3e69c063ef117bab0b400586d94adf119f5a9ba260df59dc4e4a7",
+  "methodSignatures": [
+    {
+      "type": "W30.M3m",
+      "method": "vRo",
+      "token": "0x06000620",
+      "returns": "W30.M3m",
+      "parameters": []
+    },
+    {
+      "type": "W30.M3m",
+      "method": "XIXf",
+      "token": "0x06000637",
+      "returns": "HNR1.LNRH",
+      "parameters": []
+    },
+    {
+      "type": "W30.M3m",
+      "method": "nIXw",
+      "token": "0x06000639",
+      "returns": "nJhk.XJhE",
+      "parameters": []
+    },
+    {
+      "type": "W30.M3m",
+      "method": "OpenDocument",
+      "token": "0x0600064C",
+      "returns": "System.Void",
+      "parameters": [
+        {
+          "type": "System.String",
+          "name": "filename",
+          "isOptional": false
+        },
+        {
+          "type": "System.Boolean",
+          "name": "skipUpgradeWarning",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "type": "W30.M3m",
+      "method": "vImH",
+      "token": "0x0600066E",
+      "returns": "System.Void",
+      "parameters": [
+        {
+          "type": "Axure.Platform.ObjectPersistanceContext.DesignDocumentType",
+          "name": " ",
+          "isOptional": false
+        },
+        {
+          "type": "System.Boolean",
+          "name": " ",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "type": "W30.M3m",
+      "method": "CloseClient",
+      "token": "0x060006B2",
+      "returns": "System.Void",
+      "parameters": []
+    },
+    {
+      "type": "W30.M3m",
+      "method": "CommitOuterObject",
+      "token": "0x060006B9",
+      "returns": "System.Void",
+      "parameters": [
+        {
+          "type": "System.Boolean",
+          "name": "clearEditors",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "type": "R7G.IPz",
+      "method": "c7B",
+      "token": "0x060009FE",
+      "returns": "GSri.DSrC",
+      "parameters": [
+        {
+          "type": "mbkg.Bbk3",
+          "name": " ",
+          "isOptional": false
+        },
+        {
+          "type": "System.Guid",
+          "name": " ",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "type": "R7G.IPz",
+      "method": "G7V",
+      "token": "0x060009FF",
+      "returns": "GSri.DSrC",
+      "parameters": [
+        {
+          "type": "HNR1.LNRH",
+          "name": " ",
+          "isOptional": false
+        },
+        {
+          "type": "System.Guid",
+          "name": " ",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "type": "R7G.IPz",
+      "method": "Generate",
+      "token": "0x06000A03",
+      "returns": "System.Void",
+      "parameters": [
+        {
+          "type": "HNR1.LNRH",
+          "name": "file",
+          "isOptional": false
+        },
+        {
+          "type": "GSri.DSrC",
+          "name": "gc",
+          "isOptional": false
+        },
+        {
+          "type": "mbkg.Bbk3",
+          "name": "client",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "type": "oJFj.lJFF",
+      "method": "zJFb",
+      "token": "0x06006E4D",
+      "returns": "System.Boolean",
+      "parameters": []
+    },
+    {
+      "type": "oJFj.lJFF",
+      "method": "Cancel",
+      "token": "0x06006E4F",
+      "returns": "oJFj.lJFF",
+      "parameters": [
+        {
+          "type": "TbDj.FbDF",
+          "name": "exception",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "type": "oJFj.lJFF",
+      "method": "Finish",
+      "token": "0x06006E50",
+      "returns": "oJFj.lJFF",
+      "parameters": [
+        {
+          "type": "TbDj.FbDF",
+          "name": "exception",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "type": "OJF5.cJFt",
+      "method": ".ctor",
+      "token": "0x06006E5B",
+      "returns": "System.Void",
+      "parameters": [
+        {
+          "type": "LSr8.GSrn",
+          "name": " ",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "type": "OJF5.cJFt",
+      "method": "Generate",
+      "token": "0x06006E72",
+      "returns": "oJFj.lJFF",
+      "parameters": [
+        {
+          "type": "HNR1.LNRH",
+          "name": "file",
+          "isOptional": false
+        },
+        {
+          "type": "ebXn.GbXY`1[[System.Guid]]",
+          "name": "pageIdsToGenerate",
+          "isOptional": true
+        },
+        {
+          "type": "System.Collections.Generic.Dictionary`2[[System.String],[System.String]]",
+          "name": "googleFonts",
+          "isOptional": true
+        },
+        {
+          "type": "System.Collections.Generic.List`1[[System.String]]",
+          "name": "sketchFonts",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "type": "HNR1.LNRH",
+      "method": "DNET",
+      "token": "0x0600895B",
+      "returns": "nJhk.XJhE",
+      "parameters": []
+    },
+    {
+      "type": "HNR1.LNRH",
+      "method": "Save",
+      "token": "0x06008973",
+      "returns": "System.Void",
+      "parameters": []
+    },
+    {
+      "type": "HNR1.LNRH",
+      "method": "INR4",
+      "token": "0x0600897A",
+      "returns": "System.Boolean",
+      "parameters": [
+        {
+          "type": "System.String",
+          "name": " ",
+          "isOptional": false
+        },
+        {
+          "type": "System.String&",
+          "name": " ",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "type": "HNR1.LNRH",
+      "method": "Load",
+      "token": "0x0600897D",
+      "returns": "System.Boolean",
+      "parameters": [
+        {
+          "type": "System.String",
+          "name": "fileName",
+          "isOptional": false
+        },
+        {
+          "type": "System.String&",
+          "name": "errorMessage",
+          "isOptional": false
+        },
+        {
+          "type": "System.Boolean",
+          "name": "fullConvert",
+          "isOptional": true
+        },
+        {
+          "type": "Axure.IO.AccessMode",
+          "name": "mode",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "type": "HNR1.LNRH",
+      "method": "Close",
+      "token": "0x06008999",
+      "returns": "System.Void",
+      "parameters": []
+    },
+    {
+      "type": "HNR1.LNRH",
+      "method": "Load",
+      "token": "0x060089B5",
+      "returns": "nJhk.XJhE",
+      "parameters": [
+        {
+          "type": "System.Boolean",
+          "name": "resetIds",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "type": "LSr8.GSrn",
+      "method": ".ctor",
+      "token": "0x0600A607",
+      "returns": "System.Void",
+      "parameters": [
+        {
+          "type": "HtZf.dtZ8",
+          "name": " ",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "type": "LSr8.GSrn",
+      "method": ".ctor",
+      "token": "0x0600A608",
+      "returns": "System.Void",
+      "parameters": [
+        {
+          "type": "System.Guid",
+          "name": " ",
+          "isOptional": false
+        },
+        {
+          "type": "System.Guid",
+          "name": " ",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "type": "LSr8.GSrn",
+      "method": "HSFG",
+      "token": "0x0600A60C",
+      "returns": "System.Void",
+      "parameters": [
+        {
+          "type": "System.String",
+          "name": " ",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "type": "LSr8.GSrn",
+      "method": "ESFS",
+      "token": "0x0600A612",
+      "returns": "System.Void",
+      "parameters": [
+        {
+          "type": "System.Boolean",
+          "name": " ",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "type": "LSr8.GSrn",
+      "method": "qSFt",
+      "token": "0x0600A613",
+      "returns": "System.String",
+      "parameters": []
+    },
+    {
+      "type": "LSr8.GSrn",
+      "method": "jSFg",
+      "token": "0x0600A617",
+      "returns": "System.Void",
+      "parameters": [
+        {
+          "type": "System.Boolean",
+          "name": " ",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "type": "LSr8.GSrn",
+      "method": "bSFE",
+      "token": "0x0600A618",
+      "returns": "System.Collections.Generic.IEnumerable",
+      "parameters": []
+    }
+  ],
+  "evidence": "ILSpy targeted static decompilation, no runtime execution by this subagent",
+  "limits": [
+    "Obfuscator control-flow junk and encrypted string constants present",
+    "No runtime validation or target mutation performed",
+    "REA canonical managed parser overflow recorded separately by parent"
+  ]
+}

@@ -1,0 +1,192 @@
+[
+  {
+    "Type": "JBU6.hBUW",
+    "Member": "06001DE9 JBU6.hBUW..ctor",
+    "Token": 100670953
+  },
+  {
+    "Type": "JBU6.hBUW",
+    "Member": "06001DF0 JBU6.hBUW..ctor",
+    "Token": 100670960
+  },
+  {
+    "Type": "JBU6.hBUW",
+    "Member": "06001DFA JBU6.hBUW.ABUh",
+    "Token": 100670970
+  },
+  {
+    "Type": "sJ8l.dJ8s",
+    "Member": "0600812C sJ8l.dJ8s..ctor",
+    "Token": 100696364
+  },
+  {
+    "Type": "sJ8l.dJ8s",
+    "Member": "0600812D sJ8l.dJ8s..ctor",
+    "Token": 100696365
+  },
+  {
+    "Type": "sJ8l.dJ8s",
+    "Member": "06008134 sJ8l.dJ8s.xJfE",
+    "Token": 100696372
+  },
+  {
+    "Type": "sJ8l.dJ8s",
+    "Member": "0600814C sJ8l.dJ8s.UJfj",
+    "Token": 100696396
+  },
+  {
+    "Type": "Axure.DocumentModel.Interaction.IxCase",
+    "Member": "06009C7F Axure.DocumentModel.Interaction.IxCase..ctor",
+    "Token": 100703359
+  },
+  {
+    "Type": "Axure.DocumentModel.Interaction.IxCase",
+    "Member": "06009C80 Axure.DocumentModel.Interaction.IxCase..ctor",
+    "Token": 100703360
+  },
+  {
+    "Type": "Axure.DocumentModel.Interaction.IxCase",
+    "Member": "17000BD6 Axure.DocumentModel.Interaction.IxCase.Condition",
+    "Token": 385878998
+  },
+  {
+    "Type": "Axure.DocumentModel.Interaction.IxActionSetFunction",
+    "Member": "06009F87 Axure.DocumentModel.Interaction.IxActionSetFunction..ctor",
+    "Token": 100704135
+  },
+  {
+    "Type": "Axure.DocumentModel.Interaction.IxActionSetFunction",
+    "Member": "06009F88 Axure.DocumentModel.Interaction.IxActionSetFunction..ctor",
+    "Token": 100704136
+  },
+  {
+    "Type": "Axure.DocumentModel.Interaction.IxActionSetFunction",
+    "Member": "06009F9C Axure.DocumentModel.Interaction.IxActionSetFunction.QNyH",
+    "Token": 100704156
+  },
+  {
+    "Type": "Axure.DocumentModel.Interaction.IxExprAction",
+    "Member": "06009FC4 Axure.DocumentModel.Interaction.IxExprAction..ctor",
+    "Token": 100704196
+  },
+  {
+    "Type": "Axure.DocumentModel.Interaction.IxExprAction",
+    "Member": "06009FC5 Axure.DocumentModel.Interaction.IxExprAction..ctor",
+    "Token": 100704197
+  },
+  {
+    "Type": "Axure.DocumentModel.Interaction.IxExprAction",
+    "Member": "17000C2E Axure.DocumentModel.Interaction.IxExprAction.Action",
+    "Token": 385879086
+  },
+  {
+    "Type": "Axure.DocumentModel.Interaction.IxLinkWindowAction",
+    "Member": "0600A10F Axure.DocumentModel.Interaction.IxLinkWindowAction..ctor",
+    "Token": 100704527
+  },
+  {
+    "Type": "Axure.DocumentModel.Interaction.IxLinkWindowAction",
+    "Member": "0600A110 Axure.DocumentModel.Interaction.IxLinkWindowAction..ctor",
+    "Token": 100704528
+  },
+  {
+    "Type": "Axure.DocumentModel.Interaction.IxLinkWindowAction",
+    "Member": "0600A111 Axure.DocumentModel.Interaction.IxLinkWindowAction..ctor",
+    "Token": 100704529
+  },
+  {
+    "Type": "Axure.DocumentModel.Interaction.IxLinkWindowAction",
+    "Member": "0600A112 Axure.DocumentModel.Interaction.IxLinkWindowAction..ctor",
+    "Token": 100704530
+  },
+  {
+    "Type": "Axure.DocumentModel.Interaction.IxTarget",
+    "Member": "0600A542 Axure.DocumentModel.Interaction.IxTarget..ctor",
+    "Token": 100705602
+  },
+  {
+    "Type": "Axure.DocumentModel.Interaction.IxTarget",
+    "Member": "0600A543 Axure.DocumentModel.Interaction.IxTarget..ctor",
+    "Token": 100705603
+  },
+  {
+    "Type": "Axure.DocumentModel.Interaction.IxTarget",
+    "Member": "17000D83 Axure.DocumentModel.Interaction.IxTarget.TargetPagePackageId",
+    "Token": 385879427
+  },
+  {
+    "Type": "Axure.DocumentModel.Expressions.BinaryExpr",
+    "Member": "0600A73C Axure.DocumentModel.Expressions.BinaryExpr..ctor",
+    "Token": 100706108
+  },
+  {
+    "Type": "Axure.DocumentModel.Expressions.BinaryExpr",
+    "Member": "0600A73D Axure.DocumentModel.Expressions.BinaryExpr..ctor",
+    "Token": 100706109
+  },
+  {
+    "Type": "Axure.DocumentModel.Expressions.BinaryExpr",
+    "Member": "0600A73E Axure.DocumentModel.Expressions.BinaryExpr..ctor",
+    "Token": 100706110
+  },
+  {
+    "Type": "Axure.DocumentModel.Expressions.BinaryExpr",
+    "Member": "17000DB0 Axure.DocumentModel.Expressions.BinaryExpr.Operation",
+    "Token": 385879472
+  },
+  {
+    "Type": "Axure.DocumentModel.Expressions.BooleanLiteral",
+    "Member": "0600A75F Axure.DocumentModel.Expressions.BooleanLiteral..ctor",
+    "Token": 100706143
+  },
+  {
+    "Type": "Axure.DocumentModel.Expressions.BooleanLiteral",
+    "Member": "0600A760 Axure.DocumentModel.Expressions.BooleanLiteral..ctor",
+    "Token": 100706144
+  },
+  {
+    "Type": "Axure.DocumentModel.Expressions.BooleanLiteral",
+    "Member": "0600A761 Axure.DocumentModel.Expressions.BooleanLiteral..ctor",
+    "Token": 100706145
+  },
+  {
+    "Type": "Axure.DocumentModel.Expressions.DiagramObjectPathLiteral",
+    "Member": "0600A79F Axure.DocumentModel.Expressions.DiagramObjectPathLiteral..ctor",
+    "Token": 100706207
+  },
+  {
+    "Type": "Axure.DocumentModel.Expressions.DiagramObjectPathLiteral",
+    "Member": "0600A7A0 Axure.DocumentModel.Expressions.DiagramObjectPathLiteral..ctor",
+    "Token": 100706208
+  },
+  {
+    "Type": "Axure.DocumentModel.Expressions.FCall",
+    "Member": "0600A800 Axure.DocumentModel.Expressions.FCall..ctor",
+    "Token": 100706304
+  },
+  {
+    "Type": "Axure.DocumentModel.Expressions.FCall",
+    "Member": "0600A801 Axure.DocumentModel.Expressions.FCall..ctor",
+    "Token": 100706305
+  },
+  {
+    "Type": "Axure.DocumentModel.Expressions.FCall",
+    "Member": "0600A802 Axure.DocumentModel.Expressions.FCall..ctor",
+    "Token": 100706306
+  },
+  {
+    "Type": "Axure.DocumentModel.Expressions.FCall",
+    "Member": "0600A809 Axure.DocumentModel.Expressions.FCall.kS5q",
+    "Token": 100706313
+  },
+  {
+    "Type": "Axure.DocumentModel.Expressions.StringLiteral",
+    "Member": "0600A8B0 Axure.DocumentModel.Expressions.StringLiteral..ctor",
+    "Token": 100706480
+  },
+  {
+    "Type": "Axure.DocumentModel.Expressions.StringLiteral",
+    "Member": "0600A8B1 Axure.DocumentModel.Expressions.StringLiteral..ctor",
+    "Token": 100706481
+  }
+]

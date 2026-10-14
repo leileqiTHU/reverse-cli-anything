@@ -1,0 +1,429 @@
+{
+  "schemaVersion": 1,
+  "presentationDate": "2026-10-14",
+  "passed": true,
+  "description": "Curated presentation editions of previously verified native CLI workflows. This packaging run did not rerun native edits.",
+  "style": {
+    "width": 1920,
+    "height": 1440,
+    "fps": 30,
+    "appAreaHeight": 1020,
+    "footerHeight": 420,
+    "background": "#111827",
+    "font": "Consolas",
+    "commandFontPx": 23,
+    "headerFontPx": 26,
+    "language": "English overlays; original app/content language retained",
+    "intro": false
+  },
+  "demos": {
+    "capcut": {
+      "app": "capcut",
+      "passed": true,
+      "presentationDate": "2026-10-14",
+      "video": "capcut-cli/assets/capcut-cli-demo.mp4",
+      "poster": "capcut-cli/assets/capcut-cli-demo.jpg",
+      "sha256": "6d9a78b9f2552fa466dccb1cbaed3b2fe06caf110c070509eacd845c9191459b",
+      "bytes": 22113028,
+      "width": 1920,
+      "height": 1440,
+      "fps": 30,
+      "frames": 7453,
+      "durationSeconds": 248.43333333333334,
+      "chapters": [
+        {
+          "seconds": 0,
+          "title": "INITIALIZE THE CLI WORKFLOW"
+        },
+        {
+          "seconds": 5.0,
+          "title": "CREATE AN EMPTY PROJECT"
+        },
+        {
+          "seconds": 15.547,
+          "title": "IMPORT REAL FOOTAGE"
+        },
+        {
+          "seconds": 38.36,
+          "title": "TRIM THE NATIVE TIMELINE"
+        },
+        {
+          "seconds": 77.016,
+          "title": "TRANSCRIBE SPEECH LOCALLY"
+        },
+        {
+          "seconds": 81.641,
+          "title": "GENERATE FRESH CHINESE TRANSLATION"
+        },
+        {
+          "seconds": 127.703,
+          "title": "BUILD JSON / SRT CAPTIONS"
+        },
+        {
+          "seconds": 127.922,
+          "title": "ADD BACKGROUND MUSIC"
+        },
+        {
+          "seconds": 131.844,
+          "title": "IMPORT EDITABLE CAPTIONS"
+        },
+        {
+          "seconds": 171.703,
+          "title": "EXPORT THROUGH CAPCUT"
+        },
+        {
+          "seconds": 186.344,
+          "title": "SAVE, REOPEN AND VERIFY"
+        },
+        {
+          "seconds": 214.73333333333332,
+          "title": "PLAY THE NATIVE EXPORT WITH AUDIO"
+        }
+      ],
+      "sources": [
+        {
+          "path": "capcut-cli/capcut-analysis/recorded-real-media-20261014-wgc/capcut-from-blank-recording.mp4",
+          "sha256": "80d3d6d6d1de89db0518861deed988968ec2367d82cada317f3df3e7ea95228b",
+          "frames": 3221,
+          "fps": 15,
+          "cropHeight": 1134,
+          "destSize": [
+            1727,
+            1020
+          ]
+        },
+        {
+          "path": "capcut-cli/capcut-analysis/recorded-real-media-20261014-wgc/water-science-final.mp4",
+          "sha256": "1ce5c9064da3b9086a31aefd9789753da1741abcd51f3f7a59b475f9a3f05106",
+          "frames": 1011,
+          "fps": 30,
+          "cropHeight": 1080,
+          "destSize": [
+            1813,
+            1020
+          ]
+        }
+      ],
+      "provenance": "Reuses original chronological software captures; caption footer rebuilt from original timed command journals. No native edits rerun.",
+      "sourceEvidence": "capcut-cli/evidence/recorded-real-media-20261014.json",
+      "nativeChecks": 26,
+      "browserChecks": null,
+      "noMouseInput": true,
+      "newNativeOperationsPerformed": false,
+      "fullDecodePassed": true,
+      "visualReview": {
+        "passed": true,
+        "samplesReviewed": 14,
+        "notes": "Reviewed all 14 sampled frames and full-size command/result frames. English footer is readable; original bilingual result, source speech and music retained."
+      },
+      "style": {
+        "intro": false,
+        "language": "English overlays; original app/content language retained",
+        "background": "#111827",
+        "font": "Consolas",
+        "commandFontPx": 23,
+        "headerFontPx": 26,
+        "appAreaHeight": 1020
+      },
+      "audioVerification": {
+        "silentPortionPeak": 0.0,
+        "playbackRms": 0.22708947347419817,
+        "nativeCorrelation": 0.9998617109668956,
+        "alignmentSamplesAt16kHz": 0,
+        "nativePlaybackStartsSeconds": 214.73333333333332
+      },
+      "presentationChecks": {
+        "outputHashMatches": true,
+        "sourceHash0": true,
+        "imageAreaPreserved0": true,
+        "sourceHash1": true,
+        "imageAreaPreserved1": true,
+        "commandFootageSilent": true,
+        "nativePlaybackAudible": true,
+        "nativeAudioPreserved": true
+      },
+      "imageComparisons": [
+        {
+          "part": 1,
+          "ssim": 0.997591,
+          "seconds": 214.73333333333332,
+          "passed": true
+        },
+        {
+          "part": 2,
+          "ssim": 0.987618,
+          "seconds": 33.7,
+          "passed": true
+        }
+      ],
+      "posterSha256": "9dba2c3e0bdfa718b45c0b8a7b365583013e4d04c907484f2626508743b379b4",
+      "reviewedSampleSeconds": [
+        0,
+        8,
+        17,
+        40,
+        59,
+        79,
+        100,
+        129,
+        135,
+        155,
+        178,
+        193,
+        211,
+        232
+      ]
+    },
+    "axure": {
+      "app": "axure",
+      "passed": true,
+      "presentationDate": "2026-10-14",
+      "video": "axure-cli/assets/axure-cli-demo.mp4",
+      "poster": "axure-cli/assets/axure-cli-demo.jpg",
+      "sha256": "0f4c9af68a812c8efb911f8de92db1c9356eb97bb4629d440bcf0683ed8ef132",
+      "bytes": 2283275,
+      "width": 1920,
+      "height": 1440,
+      "fps": 30,
+      "frames": 3166,
+      "durationSeconds": 105.53333333333333,
+      "chapters": [
+        {
+          "seconds": 0,
+          "title": "BUILD AN INTERACTIVE LOGIN FORM"
+        },
+        {
+          "seconds": 69.13333333333334,
+          "title": "COLD REOPEN AND NATIVE HTML EXPORT"
+        },
+        {
+          "seconds": 82.06666666666666,
+          "title": "VERIFY THE EXPORTED HTML"
+        }
+      ],
+      "sources": [
+        {
+          "path": "axure-cli/outputs/login-20261013-191733/native-part-1.mp4",
+          "sha256": "ce5f17acb4e9a9d5238e7539508094af5a38bf344e8f1bc0338d27f3d56a953a",
+          "frames": 1037,
+          "fps": 15,
+          "cropHeight": 1166,
+          "destSize": [
+            1680,
+            1020
+          ]
+        },
+        {
+          "path": "axure-cli/outputs/login-20261013-191733/native-part-2.mp4",
+          "sha256": "0e946a0586e147fb56078e513d16477d86ecdfeca1251339031ffe4a75921515",
+          "frames": 194,
+          "fps": 15,
+          "cropHeight": 1166,
+          "destSize": [
+            1680,
+            1020
+          ]
+        },
+        {
+          "path": "local original browser capture frames / derived unlabelled replay",
+          "sha256": "8cd46b9555066f0bb0fbfd056a98138628b0b80c8f04e30fbc143ea06e06f603",
+          "frames": 352,
+          "fps": 15,
+          "cropHeight": 900,
+          "destSize": [
+            1451,
+            1020
+          ],
+          "origin": "Original CDP JPEG captures, replayed with their original durations",
+          "captureFrameCount": 115,
+          "captureTimelineSha256": "b3582f82dabef2bd8d38fa1ad4ad704a0f64add90df4394f47327c6038393101",
+          "captureImagesSha256": "b53df1833e575aecfb29866aa71d6a19889f62f1ec734c3e00cc4bd3318b67f6"
+        }
+      ],
+      "provenance": "Reuses original chronological software captures; caption footer rebuilt from original timed command journals. No native edits rerun.",
+      "sourceEvidence": "axure-cli/evidence/login-recording.json",
+      "nativeChecks": 29,
+      "browserChecks": 14,
+      "noMouseInput": true,
+      "newNativeOperationsPerformed": false,
+      "fullDecodePassed": true,
+      "visualReview": {
+        "passed": true,
+        "samplesReviewed": 14,
+        "notes": "Reviewed all 14 sampled frames and the full-size browser success frame. Old browser caption remnants removed by replaying original JPEG captures; native UI and verification results retained."
+      },
+      "style": {
+        "intro": false,
+        "language": "English overlays; original app/content language retained",
+        "background": "#111827",
+        "font": "Consolas",
+        "commandFontPx": 23,
+        "headerFontPx": 26,
+        "appAreaHeight": 1020
+      },
+      "presentationChecks": {
+        "outputHashMatches": true,
+        "sourceHash0": true,
+        "imageAreaPreserved0": true,
+        "sourceHash1": true,
+        "imageAreaPreserved1": true,
+        "sourceHash2": true,
+        "imageAreaPreserved2": true
+      },
+      "imageComparisons": [
+        {
+          "part": 1,
+          "ssim": 0.997831,
+          "seconds": 69.13333333333334,
+          "passed": true
+        },
+        {
+          "part": 2,
+          "ssim": 0.997932,
+          "seconds": 12.933333333333334,
+          "passed": true
+        },
+        {
+          "part": 3,
+          "ssim": 0.998048,
+          "seconds": 23.466666666666665,
+          "passed": true
+        }
+      ],
+      "posterSha256": "3c7064452eea4df9737026ac9629862c6805298a9b896b733cb09c6425ec1dfc",
+      "reviewedSampleSeconds": [
+        0,
+        13,
+        28,
+        36,
+        43,
+        56,
+        65,
+        73,
+        79,
+        85,
+        87,
+        93,
+        100,
+        104
+      ]
+    },
+    "shapr3d": {
+      "app": "shapr3d",
+      "passed": true,
+      "presentationDate": "2026-10-14",
+      "video": "shapr3d-cli/assets/shapr3d-cli-demo.mp4",
+      "poster": "shapr3d-cli/assets/shapr3d-cli-demo.jpg",
+      "sha256": "ec2324b32476923e33107190079f008a5defa39e1e25b72c158ca125b30395ac",
+      "bytes": 1677653,
+      "width": 1920,
+      "height": 1440,
+      "fps": 30,
+      "frames": 1680,
+      "durationSeconds": 56,
+      "chapters": [
+        {
+          "seconds": 0.0,
+          "title": "EMPTY MODEL / CLI SESSION"
+        },
+        {
+          "seconds": 3.328,
+          "title": "IMPORT A RECTANGLE + TWO CIRCLES"
+        },
+        {
+          "seconds": 7.578,
+          "title": "EXTRUDE THE PLATE"
+        },
+        {
+          "seconds": 11.938,
+          "title": "EDIT THE HISTORY PARAMETER"
+        },
+        {
+          "seconds": 16.703,
+          "title": "MOVE THE RIGHT HOLE"
+        },
+        {
+          "seconds": 21.578,
+          "title": "MOVE THE LEFT HOLE"
+        },
+        {
+          "seconds": 26.188,
+          "title": "IMPORT THE CENTER CIRCLE"
+        },
+        {
+          "seconds": 30.063,
+          "title": "SELECT THE EXACT CIRCULAR REGION"
+        },
+        {
+          "seconds": 33.907,
+          "title": "CUT A 2 mm POCKET"
+        },
+        {
+          "seconds": 38.266,
+          "title": "DEEPEN THE POCKET TO 4 mm"
+        },
+        {
+          "seconds": 41.813,
+          "title": "CREATE THE THROUGH HOLE"
+        },
+        {
+          "seconds": 45.703,
+          "title": "EXPORT THE NATIVE MODEL AND STL"
+        },
+        {
+          "seconds": 49,
+          "title": "INDEPENDENT GEOMETRY VERIFICATION"
+        }
+      ],
+      "sources": [
+        {
+          "path": "shapr3d-cli/exports/shapr3d-cli-demo-english-20261014.mp4",
+          "sha256": "ec2324b32476923e33107190079f008a5defa39e1e25b72c158ca125b30395ac",
+          "frames": 1680
+        }
+      ],
+      "provenance": "Reuses accepted English edition. CLI equivalents from verified native requests, not a new execution.",
+      "sourceEvidence": "shapr3d-cli/evidence/recorded-demo-english-20261014.json",
+      "nativeChecks": 78,
+      "browserChecks": null,
+      "noMouseInput": true,
+      "newNativeOperationsPerformed": false,
+      "fullDecodePassed": true,
+      "visualReview": {
+        "passed": true,
+        "samplesReviewed": 13,
+        "notes": "Reviewed all 13 sampled frames. Accepted English edition reused byte-for-byte, with readable CLI equivalents, original native model changes and the final verification hold."
+      },
+      "style": {
+        "intro": false,
+        "language": "English overlays; original app/content language retained",
+        "background": "#111827",
+        "font": "Consolas",
+        "commandFontPx": 23,
+        "headerFontPx": 26,
+        "appAreaHeight": 1020
+      },
+      "presentationChecks": {
+        "outputHashMatches": true,
+        "exactAcceptedEditionCopy": true
+      },
+      "imageComparisons": [],
+      "posterSha256": "0c1993ae25155a7e0a46cc4c58f676771556c64ad6559ac354ae537a7d1d7960",
+      "reviewedSampleSeconds": [
+        0,
+        4,
+        9,
+        13,
+        18,
+        23,
+        28,
+        31,
+        35,
+        39,
+        43,
+        47,
+        53
+      ]
+    }
+  }
+}

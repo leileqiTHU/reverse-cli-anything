@@ -1,0 +1,3 @@
+# Offline contract validation only; the shared runtime uses the standard library.
+jsonschema>=4.18,<5
+PyYAML>=6,<7

@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "adapter": "target-app",
+  "application": "User-selected application",
+  "goal": "Record the requested workflow",
+  "constraints": [],
+  "target": {
+    "build": "uninvestigated",
+    "architecture": "unknown",
+    "identityEvidence": []
+  },
+  "researchRoute": "undecided",
+  "execution": {
+    "model": "unknown",
+    "stateLifetime": "unknown",
+    "readiness": []
+  },
+  "workflow": [],
+  "handoff": {
+    "lastDecision": "Research has not started",
+    "nextAction": "Inventory public coverage and shipped artifacts",
+    "blockers": []
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "checks": {
+    "browserExitZero": true,
+    "exactTextInRenderedDom": true,
+    "screenshotCreated": true
+  },
+  "screenshot": "D:\\ChatGPT\\reverse-cli\\axure-cli\\outputs\\acceptance-20261013-191954\\native-html.png",
+  "profile": "D:\\Caches\\Axure\\HtmlQA\\acceptance-20261013-191954",
+  "mouseClicks": 0,
+  "sha256": "bbfa7575fe65c9245caefbce150c8807d39dbf4dab1e1652f011175d942e6d3f"
+}

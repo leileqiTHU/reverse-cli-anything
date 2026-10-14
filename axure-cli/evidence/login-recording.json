@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "path": "D:\\ChatGPT\\reverse-cli\\axure-cli\\outputs\\login-20261013-191733\\axure-cli-from-blank.mp4",
+  "bytes": 1774537,
+  "sha256": "24105eeb2231468d7fb95c20fcdf35b5d5bbada3e9e126072b30ac9e6ca07cdf",
+  "durationSeconds": 105.53,
+  "decodedFrames": 1583,
+  "width": 1920,
+  "height": 1280,
+  "fps": 15,
+  "mouseEvents": 0,
+  "chapters": [
+    {
+      "title": "CLI builds the native Axure project",
+      "startSeconds": 0,
+      "durationSeconds": 69.13
+    },
+    {
+      "title": "Cold reopen and native HTML export",
+      "startSeconds": 69.13,
+      "durationSeconds": 12.93
+    },
+    {
+      "title": "Native HTML interaction verification",
+      "startSeconds": 82.06,
+      "durationSeconds": 23.47
+    }
+  ],
+  "sourceClips": [
+    "D:\\ChatGPT\\reverse-cli\\axure-cli\\outputs\\login-20261013-191733\\native-part-1.mp4",
+    "D:\\ChatGPT\\reverse-cli\\axure-cli\\outputs\\login-20261013-191733\\native-part-2.mp4",
+    "D:\\ChatGPT\\reverse-cli\\axure-cli\\outputs\\login-20261013-191733\\browser-interaction-1791890476664.mp4"
+  ],
+  "capture": "Native window: FFmpeg GDI at 15 fps. Browser: actual CDP screenshots sampled at approximately 5 fps, resampled to 15 fps. No synthesized software frames.",
+  "editing": "Three chronological clips joined at app cold restart and browser transition; CLI command captions overlaid. No speed-up. No audio.",
+  "nativeEvidence": "native-login-acceptance.json",
+  "browserEvidence": "native-login-browser.json"
+}

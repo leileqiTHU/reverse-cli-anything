@@ -1,0 +1,33 @@
+{
+  "target": "D:\\Apps\\Axure\\Axure RP 11\\AxureRP11.dll",
+  "sha256": "dae5748f6be3e69c063ef117bab0b400586d94adf119f5a9ba260df59dc4e4a7",
+  "evidenceType": "Targeted static decompilation of installed binary; no runtime execution",
+  "reaEvidenceId": "ev_e29c588cceaa189a8c3d87f9dd7a5e28e7bd8a65bf8773ddb6a485e6f18273e8",
+  "construction": [
+    "doc = widget.btnD(); oldMap = widget.GIss();",
+    "newMap = new MJuB.gJuG(doc, widget);",
+    "eventNode = newMap.lJu3(Axure.Constants.IxEventType.OnClick);",
+    "case = new Axure.DocumentModel.Interaction.IxCase(doc); set Description and Condition before insertion;",
+    "caseNode = newMap.TNFt(null, eventNode, eventNode.Children.Count, case);",
+    "action = any concrete IxAction subtype constructed with doc; configure action payload before insertion;",
+    "actionNode = newMap.TNFt(null, caseNode, caseNode.Children.Count, action);",
+    "edit = new uSgI.ESg1(widget, oldMap, newMap, new Dictionary<Guid,Guid>(), null, false, Guid.Empty, false);",
+    "dispatch edit through existing native editor history entry."
+  ],
+  "ownership": "gJuG(doc,widget) allocates base FNry root and sets owner via CJsJ. lJu3 creates/reuses OnClick event. TNFt calls wNFS, creates child tree node, then virtual gJuG.xIl9 registers mapping and UJur assigns IxMap for events, cases, actions. No manual QJlk attachment or IxMap set required.",
+  "commit": "ESg1.Commit updates KJm7.FJpd(newMap,true,false), and LIf8 reverses to old map. FJpd sets GIss, map owner, supported event bookkeeping and native change notifications.",
+  "nullSettingsInference": "All six WN1o dereferences in ESg1 occur within forward/reverse loops over the supplied ID-remapping dictionary. With an empty dictionary those loops do not execute, so null WN1o is statically safe in these two methods. Runtime verification still required.",
+  "limits": [
+    "Fresh map replacement removes previous interactions; reject nonempty map or copy existing map when preservation is required.",
+    "TNFt only builds the detached model. The ESg1 native edit must install it to support dirty state and undo.",
+    "Preserve event/case/action hierarchy. Do not attach action directly beneath event.",
+    "Conditions, action expression correctness and export behavior remain parent runtime tasks."
+  ],
+  "sourcePaths": [
+    ".runtime/interaction-research/gJuG.cs:1064",
+    ".runtime/interaction-research/FNry.cs:948",
+    ".runtime/interaction-research/ESg1.cs:500",
+    ".runtime/interaction-research/KJm7.cs:15520",
+    ".runtime/page-research/interaction-tree-tokens.json"
+  ]
+}

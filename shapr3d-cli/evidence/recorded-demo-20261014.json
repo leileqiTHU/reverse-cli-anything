@@ -1,0 +1,77 @@
+{
+  "date": "2026-10-14",
+  "application": "Shapr3D",
+  "originalRecordingDate": "2026-10-13",
+  "reusedExistingRecording": true,
+  "newNativeOperationsPerformed": false,
+  "passed": true,
+  "video": {
+    "path": "exports/shapr3d-cli-demo-20261014.mp4",
+    "sha256": "10ebf51ba537aa289b88a563aa745bf8d946ea6374a4d815941950d88b3a2943",
+    "bytes": 1476222,
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "expectedFrames": 1890,
+    "seconds": 63
+  },
+  "source": {
+    "path": "outputs/full-build-visible-20261013/full-build.mp4",
+    "sha256": "0edd8f2650edf161416249ca87eb28159f5e45df160e158de096b68990eb5488",
+    "frames": 735,
+    "fps": 15,
+    "seconds": 49.0
+  },
+  "editing": {
+    "originalFramesContinuous": true,
+    "speed": 1,
+    "introSeconds": 5,
+    "outroSeconds": 9,
+    "commandPanels": "Added from original receipts at recorded stage-completion markers",
+    "originalRecordingDate": "2026-10-13",
+    "nativeApplicationRerun": false
+  },
+  "checks": {
+    "sourceHashMatchesPriorEvidence": true,
+    "allReceiptResultsMatch": true,
+    "receiptCount": 38,
+    "freshGeometryPassed": true,
+    "geometryChecks": 78,
+    "decodeExitCode": 0,
+    "originalFileUnchanged": true,
+    "actualDecodedFrames": 1890,
+    "actualDurationSeconds": 63.0,
+    "allFramesAndDurationMatch": true,
+    "sourceRegionSsim": 0.997114,
+    "sourceRegionComparisonPassed": true
+  },
+  "visualReview": {
+    "passed": true,
+    "encodedSamplesReviewed": 14,
+    "coverage": "intro, all 12 stages, outro",
+    "checks": [
+      "Actual Shapr3D window remains visible",
+      "Chinese headings and request panels legible",
+      "No title/request clipping",
+      "Model changes correspond to completed-stage labels"
+    ]
+  },
+  "geometry": {
+    "checksPassed": 78,
+    "lengthMm": 80,
+    "widthMm": 40,
+    "thicknessMm": 6,
+    "originalHoleDiameterMm": 6,
+    "holePitchMm": 60,
+    "newHoleDiameterMm": 8,
+    "throughHole": true,
+    "stlSha256": "c9a350af5941ecd2e3618d67f7462c1d9b0474bb540162725d529df82e0c467f"
+  },
+  "limitations": [
+    "Source recording is 1026x802 at 15 fps; delivery is upscaled.",
+    "Native STL Low resolution.",
+    "No cold app restart claimed by this recording."
+  ],
+  "documentation": "RECORDED-DEMO.md",
+  "details": "outputs/presentation-20261014/verification.json"
+}

@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "adapter": "shapr3d",
+  "build": "26.180.11926.0",
+  "checklist": [
+    {
+      "id": "environment",
+      "assertion": "Pinned build, explicit paths, process and doctor; activation/editability checked separately."
+    },
+    {
+      "id": "request",
+      "assertion": "Correct identity and units; malformed requests rejected; JSON results and legacy compatibility retained."
+    },
+    {
+      "id": "receipt",
+      "assertion": "Operation state, ID/input collision, write serialization, timeout, late completion and no automatic mutation replay."
+    },
+    {
+      "id": "native-state",
+      "assertion": "Inspect actual before/after objects and preserve unrelated content."
+    },
+    {
+      "id": "persistence",
+      "assertion": "Save convergence and explicitly scoped reopen; distinguish same-session from cold startup."
+    },
+    {
+      "id": "artifact",
+      "assertion": "Native output and independent media/browser/geometry validation; absence of overwrite."
+    },
+    {
+      "id": "restoration",
+      "assertion": "Retain failures, restore previous user project or verified model parameters; no mouse input."
+    }
+  ],
+  "tools": [
+    {
+      "name": "start",
+      "coverage": "not-run",
+      "evidence": [],
+      "scope": "No current native acceptance claim; see schema, adapter guide and offline tests."
+    },
+    {
+      "name": "inspect",
+      "coverage": "historical-workflow",
+      "evidence": [
+        "shapr3d-cli/evidence/native-model-proof-20261013.json"
+      ],
+      "scope": "Earlier native session lifecycle proof only; not rerun during this upgrade."
+    },
+    {
+      "name": "history",
+      "coverage": "current-native",
+      "evidence": [
+        "evidence/upgrade-20261014.json"
+      ],
+      "scope": "Exact command executed in the dated bounded workflow; not every argument combination."
+    },
+    {
+      "name": "create-project",
+      "coverage": "historical-workflow",
+      "evidence": [
+        "shapr3d-cli/evidence/native-model-proof-20261013.json"
+      ],
+      "scope": "Earlier native session lifecycle proof only; not rerun during this upgrade."
+    },
+    {
+      "name": "visible-status",
+      "coverage": "not-run",
+      "evidence": [],
+      "scope": "No current native acceptance claim; see schema, adapter guide and offline tests."
+    },
+    {
+      "name": "import-native",
+      "coverage": "historical-workflow",
+      "evidence": [
+        "shapr3d-cli/evidence/native-model-proof-20261013.json"
+      ],
+      "scope": "Earlier native session lifecycle proof only; not rerun during this upgrade."
+    },
+    {
+      "name": "history-set",
+      "coverage": "current-native",
+      "evidence": [
+        "evidence/upgrade-20261014.json"
+      ],
+      "scope": "Exact command executed in the dated bounded workflow; not every argument combination."
+    },
+    {
+      "name": "export-stl",
+      "coverage": "current-native",
+      "evidence": [
+        "evidence/upgrade-20261014.json"
+      ],
+      "scope": "Exact command executed in the dated bounded workflow; not every argument combination."
+    },
+    {
+      "name": "export-shapr",
+      "coverage": "current-native",
+      "evidence": [
+        "evidence/upgrade-20261014.json"
+      ],
+      "scope": "Exact command executed in the dated bounded workflow; not every argument combination."
+    },
+    {
+      "name": "project-close",
+      "coverage": "historical-workflow",
+      "evidence": [
+        "shapr3d-cli/evidence/native-model-proof-20261013.json"
+      ],
+      "scope": "Earlier native session lifecycle proof only; not rerun during this upgrade."
+    },
+    {
+      "name": "project-reopen",
+      "coverage": "historical-workflow",
+      "evidence": [
+        "shapr3d-cli/evidence/native-model-proof-20261013.json"
+      ],
+      "scope": "Earlier native session lifecycle proof only; not rerun during this upgrade."
+    },
+    {
+      "name": "session-close",
+      "coverage": "historical-workflow",
+      "evidence": [
+        "shapr3d-cli/evidence/native-model-proof-20261013.json"
+      ],
+      "scope": "Earlier native session lifecycle proof only; not rerun during this upgrade."
+    },
+    {
+      "name": "model-select-sketch",
+      "coverage": "not-run",
+      "evidence": [],
+      "scope": "No current native acceptance claim; see schema, adapter guide and offline tests."
+    },
+    {
+      "name": "model-annotations",
+      "coverage": "not-run",
+      "evidence": [],
+      "scope": "No current native acceptance claim; see schema, adapter guide and offline tests."
+    },
+    {
+      "name": "model-tool-start",
+      "coverage": "not-run",
+      "evidence": [],
+      "scope": "No current native acceptance claim; see schema, adapter guide and offline tests."
+    },
+    {
+      "name": "model-tool-finish",
+      "coverage": "not-run",
+      "evidence": [],
+      "scope": "No current native acceptance claim; see schema, adapter guide and offline tests."
+    },
+    {
+      "name": "model-pick",
+      "coverage": "not-run",
+      "evidence": [],
+      "scope": "No current native acceptance claim; see schema, adapter guide and offline tests."
+    },
+    {
+      "name": "model-set-distance",
+      "coverage": "not-run",
+      "evidence": [],
+      "scope": "No current native acceptance claim; see schema, adapter guide and offline tests."
+    },
+    {
+      "name": "model-screenshot",
+      "coverage": "not-run",
+      "evidence": [],
+      "scope": "No current native acceptance claim; see schema, adapter guide and offline tests."
+    },
+    {
+      "name": "model-command",
+      "coverage": "not-run",
+      "evidence": [],
+      "scope": "No current native acceptance claim; see schema, adapter guide and offline tests."
+    },
+    {
+      "name": "model-clear-demo",
+      "coverage": "not-run",
+      "evidence": [],
+      "scope": "No current native acceptance claim; see schema, adapter guide and offline tests."
+    }
+  ]
+}

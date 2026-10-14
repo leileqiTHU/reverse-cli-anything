@@ -1,0 +1,6 @@
+{
+  "schemaVersion": 1,
+  "project": "reverse-cli-anything",
+  "adapters": [],
+  "examples": "examples/registry.json"
+}

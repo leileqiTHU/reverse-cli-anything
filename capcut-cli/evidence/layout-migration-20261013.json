@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "validatedOn": "2026-10-13",
+  "regression": {
+    "run": 99,
+    "passed": 95,
+    "skipped": 4,
+    "failed": 0,
+    "skipReason": "Four legacy editor tests require explicit live-test configuration"
+  },
+  "checks": {
+    "legacyAndNewEntryCapabilitiesEqual": true,
+    "nativeVersionLoaded": true,
+    "sameProjectReopened": true,
+    "sameTimelineSelected": true,
+    "all21EditableItemsUnchanged": true,
+    "nativeFrameFromOriginalSourcePaths": true,
+    "oldMediaAliasResolvesToMovedSource": true,
+    "previousExportSha256Unchanged": true,
+    "nativeFramePixelsPreserved": true
+  },
+  "localEvidence": "Local migration journal, command outputs, before/after state and native frame retained under .local/layout-migration-20261013",
+  "limits": [
+    "This verifies the relocation and existing adapter, not new CapCut build support.",
+    "Large local media and native dependencies are excluded from source distribution."
+  ],
+  "nativeFrameMeanAbsoluteRgbError": 0.0,
+  "skillValidation": "Passed bundled skill-creator validator",
+  "fixtureGenerator": "Fresh synthetic 9-second video generated on D: and probed by CapCut native module"
+}

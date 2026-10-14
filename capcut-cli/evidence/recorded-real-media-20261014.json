@@ -1,0 +1,274 @@
+{
+  "date": "2026-10-14",
+  "passed": true,
+  "project": {
+    "pid": 21888,
+    "originalProject": {
+      "id": "5E3139E2-DCF4-4031-97FD-798A009DEDC2",
+      "name": "NASA CLI Recording 20261014-094315",
+      "path": "D:/Apps/CapCut2/CapCut Drafts/NASA CLI Recording 20261014-094315"
+    },
+    "projectId": "EC980317-7A25-436b-977C-56A2F6860449",
+    "projectPath": "D:\\Apps\\CapCut2\\CapCut Drafts\\NASA CLI Recording 20261014-094740",
+    "timelineId": "FCC6195E-E48B-446e-BF35-395B6E0CC4DC"
+  },
+  "deliverables": {
+    "capcut-cli-demo-20261014.mp4": {
+      "path": "D:\\ChatGPT\\reverse-cli\\capcut-cli\\exports\\capcut-cli-demo-20261014.mp4",
+      "bytes": 25299942,
+      "sha256": "4c8346c273e83ddc752a8267e97ea5a290151e68892fd309f58b384df9133282"
+    },
+    "water-science-fresh-subtitles-20261014.mp4": {
+      "path": "D:\\ChatGPT\\reverse-cli\\capcut-cli\\exports\\water-science-fresh-subtitles-20261014.mp4",
+      "bytes": 31762532,
+      "sha256": "1ce5c9064da3b9086a31aefd9789753da1741abcd51f3f7a59b475f9a3f05106"
+    },
+    "water-science-fresh-subtitles-20261014.srt": {
+      "path": "D:\\ChatGPT\\reverse-cli\\capcut-cli\\exports\\water-science-fresh-subtitles-20261014.srt",
+      "bytes": 1663,
+      "sha256": "64fc30b23b57d3f5c91a202c1b86986b0b04977b55cfb772a1ad087f7c128142"
+    },
+    "water-science-credits-20261014.txt": {
+      "path": "D:\\ChatGPT\\reverse-cli\\capcut-cli\\exports\\water-science-credits-20261014.txt",
+      "bytes": 1194,
+      "sha256": "e742ad2b5b58894f451fb345c56b4a0a26e693263bce9bba3a42ae13616308dd"
+    }
+  },
+  "recording": {
+    "durationSeconds": 248.43,
+    "rawDurationSeconds": 214.73333333333332,
+    "capture": "Windows Graphics Capture; occlusion-independent PID-bound home/editor pixels; live command footer",
+    "frames": 7453,
+    "checks": {
+      "rawRecordingFullyDecoded": true,
+      "completeDemoFullyDecoded": true,
+      "originalCaptureNotAccelerated": true,
+      "nativeResultPlaybackAppended": true,
+      "recordingHasNoCaptureError": true,
+      "noMouseOrKeyboardEventsSent": true
+    },
+    "visualInspection": {
+      "passed": true,
+      "method": "Agent reviewed the 15 periodic snapshots contact sheet plus full-size empty project, accepted editor and result playback frames",
+      "samples": [
+        "recording-contact-sheet.jpg",
+        "empty-project.png",
+        "accepted-editor.png",
+        "result-playback.png"
+      ],
+      "findings": [
+        "Actual CapCut window content only in inspected application frames",
+        "Blank media bin and timeline before import",
+        "Live command footer is readable",
+        "Fresh Chinese/English captions visible and final timeline has video, audio and text tracks",
+        "Labelled result playback has unobstructed subtitles"
+      ],
+      "scope": "Sampled visual inspection; full file decode is separate"
+    },
+    "chapters": [
+      {
+        "label": "创建空白工程",
+        "seconds": 5.0
+      },
+      {
+        "label": "导入素材库",
+        "seconds": 15.547
+      },
+      {
+        "label": "原生裁剪",
+        "seconds": 38.36
+      },
+      {
+        "label": "本地识别人声",
+        "seconds": 77.016
+      },
+      {
+        "label": "Agent 现场翻译中文",
+        "seconds": 81.641
+      },
+      {
+        "label": "生成 JSON/SRT",
+        "seconds": 127.703
+      },
+      {
+        "label": "加入配乐",
+        "seconds": 127.922
+      },
+      {
+        "label": "导入可编辑字幕",
+        "seconds": 131.844
+      },
+      {
+        "label": "原生导出成片",
+        "seconds": 171.703
+      },
+      {
+        "label": "保存重开与验收",
+        "seconds": 186.344
+      },
+      {
+        "label": "成片播放（含声音）",
+        "seconds": 214.73333333333332
+      }
+    ]
+  },
+  "nativeOutput": {
+    "durationSeconds": 33.7,
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "frames": 1011,
+    "editableItems": 21,
+    "checks": {
+      "timelineIdentity": true,
+      "duration33_7Seconds": true,
+      "threeNativeVideoClips": true,
+      "oneNativeMusicClip": true,
+      "freshBilingualCaptionsAndSourceCredit": true,
+      "editableItemsSurviveCloseAndReopen": true,
+      "originalUserProjectUnchanged": true,
+      "clip1NativeSourceAndTarget": true,
+      "clip2NativeSourceAndTarget": true,
+      "clip3NativeSourceAndTarget": true,
+      "middleClipNative108PercentScale": true,
+      "musicNativeGainSourceAndFades": true,
+      "newProjectStartedEmpty": true,
+      "freshAsrAndChineseTranslation": true,
+      "1011FramesFullyDecoded": true,
+      "1080p30H264AAC": true,
+      "finiteAudioNoClipping": true,
+      "audioDurationWithinAACPadding": true,
+      "noBlankFrames": true,
+      "renderedSpeechPreserved": true,
+      "renderedMusicMinus22dB": true,
+      "renderedAudioMatchesRealSources": true,
+      "speechClearlyAboveAddedMusic": true,
+      "independentRecognitionRetainsSpeech": true,
+      "sampledFramesMatchSelectedSourceAndTransform": true,
+      "nativeTimelineFramesMatchExport": true
+    },
+    "audioMixMeasurements": [
+      {
+        "windowSeconds": [
+          1.5,
+          7.5
+        ],
+        "speechDelaySamples": 0,
+        "musicRelativeDelaySamples": 0,
+        "gainDbPerChannelSpeechMusic": [
+          [
+            -0.03278648453294368,
+            -22.064492570193032
+          ],
+          [
+            -0.03460577863196172,
+            -22.0445542857553
+          ]
+        ],
+        "reconstructionCorrelation": [
+          0.9998351403783603,
+          0.9998284806936351
+        ],
+        "reconstructionSnrDb": [
+          34.8174365532963,
+          34.64532088582599
+        ],
+        "speechOverMusicDb": [
+          18.86214767493973,
+          19.583086208733643
+        ]
+      },
+      {
+        "windowSeconds": [
+          9.5,
+          19.5
+        ],
+        "speechDelaySamples": -1,
+        "musicRelativeDelaySamples": 1,
+        "gainDbPerChannelSpeechMusic": [
+          [
+            -0.03564618189073888,
+            -22.06381337912951
+          ],
+          [
+            -0.03425449136266425,
+            -22.09857043128399
+          ]
+        ],
+        "reconstructionCorrelation": [
+          0.9997058756126737,
+          0.9997093709402883
+        ],
+        "reconstructionSnrDb": [
+          32.30247097147317,
+          32.35439206855414
+        ],
+        "speechOverMusicDb": [
+          21.114254440708887,
+          23.529320073975146
+        ]
+      },
+      {
+        "windowSeconds": [
+          21.5,
+          31.5
+        ],
+        "speechDelaySamples": -2,
+        "musicRelativeDelaySamples": 2,
+        "gainDbPerChannelSpeechMusic": [
+          [
+            -0.08191536352073878,
+            -22.08372702128984
+          ],
+          [
+            -0.06536151695527762,
+            -22.08936641791883
+          ]
+        ],
+        "reconstructionCorrelation": [
+          0.9975993145918083,
+          0.9982294729967203
+        ],
+        "reconstructionSnrDb": [
+          23.17068876028386,
+          24.497131215588105
+        ],
+        "speechOverMusicDb": [
+          19.597024921079083,
+          21.698358442874742
+        ]
+      }
+    ],
+    "wordErrorRate": 0.010869565217391304
+  },
+  "freshSubtitles": {
+    "recognitionInput": "rough-cut.mp4",
+    "recognitionReport": "source-asr.json",
+    "translationAuthor": "Current live agent, after inspecting this WGC run's new ASR word timestamps",
+    "translationInput": "Current English transcript, word timestamps and NASA water-demonstration visuals",
+    "translationFile": "fresh-translations.json",
+    "oldChineseTranslationReused": false,
+    "oldCaptionTimingReused": false,
+    "englishCorrections": [
+      {
+        "asr": "water properties",
+        "caption": "water's properties",
+        "reason": "Restore the possessive in the grammatical phrase; meaning unchanged"
+      }
+    ],
+    "timingPolicy": "Current word boundaries snapped to 30 fps; selected cue ends extend slightly into silence for reading time",
+    "note": "Chinese was written afresh during this recording, including new phrasing after the rejected recording attempts. Whisper recognizes English; the agent translates; assemble_captions.py validates and formats."
+  },
+  "recordingDependenciesOnD": [
+    "windows-capture 2.0.1",
+    "opencv-python-headless 5.0.0.93"
+  ],
+  "fullEvidence": "capcut-analysis/recorded-real-media-20261014-wgc/",
+  "noMouseOrKeyboardEventsSent": true,
+  "notes": [
+    "Footage and editorial selection reused; recognition, Chinese translation and subtitle timing generated during this run.",
+    "WGC recording reran from a new empty project after rejecting earlier capture attempts.",
+    "Microphone/system audio is not captured; labelled native-result playback at the end includes original audio.",
+    "Existing C: Python runtime and Windows fonts reused; new recorder dependencies, configurable caches and deliverables are on D:."
+  ]
+}

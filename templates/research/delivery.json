@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "adapter": "target-app",
+  "frameworkRoot": null,
+  "researchDirectory": null,
+  "configuration": null,
+  "requestedOperations": [],
+  "verifiedOperations": [],
+  "unverifiedOperations": [],
+  "testedBuilds": [],
+  "entrypoint": null,
+  "manifest": null,
+  "skill": null,
+  "dependencies": [],
+  "readinessChecks": [],
+  "supportedLifecycles": [],
+  "recoveryInstructions": null,
+  "acceptanceReports": [],
+  "historicalEvidence": [],
+  "nativeValidationRun": false,
+  "limitations": []
+}
