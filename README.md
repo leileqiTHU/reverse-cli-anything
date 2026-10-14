@@ -4,6 +4,14 @@
 
 [中文](README.zh-CN.md) · [Quick start](#quick-start-install-with-your-agent) · [Conversational use](#after-installation-create-and-use-clis-through-conversation) · [How it works](#how-it-works) · [Showcases](#showcase-examples) · [Developer docs](#development-and-extension) · [Acknowledgments](#acknowledgments)
 
+**See it in action: native video editing in CapCut, driven through a CLI.**
+
+[![CapCut CLI: timeline edits, editable captions and the exported result](capcut-cli/assets/capcut-cli-teaser.gif)](https://github.com/leileqiTHU/reverse-cli-anything/blob/main/capcut-cli/assets/capcut-cli-45s.mp4)
+
+**[Watch the 45-second overview](https://github.com/leileqiTHU/reverse-cli-anything/blob/main/capcut-cli/assets/capcut-cli-45s.mp4)** · [Full CapCut workflow · 4:08](capcut-cli/assets/capcut-cli-demo.mp4) · [Axure + Shapr3D demos](#showcase-examples)
+
+Selected recorded segments at their original speed; the GIF is a silent preview. CapCut's recovered internal calls drive editing and export; speech recognition and translation use external helpers. [Recording details](docs/demos/README.md#short-overview) · [Media credits](docs/demos/CREDITS.md).
+
 `reverse-cli-anything` is a general reverse-engineering toolkit for agents. When an agent needs to work inside an application but its public CLI, API or MCP lacks the required operations, ask the agent to use this repository to investigate the software, recover its internal capabilities and build a set of callable, verifiable, reusable CLI tools.
 
 **Have your agent install it once, then name the software and operations through conversation.** You interact through chat; the agent delivers tested CLI tools. The agent handles environment setup, reverse engineering, implementation and verification.
@@ -97,7 +105,7 @@ These examples demonstrate the method in practice; they are not a software suppo
 | Empty project → real footage → trimming → fresh speech recognition and translation → music and captions → native MP4. Includes the finished video with audio. | Empty document → pages, buttons and inputs → layout and click rules → save and cold reopen → native HTML and real browser interaction. | Empty model → sketch import → native extrusion → thickness and hole-spacing edits → center through-hole → native project and STL export. |
 | [Commands and setup](capcut-cli/README.md) · [26 native/media checks](capcut-cli/evidence/recorded-real-media-20261014.json) | [Commands and setup](axure-cli/README.md) · [29 native checks](axure-cli/evidence/native-login-acceptance.json) + [14 browser checks](axure-cli/evidence/native-login-browser.json) | [Commands and setup](shapr3d-cli/README.md) · [78 geometry checks](shapr3d-cli/evidence/recorded-demo-english-20261014.json) |
 
-、Footage is reused at its original speed. CapCut and Axure command captions come from timed execution logs; Shapr3D displays CLI equivalents of verified native requests. [Recording details, chapters and checksums](docs/demos/README.md) · [Media credits](docs/demos/CREDITS.md).
+Footage is reused at its original speed. CapCut and Axure command captions come from timed execution logs; Shapr3D displays CLI equivalents of verified native requests. [Recording details, chapters and checksums](docs/demos/README.md) · [Media credits](docs/demos/CREDITS.md).
 
 ### Capabilities demonstrated in the examples
 

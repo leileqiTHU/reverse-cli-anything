@@ -10,6 +10,8 @@ Changes: footage shortened into three chronological shots; middle shot scaled to
 
 The showcase repackages an actual CLI workflow and plays the resulting 33.7-second native CapCut export. It preserves the source speech, music and bilingual captions. [Original example and attribution](../../capcut-cli/examples/real-media.md).
 
+The 45-second overview further excerpts that showcase, adds English stage headings and an attribution card, and includes eight seconds of the exported result with its original audio. The README GIF is a silent, cropped nine-second selection from the overview. Both use the same footage attribution above; the overview retains the music attribution and CC BY 4.0 link in its end card. [Edit list](README.md#short-overview).
+
 ## Axure RP and Shapr3D
 
 The login prototype and mounting plate are demonstration assets created through this project's CLI workflows. Axure's `demo / cli123` credentials are local prototype test values, not a real authentication service. Shapr3D's solid and holes were calculated by its native modeling tools from generated two-dimensional sketch inputs.

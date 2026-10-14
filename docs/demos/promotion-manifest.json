@@ -1,0 +1,66 @@
+{
+  "source": "capcut-cli/assets/capcut-cli-demo.mp4",
+  "source_sha256": "6d9a78b9f2552fa466dccb1cbaed3b2fe06caf110c070509eacd845c9191459b",
+  "output_sha256": "e3fc144db77daa7277cfd8c5a082e949d0cec7b18917b90d4a8fb3f4ff55b7e2",
+  "segments": [
+    {
+      "start": 5,
+      "duration": 6,
+      "label": "01 / CREATE A NATIVE CAPCUT PROJECT"
+    },
+    {
+      "start": 38.4,
+      "duration": 6,
+      "label": "02 / EDIT THE NATIVE TIMELINE"
+    },
+    {
+      "start": 131.85,
+      "duration": 7,
+      "label": "03 / ADD EDITABLE CAPTIONS"
+    },
+    {
+      "start": 171.7,
+      "duration": 6,
+      "label": "04 / EXPORT THROUGH CAPCUT"
+    },
+    {
+      "start": 186.35,
+      "duration": 6,
+      "label": "05 / SAVE, REOPEN AND CHECK"
+    },
+    {
+      "start": 223,
+      "duration": 8,
+      "label": "06 / WATCH THE EXPORTED RESULT"
+    }
+  ],
+  "end_card_seconds": 6,
+  "planned_duration_seconds": 45,
+  "decode_passed": true,
+  "new_application_operations": false,
+  "visual_review": {
+    "passed": true,
+    "sample_seconds": [
+      2,
+      8,
+      15,
+      22,
+      28,
+      35,
+      42
+    ],
+    "notes": "Reviewed all seven montage samples; English stage labels, original application and CLI footage, native result and attribution card are intact."
+  },
+  "gif": {
+    "path": "capcut-cli/assets/capcut-cli-teaser.gif",
+    "sha256": "3bbdfb822f88f431e54d1522116feed559ce3225790dbc5cbbf1908aaa468899",
+    "bytes": 2440333,
+    "frames": 72,
+    "duration_ms": 9010,
+    "dimensions": [
+      720,
+      442
+    ]
+  },
+  "output": "capcut-cli/assets/capcut-cli-45s.mp4"
+}
