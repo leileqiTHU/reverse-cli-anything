@@ -1,5 +1,9 @@
 # capcut-cli
 
+[Native automation overview and evidence (English)](../docs/native-automation-examples.md#capcut-cli-control-the-native-editor-and-export-video) · [原生控制说明与证据](../docs/native-automation-examples.zh-CN.md#capcut-cli控制原生编辑器并导出视频)
+
+**CapCut video editing automation through a native JSON CLI for AI agents.** This reverse-cli-anything example imports media, edits timelines, adds editable captions and exports video through recovered internal CapCut calls. Verified on Windows x64 with CapCut 9.5.0.4050; speech recognition and translation in the demo use external helpers. [Project overview](../README.md) · [Automation FAQ](../docs/faq.md).
+
 **[Watch the English CLI demo · 4:08](assets/capcut-cli-demo.mp4)** — real footage, fresh ASR and bilingual captions, music, native MP4 export and result playback. [Shared demo gallery and provenance](../docs/demos/README.md).
 
 CapCut 的原生 JSON CLI 适配器，也是 [reverse-cli](../README.zh-CN.md) 的第一个已验收案例。

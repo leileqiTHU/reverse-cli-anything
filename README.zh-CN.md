@@ -2,7 +2,9 @@
 
 **通过逆向，为闭源软件建立 Agent 友好的 CLI。**
 
-[English](README.md) · [最简安装](#最简安装复制给你的-agent) · [对话使用](#安装后通过对话生成和使用-cli) · [工作方式](#工作方式) · [展示案例](#展示案例) · [开发文档](#开发与扩展) · [致敬与感谢](#致敬与感谢)
+`reverse-cli-anything` 是面向 **AI Agent 闭源桌面软件自动化**的开源逆向工程工具链。当公开 CLI、API 或 MCP 无法覆盖任务时，编程 Agent 利用本框架恢复软件内部操作、构建可复用的命令行工具，并在真实软件中验证。仓库提供 **CapCut 视频剪辑、Axure RP 交互原型和 Shapr3D CAD 建模**的实测案例。
+
+[English](README.md) · [最简安装](#最简安装复制给你的-agent) · [对话使用](#安装后通过对话生成和使用-cli) · [工作方式](#工作方式) · [展示案例](#展示案例) · [常见问题](docs/faq.zh-CN.md) · [开发文档](#开发与扩展) · [致敬与感谢](#致敬与感谢)
 
 **没有源码，也能通过逆向构建 CLI，让 Agent 调用软件的原生能力。** 中英双语项目介绍：[YouTube · 1 分 48 秒](https://www.youtube.com/watch?v=BVbwRFlK0nM) · [X · 60 秒](https://x.com/lei_le77716/status/2110290745844437485)。
 
@@ -14,8 +16,6 @@
 
 MP4 链接会根据浏览器设置直接打开或下载视频。预告从实际录像中选取片段，保留原速；动图为无声预览。CapCut 的编辑和导出通过逆向恢复的内部调用完成，语音识别和翻译使用外部辅助工具。[剪辑来源](docs/demos/README.md#short-overview) · [素材署名](docs/demos/CREDITS.md)。
 
-`reverse-cli-anything` 是给 Agent 使用的通用逆向工具链。当 Agent 需要在某个软件里完成工作，而公开 CLI、API 或 MCP 不支持所需操作时，你可以让 Agent 利用本仓库分析软件、恢复内部能力，并建立一组可调用、可验证、可复用的 CLI。
-
 **让 Agent 安装一次，之后通过对话指定软件和所需操作。** 用户的入口是对话，Agent 的交付物是经过实测的 CLI 集合；环境配置、逆向研究、接口开发和验收都由 Agent 执行。
 
 ## 使用场景
@@ -25,6 +25,18 @@ MP4 链接会根据浏览器设置直接打开或下载视频。预告从实际�
 - 希望把一次成功的逆向实验整理成其他 Agent 可以发现和使用的工具。
 
 软件和任务由你决定。你可以列出所需操作，也可以直接描述工作目标，让 Agent 拆解需要补齐的接口。
+
+### 按你的任务找到入口
+
+| 你的任务 | 从这里开始 |
+| --- | --- |
+| 让 AI Agent 操作没有合适 API 或 CLI 的桌面软件 | [没有公开 API，如何自动化闭源软件](docs/desktop-automation.zh-CN.md) |
+| 在 GUI 自动化、项目文件编辑、软件原生控制之间选型 | [选择自动化路线](docs/desktop-automation.zh-CN.md#选择自动化路线) |
+| 用 CapCut 剪辑导出视频、生成 Axure 原型、修改 Shapr3D 模型 | [原生软件自动化案例与证据](docs/native-automation-examples.zh-CN.md) |
+| 将逆向恢复的内部函数变成可复用的 Agent 工具 | [闭源应用 CLI 工程手册](docs/HARNESS.zh-CN.md) |
+| 软件升级后修复 CLI，或在新会话接续研究 | [新建、扩展、恢复与升级流程](docs/workflows.zh-CN.md) |
+
+源码仓库为 **[leileqiTHU/reverse-cli-anything](https://github.com/leileqiTHU/reverse-cli-anything)**。[REA 和 CLI-Anything 是另外两个项目](docs/faq.zh-CN.md#reverse-cli-anything-与-reacli-anything-是什么关系)：REA 提供本项目研究中使用的分析工具，CLI-Anything 为面向 Agent 的 CLI 方法提供了启发。
 
 ## 最简安装：复制给你的 Agent
 
@@ -142,6 +154,7 @@ CapCut 的语音识别、翻译由外部工具和 Agent 完成，再写入原生
 | [运行层命令](docs/runtime.zh-CN.md) · [适配器契约](docs/adapter-contract.zh-CN.md) | 配置、脚手架、注册、调用、回执及工具结构。 |
 | [验收标准](acceptance/README.zh-CN.md) | 框架检查、原生后置条件、持久化、产物及恢复要求。 |
 | [贡献指南](CONTRIBUTING.zh-CN.md) | 扩展框架或添加新的软件适配器。 |
+| [文档站构建与发布](site/README.md) | 复用中英文文档，通过免费的 GitHub Pages 项目站发布。 |
 
 通用能力位于 `reverse_cli/`、`skills/reverse-cli-anything/`、`docs/` 和 `tools/`；软件相关实现位于各自的 `<software>-cli/` 目录。展示案例通过 `examples/` 单独索引，安装与通用流程不依赖任何案例。
 

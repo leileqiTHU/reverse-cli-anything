@@ -1,5 +1,9 @@
 # Axure RP CLI
 
+[Native prototype automation and evidence (English)](../docs/native-automation-examples.md#axure-rp-automation-generate-editable-prototypes-and-interactive-html) · [原生原型自动化与证据](../docs/native-automation-examples.zh-CN.md#axure-rp-自动化生成可编辑原型和交互-html)
+
+**Axure RP prototyping automation through a JSON CLI for AI agents.** This reverse-cli-anything example creates pages and widgets, installs supported click interactions, saves and reopens native projects, and generates interactive HTML through recovered internal editing calls. Verified with Axure RP 11.0.0.4150 on Windows. [Project overview](../README.md) · [Automation FAQ](../docs/faq.md).
+
 **[Watch the English CLI demo · 1:46](assets/axure-cli-demo.mp4)** — build an interactive login prototype, cold reopen the native project, export HTML and verify it in a browser. [Shared demo gallery and provenance](../docs/demos/README.md).
 
 Windows 上的 Axure RP **11.0.0.4150** 原生编辑试验。Agent 可以创建和切换页面，添加按钮及输入框，修改位置尺寸和文字，安装点击条件与动作，撤销/重做、保存/重开，并调用 Axure 自己的 HTML 生成器。

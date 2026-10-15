@@ -1,5 +1,9 @@
 # Shapr3D native CLI pilot
 
+[Native CAD automation and evidence (English)](../docs/native-automation-examples.md#shapr3d-cli-edit-native-cad-geometry-and-export-a-model) · [原生建模与证据](../docs/native-automation-examples.zh-CN.md#shapr3d-cli修改原生-cad-几何并导出模型)
+
+**Shapr3D CAD automation through a native CLI for AI agents.** This reverse-cli-anything pilot demonstrates mounting-plate modeling, parameter edits, a through-hole and native project/STL export on Windows x64 with Shapr3D 26.180.11926.0. It does not implement arbitrary sketch construction, general project navigation or STEP export. [Project overview](../README.md) · [Automation FAQ](../docs/faq.md).
+
 **[Watch the English CLI demo · 0:56](assets/shapr3d-cli-demo.mp4)** — build a plate, edit thickness and hole spacing, drill a center hole, and export the native model and STL. [Shared demo gallery and provenance](../docs/demos/README.md).
 
 Windows x64 **26.180.11926.0** 的首个原生建模闭环已验收：正常新建项目 → 导入软件自带阀门模型副本 → 修改原生拉伸历史 → 保存并关闭 → 重开 → 原生 STL 导出。

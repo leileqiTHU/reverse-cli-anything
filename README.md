@@ -2,7 +2,9 @@
 
 **Turn closed-source software into agent-friendly CLI tools.**
 
-[中文](README.zh-CN.md) · [Quick start](#quick-start-install-with-your-agent) · [Conversational use](#after-installation-create-and-use-clis-through-conversation) · [How it works](#how-it-works) · [Showcases](#showcase-examples) · [Developer docs](#development-and-extension) · [Acknowledgments](#acknowledgments)
+`reverse-cli-anything` is an open-source reverse-engineering toolkit for **AI agent automation of closed-source desktop software**. When a public CLI, API or MCP does not cover a task, a coding agent uses this framework to recover internal operations, build reusable command-line tools and verify them in the real application. The repository includes demonstrated workflows for **CapCut video editing, Axure RP prototyping and Shapr3D CAD modeling**.
+
+[中文](README.zh-CN.md) · [Quick start](#quick-start-install-with-your-agent) · [Conversational use](#after-installation-create-and-use-clis-through-conversation) · [How it works](#how-it-works) · [Showcases](#showcase-examples) · [FAQ](docs/faq.md) · [Developer docs](#development-and-extension) · [Acknowledgments](#acknowledgments)
 
 **No source code? Build a CLI for agents through reverse engineering.** Watch the bilingual project introduction: [YouTube · 1:48](https://www.youtube.com/watch?v=BVbwRFlK0nM) · [X · 60 seconds](https://x.com/lei_le77716/status/2110290745844437485).
 
@@ -14,8 +16,6 @@
 
 The MP4 link opens or downloads the video, depending on your browser. Selected recorded segments at their original speed; the GIF is a silent preview. CapCut's recovered internal calls drive editing and export; speech recognition and translation use external helpers. [Recording details](docs/demos/README.md#short-overview) · [Media credits](docs/demos/CREDITS.md).
 
-`reverse-cli-anything` is a general reverse-engineering toolkit for agents. When an agent needs to work inside an application but its public CLI, API or MCP lacks the required operations, ask the agent to use this repository to investigate the software, recover its internal capabilities and build a set of callable, verifiable, reusable CLI tools.
-
 **Have your agent install it once, then name the software and operations through conversation.** You interact through chat; the agent delivers tested CLI tools. The agent handles environment setup, reverse engineering, implementation and verification.
 
 ## When to use it
@@ -25,6 +25,18 @@ The MP4 link opens or downloads the video, depending on your browser. Selected r
 - You want to turn one successful reverse-engineering experiment into documented tools another agent can discover and use.
 
 You choose the software and task. List the operations you need, or describe the outcome and let the agent identify the missing interfaces.
+
+### Find a solution for your task
+
+| Your task | Start here |
+| --- | --- |
+| Let an AI agent operate desktop software that has no suitable API or CLI | [Automating closed-source software without a public API](docs/desktop-automation.md) |
+| Choose between GUI automation, project-file editing and native application control | [Choose an automation route](docs/desktop-automation.md#choose-an-automation-route) |
+| Edit and export video in CapCut, generate an Axure prototype, or modify a Shapr3D model | [Native automation examples and evidence](docs/native-automation-examples.md) |
+| Turn recovered internal functions into reusable agent tools | [Engineering a CLI from a closed-source application](docs/HARNESS.md) |
+| Repair a CLI after an application update or preserve research across sessions | [Build, extend, recover and upgrade workflows](docs/workflows.md) |
+
+The source repository is **[leileqiTHU/reverse-cli-anything](https://github.com/leileqiTHU/reverse-cli-anything)**. [REA and CLI-Anything are separate projects](docs/faq.md#how-is-reverse-cli-anything-related-to-rea-and-cli-anything); REA supplies research tools used in our investigations, and CLI-Anything inspired the agent-facing CLI approach.
 
 ## Quick start: install with your agent
 
@@ -138,6 +150,7 @@ These documents are for the agent performing the work and for framework contribu
 
 | Document | Contents |
 | --- | --- |
+| [Frequently asked questions](docs/faq.md) | Closed-source automation, CLI/API/MCP differences, supported environments and verification limits. |
 | [Installation](docs/install.md) · [Generic Skill](skills/reverse-cli-anything/SKILL.md) | Environment preparation and task instructions for the agent. |
 | [Engineering manual](docs/HARNESS.md) · [Workflow modes](docs/workflows.md) | Phase deliverables and decisions for building, extending, recovering and upgrading. |
 | [Research guides](docs/HARNESS.md#loading-map) · [Templates](templates/research/README.md) | Technology-specific investigation, entry-point cards, experiments and handoff records. |
@@ -146,6 +159,7 @@ These documents are for the agent performing the work and for framework contribu
 | [Runtime commands](docs/runtime.md) · [Adapter contract](docs/adapter-contract.md) | Configuration, scaffolding, registration, invocation, receipts and tool structure. |
 | [Acceptance criteria](acceptance/README.md) | Framework checks, native postconditions, persistence, output and recovery requirements. |
 | [Contributing](CONTRIBUTING.md) | Extending the framework or adding a new application adapter. |
+| [Documentation site](site/README.md) | Build and publish the bilingual documentation on free GitHub Pages project hosting. |
 
 Shared capabilities live in `reverse_cli/`, `skills/reverse-cli-anything/`, `docs/` and `tools/`; application-specific implementations live in their own `<software>-cli/` directories. Showcases are indexed separately in `examples/`. Installation and the general workflow do not depend on any example.
 
