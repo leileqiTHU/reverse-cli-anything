@@ -114,6 +114,12 @@ def build(base_url, output):
         target.parent.mkdir(parents=True, exist_ok=True)
         shutil.copyfile(ROOT / asset, target)
     urls = []
+    verification = json.loads((ROOT / 'site/verification.json').read_text(encoding='utf-8'))
+    verification_tags = ''.join(
+        f'<meta name="{html.escape(name, quote=True)}" content="{html.escape(value, quote=True)}">'
+        for name, value in verification.items()
+        if name in ('google-site-verification', 'msvalidate.01')
+    )
     for source, destination in mapping.items():
         zh = '.zh-CN.md' in source or source in ('capcut-cli/README.md', 'axure-cli/README.md', 'shapr3d-cli/README.md')
         lang = 'zh-CN' if zh else 'en'
@@ -154,7 +160,7 @@ def build(base_url, output):
         escaped = html.escape
         page = f'''<!doctype html>
 <html lang="{lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>{escaped(title)}</title><meta name="description" content="{escaped(description, quote=True)}">
+<title>{escaped(title)}</title><meta name="description" content="{escaped(description, quote=True)}">{verification_tags if source == 'README.md' else ''}
 <link rel="canonical" href="{escaped(canonical)}">{alternate}
 <meta property="og:type" content="website"><meta property="og:site_name" content="reverse-cli-anything">
 <meta property="og:title" content="{escaped(title)}"><meta property="og:description" content="{escaped(description)}"><meta property="og:url" content="{escaped(canonical)}">
