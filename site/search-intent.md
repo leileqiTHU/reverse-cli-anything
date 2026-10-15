@@ -34,7 +34,7 @@ The first three task groups and exact-identity discovery are primary entry point
 
 ## Publication and evaluation
 
-Local changes do not affect public search. Follow [publishing instructions](README.md); About metadata is still proposed until applied. Preserve free project-level GitHub Pages hosting. No paid services, domains, account-level homepage or recurring automation is required.
+Local changes do not affect public search. Initial publication and About metadata updates were completed on 2026-10-15; see [publishing instructions](README.md). Preserve free project-level GitHub Pages hosting. No paid services, domains, account-level homepage or recurring automation is required.
 
 After publication, record the deployed commit/date and confirm public pages work. Use a fixed query set spanning the audiences above. For each sample record the engine/product, date, exact query, browsing status, returned URL, cited page and accuracy of the capability description. Evaluate unaided discovery separately from reading a supplied URL. Retain actual result samples rather than relying on model reflections.
 

@@ -2,6 +2,8 @@
 
 **通过逆向，为闭源软件建立 Agent 友好的 CLI。**
 
+**[中文文档站](https://leileqithu.github.io/reverse-cli-anything/zh/)** · [Documentation website](https://leileqithu.github.io/reverse-cli-anything/)
+
 `reverse-cli-anything` 是面向 **AI Agent 闭源桌面软件自动化**的开源逆向工程工具链。当公开 CLI、API 或 MCP 无法覆盖任务时，编程 Agent 利用本框架恢复软件内部操作、构建可复用的命令行工具，并在真实软件中验证。仓库提供 **CapCut 视频剪辑、Axure RP 交互原型和 Shapr3D CAD 建模**的实测案例。
 
 [English](README.md) · [最简安装](#最简安装复制给你的-agent) · [对话使用](#安装后通过对话生成和使用-cli) · [工作方式](#工作方式) · [展示案例](#展示案例) · [常见问题](docs/faq.zh-CN.md) · [开发文档](#开发与扩展) · [致敬与感谢](#致敬与感谢)

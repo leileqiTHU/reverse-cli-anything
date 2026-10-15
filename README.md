@@ -2,6 +2,8 @@
 
 **Turn closed-source software into agent-friendly CLI tools.**
 
+**[Documentation website](https://leileqithu.github.io/reverse-cli-anything/)** · [中文文档站](https://leileqithu.github.io/reverse-cli-anything/zh/)
+
 `reverse-cli-anything` is an open-source reverse-engineering toolkit for **AI agent automation of closed-source desktop software**. When a public CLI, API or MCP does not cover a task, a coding agent uses this framework to recover internal operations, build reusable command-line tools and verify them in the real application. The repository includes demonstrated workflows for **CapCut video editing, Axure RP prototyping and Shapr3D CAD modeling**.
 
 [中文](README.zh-CN.md) · [Quick start](#quick-start-install-with-your-agent) · [Conversational use](#after-installation-create-and-use-clis-through-conversation) · [How it works](#how-it-works) · [Showcases](#showcase-examples) · [FAQ](docs/faq.md) · [Developer docs](#development-and-extension) · [Acknowledgments](#acknowledgments)

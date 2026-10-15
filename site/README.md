@@ -4,7 +4,7 @@ This site renders the repository's English and Chinese Markdown as static HTML. 
 
 ## Free project hosting
 
-Use **GitHub Pages for this repository**, not an account-level `username.github.io` repository. The intended address is `https://leileqithu.github.io/reverse-cli-anything/`. This is a deployment target, not confirmation that the site is live.
+The documentation is published through **GitHub Pages for this repository** at [reverse-cli-anything documentation](https://leileqithu.github.io/reverse-cli-anything/). It uses a project path, not an account-level `username.github.io` repository. Initial deployment and public asset checks passed on 2026-10-15.
 
 Public repositories can use GitHub Pages on GitHub Free. Each repository can have a project site, so this does not consume the account's single user/organization site. No purchased domain, server, paid API, analytics service or other hosting account is required. GitHub's service limits still apply; see [Pages availability and project sites](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages) and [usage limits](https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits).
 
@@ -35,18 +35,18 @@ The generator uses tracked Markdown files, plus explicitly listed new FAQ, autom
 
 ## Repository About fields
 
-Suggested description:
+Applied repository description:
 
 > Reverse-engineer closed-source desktop software into CLI tools for AI agents. Verified CapCut, Axure RP and Shapr3D workflows.
 
-Suggested topics (apply to this repository only):
+Applied topics (this repository only, retaining its existing agent-skills topic):
 
 ```text
 reverse-engineering ai-agents cli desktop-automation automation
-agent-tools command-line capcut axure shapr3d python
+agent-tools command-line capcut axure shapr3d python agent-skills
 ```
 
-Set the About website to the deployment URL **after** it works. These values are proposed metadata; changing files alone does not update GitHub About settings. [GitHub topics](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/classifying-your-repository-with-topics) support repository discovery.
+The About website points to the verified deployment URL. These settings were applied through the repository API; editing this document alone does not update GitHub settings. [GitHub topics](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/classifying-your-repository-with-topics) support repository discovery.
 
 ## SEO and generative search
 
