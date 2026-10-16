@@ -39,3 +39,9 @@ Local changes do not affect public search. Initial publication and About metadat
 After publication, record the deployed commit/date and confirm public pages work. Use a fixed query set spanning the audiences above. For each sample record the engine/product, date, exact query, browsing status, returned URL, cited page and accuracy of the capability description. Evaluate unaided discovery separately from reading a supplied URL. Retain actual result samples rather than relying on model reflections.
 
 Compare available Search Console/GitHub traffic data and repeated query samples after indexing has had time to change. Do not promise an indexing deadline or infer improvement from one personalized answer. Distinguish unreachable pages, indexing coverage, ranking, content relevance and candidate selection. External posts, directory submissions and scheduled monitoring are not performed by this change.
+
+## Follow-up from the reported CapCut search trace
+
+The 2026-10-16 [keyword audit and expansion](search-keywords.md) adds six explicit seed queries, 18 same-need expansions and 24 queries for other audiences: **6 → 24 → 48**. The [CSV](search-keywords.csv) records provenance, audience, intent, language and content destination. Unlike the earlier reflections, this attachment includes the original task and specific reported queries, but still is not a raw search log.
+
+The content response makes native control discoverable from task language already used in the search, explains that MCP/CLI and operation backends are separate choices, and gives video, prototype and CAD users concrete acceptance criteria. It does not copy competitor product names into headings or claim their users can migrate without testing.

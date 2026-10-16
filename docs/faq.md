@@ -47,3 +47,15 @@ The source repository is [leileqiTHU/reverse-cli-anything](https://github.com/le
 ## Is reverse-cli-anything open source?
 
 The project's original code and documentation use the [MIT License](../LICENSE). Target applications, third-party tools and demo media retain their own licenses. See [acknowledgments](../README.md#acknowledgments) and [media credits](demos/CREDITS.md).
+
+## Is there an open-source repository for an AI agent to operate CapCut through a CLI?
+
+Yes: this repository includes [a CapCut CLI adapter](../capcut-cli/README.md) that wraps recovered internal operations for importing footage, editing timelines, adding editable captions and exporting video with CapCut's renderer. The recorded workflow targets Windows x64 CapCut 9.5.0.4050 and requires a running editing session. See the [implementation and recorded evidence](native-automation-examples.md#capcut-cli-control-the-native-editor-and-export-video) before choosing it for your version. CapCut is one example of the general closed-source CLI framework.
+
+## Do I need an MCP server to let an agent use these CLIs?
+
+An agent with local terminal access can invoke the delivered CLI directly. MCP is an optional integration interface, not a prerequisite for CLI use. A client that only supports MCP needs an additional wrapper; it still has to respect each operation's arguments, errors, version and active-session requirements. See [interface and backend selection](desktop-automation.md#cli-mcp-and-gui-automation-separate-the-interface-from-the-backend).
+
+## Does CapCut support here also mean Jianying or headless automation?
+
+No. The recorded adapter requires a running CapCut application and a supported build. It does not establish compatibility with the separate Jianying/剪映 application or unattended headless rendering. Offline draft editing and GUI automation are other routes to evaluate for a particular task; [the route guide](desktop-automation.md#choose-an-automation-route) explains their verification requirements.

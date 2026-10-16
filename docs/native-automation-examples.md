@@ -32,6 +32,12 @@ The implementation recovers C++/WinRT interfaces and native modeling objects fro
 
 This is a scoped pilot: arbitrary sketch construction, general project navigation and STEP export are not implemented. Native Low-resolution STL export is documented; this is not evidence of every export option or platform.
 
+## From a user task to a verified native result
+
+For video editors, the useful unit is a complete footage-to-video workflow: import media, trim the timeline, add editable captions, retain the project and export MP4. For prototype designers, it is a native document that reopens and generates interactive HTML. For CAD users, it is a bounded parameter change whose saved model and exported geometry agree. The recordings above provide examples of these acceptance targets; they do not establish unattended batch processing or arbitrary operation coverage.
+
+If you arrive looking for Python scripting, a CLI or an MCP tool, first identify the native result you need. The agent-facing interface and the application's execution backend are separate choices. Use the [route selection guide](desktop-automation.md#cli-mcp-and-gui-automation-separate-the-interface-from-the-backend) to choose between an existing public interface, project-file editing, GUI automation and recovered internal calls.
+
 ## Apply the method to another application
 
 Start with the [closed-source automation guide](desktop-automation.md), then ask an agent to identify the missing operations for your application and version. The [engineering manual](HARNESS.md) explains how to move from internal entry points to verified, reusable CLI tools. Reusing this method does not require installing the three example applications.

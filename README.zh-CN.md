@@ -35,6 +35,8 @@ MP4 链接会根据浏览器设置直接打开或下载视频。预告从实际�
 | 让 AI Agent 操作没有合适 API 或 CLI 的桌面软件 | [没有公开 API，如何自动化闭源软件](docs/desktop-automation.zh-CN.md) |
 | 在 GUI 自动化、项目文件编辑、软件原生控制之间选型 | [选择自动化路线](docs/desktop-automation.zh-CN.md#选择自动化路线) |
 | 用 CapCut 剪辑导出视频、生成 Axure 原型、修改 Shapr3D 模型 | [原生软件自动化案例与证据](docs/native-automation-examples.zh-CN.md) |
+| 让 Agent 直接运行命令，或评估是否需要 MCP 封装 | [CLI 调用入口与自动化后端](docs/desktop-automation.zh-CN.md#climcp-与-gui-自动化区分调用入口和执行后端) |
+| 核对原生保存重开、导出和工作流复现证据 | [评估开源桌面自动化工具](docs/desktop-automation.zh-CN.md#如何评估一个开源桌面自动化工具) |
 | 将逆向恢复的内部函数变成可复用的 Agent 工具 | [闭源应用 CLI 工程手册](docs/HARNESS.zh-CN.md) |
 | 软件升级后修复 CLI，或在新会话接续研究 | [新建、扩展、恢复与升级流程](docs/workflows.zh-CN.md) |
 

@@ -14,6 +14,8 @@ Windows x64 **26.180.11926.0** 的首个原生建模闭环已验收：正常新�
 
 这是范围受限的试验适配器。已验证项目协议链接可经正常前台流程打开本机测试项目，也可附加已经打开的可编辑项目进行钻孔。通用项目列表/导航 CLI、任意草图构造以及 STEP 导出尚未实现；本次草图输入是 CLI 生成的二维 DXF，实体和孔洞由 Shapr3D 原生建模工具计算。
 
+For CAD users evaluating Shapr3D scripting, the reproducible starting task is the demonstrated plate: change thickness and hole spacing, then compare the saved native model with the exported STL geometry. See [the workflow acceptance guide](../docs/desktop-automation.md#how-do-i-evaluate-an-open-source-desktop-automation-tool) before extending this pilot.
+
 ## 已验收结果
 
 - `Cover ear extrusion` 的距离从 **−2 mm** 改为 **−3 mm**。

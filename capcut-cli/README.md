@@ -10,6 +10,8 @@ CapCut 的原生 JSON CLI 适配器，也是 [reverse-cli](../README.zh-CN.md) �
 
 **已验证：Windows x64，CapCut 9.5.0.4050。** 原生模块 SHA-256 固定校验；其他版本不能直接视为兼容。
 
+For an agent with shell access, this adapter provides a command-line route to the running CapCut editor. If you are evaluating draft automation or an MCP server, compare the execution backend and native export evidence in the [automation route guide](../docs/desktop-automation.md). Jianying compatibility and headless operation are not established.
+
 ## 实际完成过什么
 
 - 创建、打开、关闭项目，向素材库导入本地视频。

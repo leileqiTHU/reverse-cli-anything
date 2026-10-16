@@ -59,3 +59,5 @@ Project Pages live below a path and cannot set the host's root `/robots.txt`. Do
 Google says standard SEO and useful original content remain the basis for generative search, and that it does not use `llms.txt` for ranking. See [Google's generative search guidance](https://developers.google.com/search/docs/fundamentals/ai-optimization-guide). No ranking or AI citation gains are claimed before measurement.
 
 After publication, record a baseline for GitHub traffic/referrers and search queries such as “closed-source software automation”, “reverse engineering CLI for AI agents”, “CapCut CLI”, “Axure automation” and “闭源软件 AI Agent 自动化”. Check actual indexed pages and source citations over time. Avoid treating a single personalized AI response as a ranking measurement. No monitoring service or recurring automation is created by this change.
+
+The [2026-10-16 keyword audit](search-keywords.md) and [48-query CSV](search-keywords.csv) preserve the reported queries, two expansion stages, audience mappings and evaluation set. These maintainer records are not additional search landing pages.

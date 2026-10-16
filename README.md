@@ -35,6 +35,8 @@ You choose the software and task. List the operations you need, or describe the 
 | Let an AI agent operate desktop software that has no suitable API or CLI | [Automating closed-source software without a public API](docs/desktop-automation.md) |
 | Choose between GUI automation, project-file editing and native application control | [Choose an automation route](docs/desktop-automation.md#choose-an-automation-route) |
 | Edit and export video in CapCut, generate an Axure prototype, or modify a Shapr3D model | [Native automation examples and evidence](docs/native-automation-examples.md) |
+| Connect an agent through shell commands or evaluate an MCP wrapper | [CLI interfaces and automation backends](docs/desktop-automation.md#cli-mcp-and-gui-automation-separate-the-interface-from-the-backend) |
+| Check native save/reopen, export and repeatable workflow evidence | [Evaluate an open-source desktop automation tool](docs/desktop-automation.md#how-do-i-evaluate-an-open-source-desktop-automation-tool) |
 | Turn recovered internal functions into reusable agent tools | [Engineering a CLI from a closed-source application](docs/HARNESS.md) |
 | Repair a CLI after an application update or preserve research across sessions | [Build, extend, recover and upgrade workflows](docs/workflows.md) |
 

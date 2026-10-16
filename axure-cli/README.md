@@ -10,6 +10,8 @@ Windows 上的 Axure RP **11.0.0.4150** 原生编辑试验。Agent 可以创建�
 
 完整链路为：**JSON CLI → 当前用户命名管道 → .NET startup hook → Axure UI 线程 → 原生编辑事务、保存器和生成器**。
 
+For prototype designers and agent developers, start with a small editable page, a button/input interaction and native HTML export; verify both reopening in Axure and behavior in a browser. See [how to evaluate the complete workflow](../docs/desktop-automation.md#how-do-i-evaluate-an-open-source-desktop-automation-tool).
+
 ## 已完成验收
 
 [机器验收记录](evidence/native-text-acceptance.json)覆盖文字替换、撤销/重做、未保存项目保护、保存后切换文档重开、关闭进程后冷启动重开、继续编辑、原生 HTML 导出与 D 盘缓存设置。[浏览器验收记录](evidence/native-html-render.json)确认导出页包含完整中英文且实际渲染成功。

@@ -49,3 +49,23 @@ Internal calls can change across builds. Recheck build identity, investigate cha
 ## Where can I see working examples?
 
 See [CapCut native editing and export, Axure RP prototype generation, and Shapr3D native CAD modeling](native-automation-examples.md). Each example links the implementation, supported version, recorded workflow and verification evidence so you can judge whether it fits your task.
+
+## CLI, MCP and GUI automation: separate the interface from the backend
+
+When evaluating an open-source desktop automation repository, ask two questions: how does the agent call it, and how does it change the application? A shell command with JSON results and an MCP tool are agent-facing interfaces. The implementation behind either interface can edit project files, operate UI controls or invoke recovered internal functions. Choosing MCP alone does not determine which application operations are available.
+
+For an agent with terminal access, start with the delivered CLI and its documented arguments and results. For an MCP-only client, an integration would need to expose the selected CLI operations as tools, validate arguments, preserve errors and enforce the same session and version requirements. This repository's [runtime contract](runtime.md) and [adapter contract](adapter-contract.md) describe the reusable CLI side; a universal MCP server is not included.
+
+## How do I evaluate an open-source desktop automation tool?
+
+Use a small task that produces an editable native result and an exported artifact. Check the backend and evidence before assuming that a successful command completed the task.
+
+| Need | Acceptance question | Starting point |
+| --- | --- | --- |
+| Video editing | Did the running editor retain the timeline and captions, and did its own renderer produce the video? | [CapCut workflow and evidence](native-automation-examples.md#capcut-cli-control-the-native-editor-and-export-video) |
+| Prototype generation | Does the saved document reopen, and do exported buttons and inputs behave as specified? | [Axure RP native and browser checks](native-automation-examples.md#axure-rp-automation-generate-editable-prototypes-and-interactive-html) |
+| CAD parameter editing | Are the intended dimensions retained in the native model and reflected in the exported geometry? | [Shapr3D mounting-plate pilot](native-automation-examples.md#shapr3d-cli-edit-native-cad-geometry-and-export-a-model) |
+| Reusable agent integration | Can another session discover the operations, interpret failures and reproduce the verified workflow? | [Delivery guidance](guides/delivery.md) |
+| Updates and recovery | Is the target build identified, and can affected operations be retested after a change? | [Build, recover and upgrade workflows](workflows.md) |
+
+For Windows RPA or GUI automation comparisons, evaluate the specific operation gap: focus and screen layout matter for UI control; calling conventions, UI-thread dispatch and object lifetime matter for native control. Neither route establishes universal coverage. Preserve the test input, application build, native output and acceptance record so another developer can reproduce the result.

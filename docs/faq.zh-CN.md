@@ -47,3 +47,15 @@ CLI 和 API 提供操作入口，MCP 帮助 Agent 发现和调用工具。revers
 ## 项目是否开源？
 
 项目原创代码和文档采用 [MIT 许可证](../LICENSE)。目标软件、第三方工具和演示素材保留各自的许可，参见[致谢](../README.zh-CN.md#致敬与感谢)和[素材署名](demos/CREDITS.md)。
+
+## 有没有让 AI Agent 通过 CLI 操作 CapCut 的开源仓库？
+
+有。本仓库的 [CapCut CLI 适配器](../capcut-cli/README.md)封装恢复出的内部操作，可导入素材、编辑时间线、添加可编辑字幕，并调用 CapCut 自身渲染器导出视频。录制流程针对 Windows x64 CapCut 9.5.0.4050，需要正在运行的编辑会话。选择前请核对[实现与实测证据](native-automation-examples.zh-CN.md#capcut-cli控制原生编辑器并导出视频)及你的版本。CapCut 是通用闭源软件 CLI 框架的一个案例。
+
+## Agent 使用这些 CLI 必须先有 MCP 服务吗？
+
+具备本机终端权限的 Agent 可以直接调用交付的 CLI。MCP 是可选的集成入口，不是使用 CLI 的前提。仅支持 MCP 的客户端需要额外封装，并继续遵守操作参数、错误、软件版本及活动会话要求。参见[调用入口与执行后端的选择](desktop-automation.zh-CN.md#climcp-与-gui-自动化区分调用入口和执行后端)。
+
+## 支持 CapCut 是否意味着也支持剪映或无头自动化？
+
+不意味着。录制案例需要正在运行且 build 受支持的 CapCut，不能证明独立的剪映/Jianying 应用兼容，也不能证明支持无人值守的无头渲染。离线草稿编辑与 GUI 自动化是需要按任务另行评估的路线，参见[路线选择和验收要求](desktop-automation.zh-CN.md#选择自动化路线)。

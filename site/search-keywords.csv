@@ -1,0 +1,49 @@
+id,stage,parent,audience,intent,language,query,target
+Q01,reported,,video automation,draft and CLI discovery,en,github CapCut Jianying draft automation python pyJianYingDraft CLI,docs/native-automation-examples.md
+Q02,reported,,video automation,agent interface discovery,en,github CapCut desktop automation agent mcp cli,docs/native-automation-examples.md
+Q03,reported,,desktop automation,GUI route discovery,en,github desktop GUI automation agent UI-TARS open interpreter computer use playwright pyautogui,docs/desktop-automation.md
+Q04,reported,,agent integration,MCP discovery,en,github CapCut MCP server editor draft automation capcut-mcp,docs/desktop-automation.md
+Q05,reported,,video automation,named project lookup,en,github pyCapCut GuanYixuan CapCut draft,docs/native-automation-examples.md
+Q06,reported,,Windows automation,UI automation discovery,en,github microsoft UFO desktop agent Windows UI automation accessibility pywinauto,docs/desktop-automation.md
+Q07,intent-expansion,"Q01,Q05",video automation,editable output and native export,en,CapCut CLI editable timeline native MP4 export open source,docs/native-automation-examples.md
+Q08,intent-expansion,"Q01,Q05",video automation,editable output and native export,en,CapCut draft JSON editing vs native editor automation,docs/native-automation-examples.md
+Q09,intent-expansion,"Q01,Q05",video automation,editable output and native export,en,Python CapCut automation import trim captions export,docs/native-automation-examples.md
+Q10,intent-expansion,"Q01,Q05",video automation,editable output and native export,en,CapCut command line video editing without mouse clicks,docs/native-automation-examples.md
+Q11,intent-expansion,"Q01,Q05",video automation,editable output and native export,en,CapCut CLI Jianying compatibility Windows version,docs/native-automation-examples.md
+Q12,intent-expansion,"Q01,Q05",video automation,editable output and native export,en,CapCut agent video editing end to end verification,docs/native-automation-examples.md
+Q13,intent-expansion,"Q02,Q04",agent integration,CLI contract and MCP boundary,en,open source AI agent CapCut CLI GitHub,docs/desktop-automation.md
+Q14,intent-expansion,"Q02,Q04",agent integration,CLI contract and MCP boundary,en,CapCut MCP vs CLI native editing backend,docs/desktop-automation.md
+Q15,intent-expansion,"Q02,Q04",agent integration,CLI contract and MCP boundary,en,CapCut automation agent shell JSON commands,docs/desktop-automation.md
+Q16,intent-expansion,"Q02,Q04",agent integration,CLI contract and MCP boundary,en,CapCut reverse engineering internal API Frida,docs/desktop-automation.md
+Q17,intent-expansion,"Q03,Q06",desktop automation,recover missing operations,en,CapCut automation without public API or GUI scripting,docs/desktop-automation.md
+Q18,intent-expansion,"Q03,Q06",desktop automation,recover missing operations,en,CapCut native automation running editor vs headless,docs/desktop-automation.md
+Q19,intent-expansion,"Q01,Q02,Q04",video automation,Chinese task phrasing,zh-CN,AI Agent 通过 CLI 操作 CapCut 开源仓库,docs/native-automation-examples.zh-CN.md
+Q20,intent-expansion,"Q01,Q02,Q04",video automation,Chinese task phrasing,zh-CN,CapCut 自动剪辑 添加可编辑字幕 导出 MP4,docs/native-automation-examples.zh-CN.md
+Q21,intent-expansion,"Q01,Q02,Q04",video automation,Chinese task phrasing,zh-CN,CapCut 草稿编辑和原生接口自动化区别,docs/native-automation-examples.zh-CN.md
+Q22,intent-expansion,"Q01,Q02,Q04",video automation,Chinese task phrasing,zh-CN,CapCut 没有公开 API 怎么自动化,docs/native-automation-examples.zh-CN.md
+Q23,intent-expansion,"Q01,Q02,Q04",video automation,Chinese task phrasing,zh-CN,CapCut CLI 是否支持剪映 Jianying,docs/native-automation-examples.zh-CN.md
+Q24,intent-expansion,"Q01,Q02,Q04",video automation,Chinese task phrasing,zh-CN,CapCut 原生导出 不用鼠标点击,docs/native-automation-examples.zh-CN.md
+Q25,audience-expansion,"Q02,Q08,Q12",agent builders,new application integration,en,build CLI for closed source desktop software AI agents,docs/desktop-automation.md
+Q26,audience-expansion,"Q02,Q08,Q12",agent builders,new application integration,en,agent tools proprietary application no public API,docs/desktop-automation.md
+Q27,audience-expansion,"Q02,Q08,Q12",agent builders,new application integration,en,MCP tool wrapper for reverse engineered CLI,docs/desktop-automation.md
+Q28,audience-expansion,Q25,agent builders,Chinese new target task,zh-CN,闭源软件没有 API 如何让 Agent 操作,docs/desktop-automation.zh-CN.md
+Q29,audience-expansion,"Q03,Q06,Q11",automation and QA engineers,native workflow acceptance,en,desktop RPA vs native application automation,docs/desktop-automation.md
+Q30,audience-expansion,"Q03,Q06,Q11",automation and QA engineers,native workflow acceptance,en,verify desktop automation save reopen native export,docs/desktop-automation.md
+Q31,audience-expansion,"Q03,Q06,Q11",automation and QA engineers,native workflow acceptance,en,Windows desktop automation internal API without source code,docs/desktop-automation.md
+Q32,audience-expansion,Q29,automation and QA engineers,Chinese route selection,zh-CN,桌面自动化 GUI 点击之外的原生控制方案,docs/desktop-automation.zh-CN.md
+Q33,audience-expansion,"Q07,Q11",prototype designers,editable prototype and output,en,Axure RP CLI AI agent prototype automation,docs/native-automation-examples.md
+Q34,audience-expansion,"Q07,Q11",prototype designers,editable prototype and output,en,Axure generate interactive HTML command line,docs/native-automation-examples.md
+Q35,audience-expansion,"Q07,Q11",prototype designers,editable prototype and output,en,Axure automation create pages buttons click interactions,docs/native-automation-examples.md
+Q36,audience-expansion,Q33,prototype designers,Chinese prototype workflow,zh-CN,Agent 自动生成 Axure 可编辑原型 导出 HTML,docs/native-automation-examples.zh-CN.md
+Q37,audience-expansion,"Q07,Q11",CAD users,native model and bounded export,en,Shapr3D CLI AI agent CAD automation,docs/native-automation-examples.md
+Q38,audience-expansion,"Q07,Q11",CAD users,native model and bounded export,en,Shapr3D scripting edit model parameters export STL,docs/native-automation-examples.md
+Q39,audience-expansion,"Q07,Q11",CAD users,native model and bounded export,en,Shapr3D native mounting plate thickness hole spacing automation,docs/native-automation-examples.md
+Q40,audience-expansion,Q37,CAD users,Chinese CAD workflow,zh-CN,Shapr3D 自动建模 修改孔距 导出 STL,docs/native-automation-examples.zh-CN.md
+Q41,audience-expansion,"Q16,Q17",reverse engineers,recover and wrap internal calls,en,wrap reverse engineered internal functions in CLI,docs/HARNESS.md
+Q42,audience-expansion,"Q16,Q17",reverse engineers,recover and wrap internal calls,en,Frida native desktop application automation CLI,docs/HARNESS.md
+Q43,audience-expansion,"Q16,Q17",reverse engineers,recover and wrap internal calls,en,dotnet desktop automation UI thread native edit transactions,docs/HARNESS.md
+Q44,audience-expansion,Q41,reverse engineers,Chinese internal API delivery,zh-CN,逆向闭源软件 内部接口封装 Agent 命令行工具,docs/HARNESS.zh-CN.md
+Q45,audience-expansion,"Q11,Q18",adapter maintainers,version and evidence maintenance,en,maintain reverse engineered CLI after software update,docs/workflows.md
+Q46,audience-expansion,"Q11,Q18",adapter maintainers,version and evidence maintenance,en,agent reverse engineering research handoff recovery,docs/workflows.md
+Q47,audience-expansion,"Q11,Q18",adapter maintainers,version and evidence maintenance,en,version pinned desktop adapter workflow acceptance,docs/workflows.md
+Q48,audience-expansion,Q45,adapter maintainers,Chinese version maintenance,zh-CN,软件升级后逆向 CLI 失效 如何适配验证,docs/workflows.zh-CN.md
